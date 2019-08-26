@@ -16,7 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7714978111013265~7535953637"];
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
     return YES;
 }
 							
