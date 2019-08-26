@@ -1,17 +1,21 @@
 //
 //  AppDelegate.h
-//  uFail
+//  uFail Universal
 //
-//  Created by Matthew Jagiela on 3/31/15.
-//  Copyright (c) 2015 Matthew Jagiela. All rights reserved.
+//  Created by Matthew Jagiela on 6/11/14.
+//  Copyright (c) 2014 Matthew Jagiela. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+#import <WatchConnectivity/WatchConnectivity.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    AVAudioPlayer *audioPlayer;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-
