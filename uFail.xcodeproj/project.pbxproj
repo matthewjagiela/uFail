@@ -57,10 +57,8 @@
 		2EEBEF831ACB5FDA004B4834 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */; };
 		2EEBEF841ACB5FDA004B4834 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF791ACB5FDA004B4834 /* WebViewController.m */; };
 		2EEBEF8A1ACB6027004B4834 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF891ACB6027004B4834 /* Launch Screen.xib */; };
-		2EEBEF8C1ACB6051004B4834 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8B1ACB6051004B4834 /* iAd.framework */; };
 		2EEBEF8E1ACB6058004B4834 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8D1ACB6058004B4834 /* MessageUI.framework */; };
 		2EEBEF901ACB605D004B4834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8F1ACB605D004B4834 /* Social.framework */; };
-		2EEBEF941ACB606A004B4834 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF931ACB606A004B4834 /* Twitter.framework */; };
 		2EEBEFBF1ACB61AD004B4834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */; };
 		2EEBEFC11ACB61B4004B4834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFC01ACB61B4004B4834 /* UIKit.framework */; };
 		2EF75F831C74425600CD78AE /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
@@ -204,10 +202,8 @@
 			files = (
 				2EEBEFC11ACB61B4004B4834 /* UIKit.framework in Frameworks */,
 				2EEBEFBF1ACB61AD004B4834 /* Foundation.framework in Frameworks */,
-				2EEBEF941ACB606A004B4834 /* Twitter.framework in Frameworks */,
 				2EEBEF901ACB605D004B4834 /* Social.framework in Frameworks */,
 				2EEBEF8E1ACB6058004B4834 /* MessageUI.framework in Frameworks */,
-				2EEBEF8C1ACB6051004B4834 /* iAd.framework in Frameworks */,
 				459D0464B6687829331A6F04 /* Pods_uFail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +426,7 @@
 				2EEBEF011ACB5F54004B4834 /* Resources */,
 				2EEBEFBD1ACB609B004B4834 /* Embed App Extensions */,
 				2EE7C9371B2674AD007D6CBF /* Embed Watch Content */,
+				4EC2063FB798DBC31BEA0FEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -597,6 +594,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4EC2063FB798DBC31BEA0FEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FBF7D1BFA94924755A0EEC04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -761,7 +778,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0DE910E159E66290B292950 /* Pods-uFail.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Winter Icon";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
@@ -788,7 +804,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4423F145DD112B69EA52E764 /* Pods-uFail.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Winter Icon";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
