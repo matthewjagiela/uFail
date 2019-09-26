@@ -9,6 +9,11 @@
 import UIKit
 
 class AppHandler: NSObject {
+    var internetLines = [String]()
+    override init() {
+        super.init()
+        internetLabels()
+    }
     @objc func getAppVersion() -> String {
         return "Currently Running Version 11"
     }
@@ -31,5 +36,26 @@ class AppHandler: NSObject {
 
         return ""
 
+    }
+    @objc func getuFailNewestVersion() -> String {
+        return internetLines[0]
+    }
+    @objc func getuAppsnews() -> String {
+        return internetLines[1]
+    }
+    func internetLabels() {
+        if let url = URL(string: "https://matthewjagiela.github.io/uApps-HTML/") {
+            do {
+                let contents = try String(contentsOf: url)
+                let newLineSet = NSCharacterSet.newlines
+                let lines = contents.components(separatedBy: newLineSet)
+                internetLines.append(lines[0])
+                internetLines.append(lines[4])
+            } catch {
+                // contents could not be loaded
+            }
+        } else {
+            // the URL was bad!
+        }
     }
 }
