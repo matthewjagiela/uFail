@@ -27,7 +27,7 @@
 @synthesize Background;
 @synthesize buttonImage;
 @synthesize supportView;
-@synthesize RunningLabel;
+@synthesize currentRunningLabel;
 @synthesize theme;
 @synthesize particleBackground;
 @synthesize currentInfo;
@@ -199,7 +199,9 @@ NSUserDefaults *defaults;
 {
     [super viewDidLoad];
     info = [[AppHandler alloc]init];
-    [self internetLabels];
+    [appStoreVersionLabel setText:[info getuFailNewestVersion]];
+    [currentRunningLabel setText:[info getAppVersion]];
+    [_newsLabel setText:[info getuAppsnews]];
     // Do any additional setup after loading the view.
     
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
@@ -243,8 +245,8 @@ NSUserDefaults *defaults;
     stored = image;
     storedButton = buttonImage;
     [webViewer setHidden:YES];
-    RunningLabel.text = @"You are running version 10.4.1";
-    RunningLabel.textAlignment = NSTextAlignmentCenter;
+    currentRunningLabel.text = @"You are running version 10.4.1";
+    currentRunningLabel.textAlignment = NSTextAlignmentCenter;
     NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.com.uapps.ufail"];
     theme = [defaults boolForKey:@"theme"];
     if(theme == YES) //Dark theme
@@ -272,34 +274,6 @@ NSUserDefaults *defaults;
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
     
-    
-}
-
--(void)internetLabels{
-    NSString *getWebInfo = @"https://matthewjagiela.github.io/uApps-HTML/";
-    NSError *error;
-    
-    NSURL *webUnformat =[NSURL URLWithString:getWebInfo];
-    //[currentInfo setContentOffset:CGPointZero];
-    
-    @try{
-        NSString *webFormat = [NSString stringWithContentsOfURL:webUnformat encoding:NSASCIIStringEncoding error:&error];
-        NSCharacterSet *newlineCharSet = [NSCharacterSet newlineCharacterSet];
-        NSArray *lines = [webFormat componentsSeparatedByCharactersInSet:newlineCharSet];
-        for (int i = 0; i < lines.count; i++) {
-            NSLog(@"I = %i = %@",i,lines[i]);
-        }
-        _newsLabel.text = lines[4];
-        _newsLabel.textAlignment = NSTextAlignmentCenter;
-        VersionLabel.text = lines[0];
-        VersionLabel.textAlignment = NSTextAlignmentCenter;
-        //bookmarkarray addObject:@"Hello World"];
-    }
-    @catch(NSException *exception)
-    {
-       // _uAppsNewsLabel.text  =@"";
-        //_newestVersionLabel.text = @"We cannot get the latest information... This could be our problem... Try again later";
-    }
     
 }
 -(void)viewWillLayoutSubviews{
