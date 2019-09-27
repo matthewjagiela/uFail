@@ -8,7 +8,6 @@
 
 #import "InfoViewController.h"
 #import "ViewController.h"
-#import "Reachability.h"
 #import <MessageUI/MessageUI.h>
 #import "smokeScene.h"
 #import "snowScene.h"

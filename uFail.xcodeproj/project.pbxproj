@@ -51,7 +51,6 @@
 		2EEBEF5C1ACB5FA6004B4834 /* blue theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF4E1ACB5FA6004B4834 /* blue theme.png */; };
 		2EEBEF5D1ACB5FA6004B4834 /* greenBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF4F1ACB5FA6004B4834 /* greenBackGround.png */; };
 		2EEBEF5E1ACB5FA6004B4834 /* Purple Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF501ACB5FA6004B4834 /* Purple Background.png */; };
-		2EEBEF7E1ACB5FDA004B4834 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF6F1ACB5FDA004B4834 /* Reachability.m */; };
 		2EEBEF7F1ACB5FDA004B4834 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF711ACB5FDA004B4834 /* AppDelegate.m */; };
 		2EEBEF801ACB5FDA004B4834 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF721ACB5FDA004B4834 /* Main_iPhone.storyboard */; };
 		2EEBEF811ACB5FDA004B4834 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF731ACB5FDA004B4834 /* Main_iPad.storyboard */; };
@@ -160,8 +159,6 @@
 		2EEBEF4E1ACB5FA6004B4834 /* blue theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue theme.png"; sourceTree = "<group>"; };
 		2EEBEF4F1ACB5FA6004B4834 /* greenBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBackGround.png; sourceTree = "<group>"; };
 		2EEBEF501ACB5FA6004B4834 /* Purple Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple Background.png"; sourceTree = "<group>"; };
-		2EEBEF6E1ACB5FDA004B4834 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		2EEBEF6F1ACB5FDA004B4834 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2EEBEF701ACB5FDA004B4834 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2EEBEF711ACB5FDA004B4834 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2EEBEF721ACB5FDA004B4834 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -305,8 +302,6 @@
 				2EB65AC6233C58A4006DFC40 /* Other */,
 				2EB65AC3233C5544006DFC40 /* Handlers */,
 				2EEBEF881ACB6010004B4834 /* uFail.entitlements */,
-				2EEBEF6E1ACB5FDA004B4834 /* Reachability.h */,
-				2EEBEF6F1ACB5FDA004B4834 /* Reachability.m */,
 				2EEBEF701ACB5FDA004B4834 /* AppDelegate.h */,
 				2EEBEF711ACB5FDA004B4834 /* AppDelegate.m */,
 				2EEBEF721ACB5FDA004B4834 /* Main_iPhone.storyboard */,
@@ -657,7 +652,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EEBEF7E1ACB5FDA004B4834 /* Reachability.m in Sources */,
 				2EA4C0D01BC4E59800EE6E23 /* smokeScene.m in Sources */,
 				3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */,
 				349E8D401DECC16C005501A3 /* SnowScene.m in Sources */,
