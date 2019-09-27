@@ -31,23 +31,12 @@
 @synthesize theme;
 @synthesize particleBackground;
 @synthesize currentInfo;
+@synthesize newsLabel;
 UIImage *stored;
 UIImage *storedButton;
 AppHandler *info;
 BOOL Internet;
 NSUserDefaults *defaults;
-
-
-
--(IBAction)facebook:(id)sender
-{
-    mySLComposerSheet = [[SLComposeViewController alloc]init];
-    mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-    [mySLComposerSheet setInitialText:@"Check out a cool soundboard on the App Store called uFail download it here: http://bit.ly/Tu2BNX"];
-    [self presentViewController:mySLComposerSheet animated:YES completion:nil];
-    
-    //SFSafariViewController *saf = [SFSafariViewController]
-}
 
 - (IBAction)pushweb:(id)sender
 {
@@ -82,32 +71,6 @@ NSUserDefaults *defaults;
      **/
 
 }
-- (void)checkForNetwork
-{
-    // check if we've got network connectivity
-    Reachability *myNetwork = [Reachability reachabilityWithHostname:@"google.com"];
-    NetworkStatus myStatus = [myNetwork currentReachabilityStatus];
-    
-    switch (myStatus) {
-        case NotReachable:
-            NSLog(@"There's no internet connection at all. Display error message now.");
-            Internet = NO;
-            break;
-            
-        case ReachableViaWWAN:
-            Internet = YES;
-            break;
-            
-        case ReachableViaWiFi:
-            NSLog(@"We have WiFi.");
-            Internet = YES;
-            break;
-            
-        default:
-            break;
-    }
-}
-
 - (IBAction)pushhome:(id)sender {
     
     ViewController *home = [self.storyboard instantiateViewControllerWithIdentifier:@"Home"];
@@ -201,7 +164,8 @@ NSUserDefaults *defaults;
     info = [[AppHandler alloc]init];
     [appStoreVersionLabel setText:[info getuFailNewestVersion]];
     [currentRunningLabel setText:[info getAppVersion]];
-    [_newsLabel setText:[info getuAppsnews]];
+    [newsLabel setText:[info getuAppsnews]];
+    newsLabel.adjustsFontSizeToFitWidth = YES;
     // Do any additional setup after loading the view.
     
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
