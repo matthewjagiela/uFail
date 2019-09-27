@@ -14,7 +14,6 @@
 #import "smokeScene.h"
 #import "snowScene.h"
 #import <SafariServices/SafariServices.h>
-#import "uFail-Swift.h"
 
 
 @interface InfoViewController () <SFSafariViewControllerDelegate>
@@ -30,10 +29,8 @@
 @synthesize RunningLabel;
 @synthesize theme;
 @synthesize particleBackground;
-@synthesize currentInfo;
 UIImage *stored;
 UIImage *storedButton;
-AppHandler *info;
 BOOL Internet;
 NSUserDefaults *defaults;
 
@@ -198,7 +195,6 @@ NSUserDefaults *defaults;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    info = [[AppHandler alloc]init];
     [self internetLabels];
     // Do any additional setup after loading the view.
     
@@ -208,6 +204,15 @@ NSUserDefaults *defaults;
     particleBackground.allowsTransparency = YES;
     //_particleView.showsFPS = YES;
     [particleBackground presentScene:scene];
+     
+     
+     
+    
+     
+     
+     
+    
+    
     /**smokeScene *smoke = [smokeScene sceneWithSize:particleBackground.bounds.size];
     smoke.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor clearColor];
@@ -264,7 +269,7 @@ NSUserDefaults *defaults;
         [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
         
     }
-    [currentInfo setText:[info changes]];
+    
     [self.navigationController setNavigationBarHidden:NO];
     //ADS
     self.bannerView.adUnitID = @
@@ -324,7 +329,7 @@ NSUserDefaults *defaults;
     self.view.backgroundColor = [UIColor blackColor];
     
     [self.navigationController setNavigationBarHidden:NO];
-    [currentInfo setContentOffset:CGPointZero];
+    [_currentInfo setContentOffset:CGPointZero];
 }
 - (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
     NSLog(@"SAFARI CONTROLLER DISMISSED");
@@ -345,7 +350,6 @@ NSUserDefaults *defaults;
      **/
 }
 -(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:true];
     
 }
 -(BOOL)prefersStatusBarHidden
