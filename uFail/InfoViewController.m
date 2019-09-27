@@ -70,13 +70,12 @@ NSUserDefaults *defaults;
 
 }
 - (IBAction)pushhome:(id)sender {
-    if(@available(iOS 13, *)){
-        [self dismissViewControllerAnimated:true completion:^{
-            NSLog(@"Dismissed view controller on iOS 13...");
-        }];
-    } else {
-        [self performSegueWithIdentifier:@"goHome" sender:nil];
-    }
+    
+    ViewController *home = [self.storyboard instantiateViewControllerWithIdentifier:@"Home"];
+    home.bgImage = stored;
+    home.buttonImage = storedButton;
+    //home.darkTheme = theme;
+    [self presentViewController:home animated:YES completion:nil];
 }
 
 -(IBAction)CloseWeb:(id)sender {
