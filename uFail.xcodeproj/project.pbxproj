@@ -57,6 +57,7 @@
 		2EEBEF811ACB5FDA004B4834 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF731ACB5FDA004B4834 /* Main_iPad.storyboard */; };
 		2EEBEF821ACB5FDA004B4834 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF751ACB5FDA004B4834 /* ViewController.m */; };
 		2EEBEF831ACB5FDA004B4834 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */; };
+		2EEBEF841ACB5FDA004B4834 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF791ACB5FDA004B4834 /* WebViewController.m */; };
 		2EEBEF8A1ACB6027004B4834 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF891ACB6027004B4834 /* Launch Screen.xib */; };
 		2EEBEF8E1ACB6058004B4834 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8D1ACB6058004B4834 /* MessageUI.framework */; };
 		2EEBEF901ACB605D004B4834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8F1ACB605D004B4834 /* Social.framework */; };
@@ -170,6 +171,8 @@
 		2EEBEF751ACB5FDA004B4834 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2EEBEF761ACB5FDA004B4834 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		2EEBEF781ACB5FDA004B4834 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2EEBEF791ACB5FDA004B4834 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		2EEBEF881ACB6010004B4834 /* uFail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = uFail.entitlements; sourceTree = "<group>"; };
 		2EEBEF891ACB6027004B4834 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		2EEBEF8B1ACB6051004B4834 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -315,6 +318,8 @@
 				2EEBEF751ACB5FDA004B4834 /* ViewController.m */,
 				2EEBEF761ACB5FDA004B4834 /* InfoViewController.h */,
 				2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */,
+				2EEBEF781ACB5FDA004B4834 /* WebViewController.h */,
+				2EEBEF791ACB5FDA004B4834 /* WebViewController.m */,
 				2EEBEF891ACB6027004B4834 /* Launch Screen.xib */,
 				2EEBEF2C1ACB5F5F004B4834 /* Resources */,
 				2EEBEF131ACB5F54004B4834 /* Images.xcassets */,
@@ -658,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EEBEF7E1ACB5FDA004B4834 /* Reachability.m in Sources */,
+				2EEBEF841ACB5FDA004B4834 /* WebViewController.m in Sources */,
 				2EA4C0D01BC4E59800EE6E23 /* smokeScene.m in Sources */,
 				3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */,
 				349E8D401DECC16C005501A3 /* SnowScene.m in Sources */,

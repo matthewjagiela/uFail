@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Twitter/Twitter.h>
+#import<Accounts/Accounts.h>
+#import<Social/Social.h>
+#import <AdSupport/AdSupport.h>
+#import<MessageUI/MFMailComposeViewController.h>
+#import <MessageUI/MessageUI.h>
 @import SpriteKit;
 @import SafariServices;
 @import GoogleMobileAds;
@@ -14,6 +20,7 @@
 @interface InfoViewController : UIViewController
 
 {
+    SLComposeViewController *mySLComposerSheet;
     IBOutlet UILabel *appStoreVersionLabel;
     IBOutlet UILabel *wtf;
     IBOutlet UISwitch *darkTheme;

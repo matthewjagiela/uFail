@@ -8,6 +8,7 @@
 
 #import "InfoViewController.h"
 #import "ViewController.h"
+#import "WebViewController.h"
 #import "Reachability.h"
 #import <MessageUI/MessageUI.h>
 #import "smokeScene.h"
