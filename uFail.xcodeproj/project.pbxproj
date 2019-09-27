@@ -24,8 +24,6 @@
 		2E8454991BC37F26003D3D1F /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8454971BC37F26003D3D1F /* spark.png */; };
 		2E8BC0CC1AFC41A200C60866 /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
 		2EA4C0D01BC4E59800EE6E23 /* smokeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4C0CF1BC4E59800EE6E23 /* smokeScene.m */; };
-		2EB65AC5233C558A006DFC40 /* AppHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB65AC4233C558A006DFC40 /* AppHandler.swift */; };
-		2EB65AC8233C58BB006DFC40 /* Changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2EB65AC7233C58BB006DFC40 /* Changes.txt */; };
 		2ED588FC1C12B9E200C20309 /* iPad Winter Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED588FB1C12B9E200C20309 /* iPad Winter Background.png */; };
 		2ED588FE1C12BC5D00C20309 /* iPhone 6+ Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED588FD1C12BC5D00C20309 /* iPhone 6+ Background.png */; };
 		2ED589001C12BE4600C20309 /* iPhone 6 Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED588FF1C12BE4600C20309 /* iPhone 6 Background.png */; };
@@ -132,8 +130,6 @@
 		2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AIRHORN.mp3; sourceTree = "<group>"; };
 		2EA4C0CE1BC4E59800EE6E23 /* smokeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smokeScene.h; sourceTree = "<group>"; };
 		2EA4C0CF1BC4E59800EE6E23 /* smokeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smokeScene.m; sourceTree = "<group>"; };
-		2EB65AC4233C558A006DFC40 /* AppHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHandler.swift; sourceTree = "<group>"; };
-		2EB65AC7233C58BB006DFC40 /* Changes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changes.txt; sourceTree = "<group>"; };
 		2ED588FB1C12B9E200C20309 /* iPad Winter Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Winter Background.png"; sourceTree = "<group>"; };
 		2ED588FD1C12BC5D00C20309 /* iPhone 6+ Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+ Background.png"; sourceTree = "<group>"; };
 		2ED588FF1C12BE4600C20309 /* iPhone 6 Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6 Background.png"; sourceTree = "<group>"; };
@@ -248,23 +244,6 @@
 			name = "Icons (Summer)";
 			sourceTree = "<group>";
 		};
-		2EB65AC3233C5544006DFC40 /* Handlers */ = {
-			isa = PBXGroup;
-			children = (
-				3498E14F2282518000E638A6 /* DynamicTheme.swift */,
-				2EB65AC4233C558A006DFC40 /* AppHandler.swift */,
-			);
-			name = Handlers;
-			sourceTree = "<group>";
-		};
-		2EB65AC6233C58A4006DFC40 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				2EB65AC7233C58BB006DFC40 /* Changes.txt */,
-			);
-			name = Other;
-			sourceTree = "<group>";
-		};
 		2ED588FA1C12B9D700C20309 /* Winter */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,8 +284,6 @@
 		2EEBEF051ACB5F54004B4834 /* uFail */ = {
 			isa = PBXGroup;
 			children = (
-				2EB65AC6233C58A4006DFC40 /* Other */,
-				2EB65AC3233C5544006DFC40 /* Handlers */,
 				2EEBEF881ACB6010004B4834 /* uFail.entitlements */,
 				2EEBEF6E1ACB5FDA004B4834 /* Reachability.h */,
 				2EEBEF6F1ACB5FDA004B4834 /* Reachability.m */,
@@ -324,6 +301,7 @@
 				2EEBEF2C1ACB5F5F004B4834 /* Resources */,
 				2EEBEF131ACB5F54004B4834 /* Images.xcassets */,
 				2EEBEF061ACB5F54004B4834 /* Supporting Files */,
+				3498E14F2282518000E638A6 /* DynamicTheme.swift */,
 				3498E14E2282518000E638A6 /* uFail-Bridging-Header.h */,
 			);
 			path = uFail;
@@ -567,7 +545,6 @@
 				34ECBBAA1DEE8438002387BA /* iPhone3x.png in Resources */,
 				2E28F3FC1CBF37F0004080D3 /* iPad Retina.png in Resources */,
 				2E8454991BC37F26003D3D1F /* spark.png in Resources */,
-				2EB65AC8233C58BB006DFC40 /* Changes.txt in Resources */,
 				34ECBBA71DEE8438002387BA /* icon_iPad2x.png in Resources */,
 				2EEBEF3A1ACB5F7D004B4834 /* So Many Friends.mp3 in Resources */,
 				2E150E191CADA63C00E51057 /* uFail Button 8.png in Resources */,
@@ -668,7 +645,6 @@
 				3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */,
 				349E8D401DECC16C005501A3 /* SnowScene.m in Sources */,
 				2EEBEF091ACB5F54004B4834 /* main.m in Sources */,
-				2EB65AC5233C558A006DFC40 /* AppHandler.swift in Sources */,
 				2EEBEF821ACB5FDA004B4834 /* ViewController.m in Sources */,
 				2EEBEF831ACB5FDA004B4834 /* InfoViewController.m in Sources */,
 				2EEBEF7F1ACB5FDA004B4834 /* AppDelegate.m in Sources */,
