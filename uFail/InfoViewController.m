@@ -69,6 +69,7 @@ NSUserDefaults *defaults;
      **/
 
 }
+// MARK: - Safari Delegate
 - (IBAction)pushhome:(id)sender {
     if(@available(iOS 13, *)){
         [self dismissViewControllerAnimated:true completion:^{
@@ -265,7 +266,6 @@ NSUserDefaults *defaults;
 }
 - (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
     NSLog(@"SAFARI CONTROLLER DISMISSED");
-    [self dismissViewControllerAnimated:true completion:nil];
 }
 -(void)supportViewController:(id)sender
 {
