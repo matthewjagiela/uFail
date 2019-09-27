@@ -21,7 +21,7 @@
 
 {
     SLComposeViewController *mySLComposerSheet;
-    IBOutlet UILabel *appStoreVersionLabel;
+    IBOutlet UILabel *VersionLabel;
     IBOutlet UILabel *wtf;
     IBOutlet UISwitch *darkTheme;
 
@@ -36,7 +36,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *Background;
 @property(nonatomic)UIImage *buttonImage;
 @property(nonatomic)IBOutlet UIView *webViewer;
-@property (strong, nonatomic) IBOutlet UILabel *currentRunningLabel;
+@property (strong, nonatomic) IBOutlet UILabel *RunningLabel;
 @property(nonatomic)BOOL theme;
 @property (weak, nonatomic) IBOutlet UILabel *newsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *themeLabel;
