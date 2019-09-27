@@ -600,24 +600,25 @@ int mainInt = 5;
     
 }
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([[segue identifier]isEqualToString:@"showInfo"])
-    {
-        self.navigationItem.backBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
-        InfoViewController *infovc = [segue destinationViewController];
-        
-        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Support" style:UIBarButtonItemStylePlain target:self action:@selector(supportViewController:)];
-        self.navigationItem.rightBarButtonItem = anotherButton;
-        [anotherButton setTintColor:[UIColor blackColor]];
-        /**infovc.image = bgImage;
-        infovc.buttonImage = failimage;**/
-        [infovc setImage:bgImage];
-        [infovc setButtonImage:failimage];
-        
-
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        if([[segue identifier]isEqualToString:@"showInfo"])
+        {
+            self.navigationItem.backBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
+            InfoViewController *infovc = [segue destinationViewController];
+            
+            UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Support" style:UIBarButtonItemStylePlain target:self action:@selector(supportViewController:)];
+            self.navigationItem.rightBarButtonItem = anotherButton;
+            [anotherButton setTintColor:[UIColor blackColor]];
+            /**infovc.image = bgImage;
+            infovc.buttonImage = failimage;**/
+            [infovc setImage:bgImage];
+            [infovc setButtonImage:failimage];
+        }
+    } else {
+        InfoViewController *info = [segue destinationViewController];
+        [info setImage:bgImage];
+        [info setButtonImage:failimage];
     }
-    
-    
-    
     
 }
 -(BOOL)prefersStatusBarHidden
