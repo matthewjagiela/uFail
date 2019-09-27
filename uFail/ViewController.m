@@ -16,7 +16,6 @@
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 #define iPhoneVersion ([[UIScreen mainScreen] bounds].size.height == 568 ? 5 : ([[UIScreen mainScreen] bounds].size.height == 480 ? 4 : ([[UIScreen mainScreen] bounds].size.height == 667 ? 6 : ([[UIScreen mainScreen] bounds].size.height == 736 ? 61 : 999))))
 #define iPadVersion ([[UIScreen mainScreen] bounds].size.height == 1366 ? 1 : 999)
-#import "Reachability.h"
 #import "SnowScene.h"
 #import "smokeScene.h"
 @interface UIViewController ()
