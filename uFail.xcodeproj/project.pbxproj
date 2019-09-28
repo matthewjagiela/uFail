@@ -20,6 +20,12 @@
 		2E28F3FF1CBF37F0004080D3 /* Normal iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3F91CBF37F0004080D3 /* Normal iPad.png */; };
 		2E28F4001CBF37F0004080D3 /* uFail Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3FA1CBF37F0004080D3 /* uFail Icon.png */; };
 		2E497CF51AE6FBA2007EC7EB /* RefreshMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E497CF41AE6FBA2007EC7EB /* RefreshMe.png */; };
+		2E7D174B233EF9A0007B94A6 /* Hicon_iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1745233EF99F007B94A6 /* Hicon_iPadPro.png */; };
+		2E7D174C233EF9A0007B94A6 /* HiPhone2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1746233EF99F007B94A6 /* HiPhone2x.png */; };
+		2E7D174D233EF9A0007B94A6 /* HiPhone3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1747233EF99F007B94A6 /* HiPhone3x.png */; };
+		2E7D174E233EF9A0007B94A6 /* Hicon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1748233EF99F007B94A6 /* Hicon_iPad.png */; };
+		2E7D174F233EF9A0007B94A6 /* Hicon_iPad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1749233EF99F007B94A6 /* Hicon_iPad2x.png */; };
+		2E7D1750233EF9A0007B94A6 /* Hmain_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D174A233EF9A0007B94A6 /* Hmain_icon.png */; };
 		2E8454981BC37F26003D3D1F /* smokeEffect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2E8454961BC37F26003D3D1F /* smokeEffect.sks */; };
 		2E8454991BC37F26003D3D1F /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8454971BC37F26003D3D1F /* spark.png */; };
 		2E8BC0CC1AFC41A200C60866 /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
@@ -125,6 +131,12 @@
 		2E323D151BE7087E00233A5D /* uFail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3479711BE70A5F00B770E3 /* uFailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E497CF41AE6FBA2007EC7EB /* RefreshMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RefreshMe.png; sourceTree = "<group>"; };
+		2E7D1745233EF99F007B94A6 /* Hicon_iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hicon_iPadPro.png; sourceTree = "<group>"; };
+		2E7D1746233EF99F007B94A6 /* HiPhone2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HiPhone2x.png; sourceTree = "<group>"; };
+		2E7D1747233EF99F007B94A6 /* HiPhone3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HiPhone3x.png; sourceTree = "<group>"; };
+		2E7D1748233EF99F007B94A6 /* Hicon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hicon_iPad.png; sourceTree = "<group>"; };
+		2E7D1749233EF99F007B94A6 /* Hicon_iPad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hicon_iPad2x.png; sourceTree = "<group>"; };
+		2E7D174A233EF9A0007B94A6 /* Hmain_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hmain_icon.png; sourceTree = "<group>"; };
 		2E8454961BC37F26003D3D1F /* smokeEffect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smokeEffect.sks; sourceTree = "<group>"; };
 		2E8454971BC37F26003D3D1F /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AIRHORN.mp3; sourceTree = "<group>"; };
@@ -242,6 +254,19 @@
 			name = "Icons (Summer)";
 			sourceTree = "<group>";
 		};
+		2E7D1720233EF7B3007B94A6 /* Icons (Halloween) */ = {
+			isa = PBXGroup;
+			children = (
+				2E7D1748233EF99F007B94A6 /* Hicon_iPad.png */,
+				2E7D1749233EF99F007B94A6 /* Hicon_iPad2x.png */,
+				2E7D1745233EF99F007B94A6 /* Hicon_iPadPro.png */,
+				2E7D1746233EF99F007B94A6 /* HiPhone2x.png */,
+				2E7D1747233EF99F007B94A6 /* HiPhone3x.png */,
+				2E7D174A233EF9A0007B94A6 /* Hmain_icon.png */,
+			);
+			name = "Icons (Halloween)";
+			sourceTree = "<group>";
+		};
 		2EB65AC3233C5544006DFC40 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +373,7 @@
 		2EEBEF2C1ACB5F5F004B4834 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D1720233EF7B3007B94A6 /* Icons (Halloween) */,
 				34ECBB9F1DEE8429002387BA /* Icons (Winter) */,
 				2E150E0F1CADA18B00E51057 /* Icons (Summer) */,
 				2EEBEF2E1ACB5F6E004B4834 /* Sounds */,
@@ -534,6 +560,7 @@
 				2E28F3FF1CBF37F0004080D3 /* Normal iPad.png in Resources */,
 				2EEBEF5D1ACB5FA6004B4834 /* greenBackGround.png in Resources */,
 				2EEBEF3E1ACB5F7D004B4834 /* WIN.mp3 in Resources */,
+				2E7D174D233EF9A0007B94A6 /* HiPhone3x.png in Resources */,
 				2EEBEF401ACB5F7D004B4834 /* failure.mp3 in Resources */,
 				2E28F4001CBF37F0004080D3 /* uFail Icon.png in Resources */,
 				34ECBBA61DEE8438002387BA /* icon_iPad.png in Resources */,
@@ -542,9 +569,11 @@
 				2EEBEF391ACB5F7D004B4834 /* santa.mp3 in Resources */,
 				2E150E171CADA1BB00E51057 /* iPhone 6+ Summer.png in Resources */,
 				2ED588FE1C12BC5D00C20309 /* iPhone 6+ Background.png in Resources */,
+				2E7D174B233EF9A0007B94A6 /* Hicon_iPadPro.png in Resources */,
 				2EEBEF511ACB5FA6004B4834 /* Air Horn.png in Resources */,
 				2E28F3FB1CBF37F0004080D3 /* iPad Pro Icon.png in Resources */,
 				2EEBEF5E1ACB5FA6004B4834 /* Purple Background.png in Resources */,
+				2E7D174F233EF9A0007B94A6 /* Hicon_iPad2x.png in Resources */,
 				2EEBEF531ACB5FA6004B4834 /* Fail Button.png in Resources */,
 				2EEBEF5C1ACB5FA6004B4834 /* blue theme.png in Resources */,
 				2EEBEF8A1ACB6027004B4834 /* Launch Screen.xib in Resources */,
@@ -562,9 +591,11 @@
 				2EEBEF3A1ACB5F7D004B4834 /* So Many Friends.mp3 in Resources */,
 				2E150E191CADA63C00E51057 /* uFail Button 8.png in Resources */,
 				2ED589041C12C02500C20309 /* iPhone 4-5.png in Resources */,
+				2E7D174E233EF9A0007B94A6 /* Hicon_iPad.png in Resources */,
 				2E150E151CADA1BB00E51057 /* iPhone 5 summer.png in Resources */,
 				34ECBBAB1DEE8438002387BA /* main_icon.png in Resources */,
 				2EEBEF411ACB5F7D004B4834 /* You Fail.mp3 in Resources */,
+				2E7D174C233EF9A0007B94A6 /* HiPhone2x.png in Resources */,
 				2E8BC0CC1AFC41A200C60866 /* AIRHORN.mp3 in Resources */,
 				2E150E141CADA1BB00E51057 /* iPad Image Warm.png in Resources */,
 				2EEBEF5B1ACB5FA6004B4834 /* Background Image Universal.png in Resources */,
@@ -574,6 +605,7 @@
 				34DE673B1DECC7EF00A4207C /* Winter Fail Button.png in Resources */,
 				2EEBEF801ACB5FDA004B4834 /* Main_iPhone.storyboard in Resources */,
 				2E497CF51AE6FBA2007EC7EB /* RefreshMe.png in Resources */,
+				2E7D1750233EF9A0007B94A6 /* Hmain_icon.png in Resources */,
 				2E28F3FD1CBF37F0004080D3 /* iPhone 6+.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,7 +822,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0DE910E159E66290B292950 /* Pods-uFail.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Winter Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Halloween Icon";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -816,7 +848,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4423F145DD112B69EA52E764 /* Pods-uFail.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Winter Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Halloween Icon";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
