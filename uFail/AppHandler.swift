@@ -15,7 +15,7 @@ class AppHandler: NSObject {
         internetLabels()
     }
     @objc func getAppVersion() -> String {
-        return "Currently Running Version 11"
+        return "Currently Running Version 10.5"
     }
     @objc func changes() -> String {
         if let path = Bundle.main.path(forResource: "Changes", ofType: "txt") {
