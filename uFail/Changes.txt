@@ -1,5 +1,14 @@
 Welcome to uFail 10 by uApps
 What's New:
+10.5:
+- Updated for iOS 13:
+    Info Controller is now a slide view. Slide down from the nav bar to dismiss.
+    System theme enhancements: Text will be conforming to the theme of the device.
+- New theme: There is a new halloween theme.
+- New theme means new icon
+- New handler for app information: This will make info more consistent around the entire app.
+- Removal of unused entities: This will make the app smaller.
+
 10.4 / 10.4.1:
 -It's Snowing! Welcome Back Winter Theme!
 -Support for iOS 12
