@@ -9,8 +9,10 @@
 #import "InfoViewController.h"
 #import "ViewController.h"
 #import <MessageUI/MessageUI.h>
+/**
 #import "smokeScene.h"
 #import "snowScene.h"
+ **/
 #import <SafariServices/SafariServices.h>
 #import "uFail-Swift.h"
 
@@ -167,14 +169,14 @@ NSUserDefaults *defaults;
     [newsLabel setText:[info getuAppsnews]];
     newsLabel.adjustsFontSizeToFitWidth = YES;
     // Do any additional setup after loading the view.
-    
+    /**
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor redColor];
     particleBackground.allowsTransparency = YES;
     //_particleView.showsFPS = YES;
     [particleBackground presentScene:scene];
-    /**smokeScene *smoke = [smokeScene sceneWithSize:particleBackground.bounds.size];
+    smokeScene *smoke = [smokeScene sceneWithSize:particleBackground.bounds.size];
     smoke.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor clearColor];
     particleBackground.allowsTransparency  = YES;
@@ -209,7 +211,6 @@ NSUserDefaults *defaults;
     stored = image;
     storedButton = buttonImage;
     [webViewer setHidden:YES];
-    currentRunningLabel.text = @"You are running version 10.4.1";
     currentRunningLabel.textAlignment = NSTextAlignmentCenter;
     NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.com.uapps.ufail"];
     theme = [defaults boolForKey:@"theme"];

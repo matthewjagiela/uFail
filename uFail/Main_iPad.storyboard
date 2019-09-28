@@ -28,7 +28,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPad Image Warm.png" translatesAutoresizingMaskIntoConstraints="NO" id="9TI-BP-nS9">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-vQ-29C" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-vQ-29C">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSt-xR-stQ">
@@ -370,7 +370,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YP6-VX-9We">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Un-Y8-Noc" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Un-Y8-Noc">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.14954377690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>

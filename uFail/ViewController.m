@@ -16,8 +16,10 @@
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 #define iPhoneVersion ([[UIScreen mainScreen] bounds].size.height == 568 ? 5 : ([[UIScreen mainScreen] bounds].size.height == 480 ? 4 : ([[UIScreen mainScreen] bounds].size.height == 667 ? 6 : ([[UIScreen mainScreen] bounds].size.height == 736 ? 61 : 999))))
 #define iPadVersion ([[UIScreen mainScreen] bounds].size.height == 1366 ? 1 : 999)
+/**
 #import "SnowScene.h"
 #import "smokeScene.h"
+ **/
 @interface UIViewController ()
 
 @end
@@ -172,11 +174,7 @@ int mainInt = 5;
     }
     [self themeManagement];
     
-    
-    
-    DynamicTheme *dynamics = [[DynamicTheme alloc]init];
-    [dynamics determineThemeWithIPhoneVersion:iPhoneVersion];
-    
+    /**
     
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
      scene.scaleMode = SKSceneScaleModeAspectFill;
@@ -186,11 +184,12 @@ int mainInt = 5;
     particleBackground.showsNodeCount = true;
      
      [particleBackground presentScene:scene];
+    **/
      [_Santa setHidden:YES];
     
      
     
-    
+    /**
     
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     {
@@ -215,9 +214,11 @@ int mainInt = 5;
         
         
     }
+    **/
 
     
     //[particleBackground setHidden:YES];
+    //particleBackground.backgroundColor = [UIColor clearColor];
     //particleBackground.backgroundColor = [UIColor clearColor];
     [_blurEffect setHidden:YES];
    // [self clearTheme];

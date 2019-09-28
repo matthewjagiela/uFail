@@ -24,7 +24,6 @@
 
 //@property (weak, nonatomic) IBOutlet SKView *particleView;
 @property(nonatomic) IBOutlet UIWebView *supportView;
-@property(strong,nonatomic)NSString *fuck;
 @property(nonatomic)UIImage *image;
 @property (strong, nonatomic) IBOutlet UIImageView *Background;
 @property(nonatomic)UIImage *buttonImage;
