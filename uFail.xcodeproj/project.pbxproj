@@ -67,6 +67,7 @@
 		2EEBEF901ACB605D004B4834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8F1ACB605D004B4834 /* Social.framework */; };
 		2EEBEFBF1ACB61AD004B4834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */; };
 		2EEBEFC11ACB61B4004B4834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFC01ACB61B4004B4834 /* UIKit.framework */; };
+		2EF687742342F63E00980799 /* uFail Button Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687732342F63E00980799 /* uFail Button Halloween.png */; };
 		2EF75F831C74425600CD78AE /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
 		3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498E14F2282518000E638A6 /* DynamicTheme.swift */; };
 		349E8D401DECC16C005501A3 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 349E8D3F1DECC16C005501A3 /* SnowScene.m */; };
@@ -187,6 +188,7 @@
 		2EEBEF931ACB606A004B4834 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EEBEFC01ACB61B4004B4834 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2EF687732342F63E00980799 /* uFail Button Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Halloween.png"; sourceTree = "<group>"; };
 		3498E14E2282518000E638A6 /* uFail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uFail-Bridging-Header.h"; sourceTree = "<group>"; };
 		3498E14F2282518000E638A6 /* DynamicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
 		349E8D3E1DECC16C005501A3 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		2EEBEF2C1ACB5F5F004B4834 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2EF687722342F5F100980799 /* Halloween Theme */,
 				2E7D1720233EF7B3007B94A6 /* Icons (Halloween) */,
 				34ECBB9F1DEE8429002387BA /* Icons (Winter) */,
 				2E150E0F1CADA18B00E51057 /* Icons (Summer) */,
@@ -416,6 +419,14 @@
 				2EEBEF371ACB5F7D004B4834 /* You Fail.mp3 */,
 			);
 			name = Sounds;
+			sourceTree = "<group>";
+		};
+		2EF687722342F5F100980799 /* Halloween Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2EF687732342F63E00980799 /* uFail Button Halloween.png */,
+			);
+			name = "Halloween Theme";
 			sourceTree = "<group>";
 		};
 		34ECBB9F1DEE8429002387BA /* Icons (Winter) */ = {
@@ -564,6 +575,7 @@
 				2EEBEF401ACB5F7D004B4834 /* failure.mp3 in Resources */,
 				2E28F4001CBF37F0004080D3 /* uFail Icon.png in Resources */,
 				34ECBBA61DEE8438002387BA /* icon_iPad.png in Resources */,
+				2EF687742342F63E00980799 /* uFail Button Halloween.png in Resources */,
 				2EEBEF3F1ACB5F7D004B4834 /* PWNED.mp3 in Resources */,
 				2EEBEF551ACB5FA6004B4834 /* Green Button.png in Resources */,
 				2EEBEF391ACB5F7D004B4834 /* santa.mp3 in Resources */,
