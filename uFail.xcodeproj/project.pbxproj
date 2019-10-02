@@ -71,6 +71,7 @@
 		2EF687782344388600980799 /* iPhone 6 Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687752344388600980799 /* iPhone 6 Halloween.png */; };
 		2EF687792344388600980799 /* iPhone 5 Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687762344388600980799 /* iPhone 5 Halloween.png */; };
 		2EF6877A2344388600980799 /* iPhone 6+ Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687772344388600980799 /* iPhone 6+ Halloween.png */; };
+		2EF6877C23443D5300980799 /* iPad Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF6877B23443D5300980799 /* iPad Halloween.png */; };
 		2EF75F831C74425600CD78AE /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
 		3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498E14F2282518000E638A6 /* DynamicTheme.swift */; };
 		349E8D401DECC16C005501A3 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 349E8D3F1DECC16C005501A3 /* SnowScene.m */; };
@@ -195,6 +196,7 @@
 		2EF687752344388600980799 /* iPhone 6 Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6 Halloween.png"; sourceTree = "<group>"; };
 		2EF687762344388600980799 /* iPhone 5 Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 5 Halloween.png"; sourceTree = "<group>"; };
 		2EF687772344388600980799 /* iPhone 6+ Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+ Halloween.png"; sourceTree = "<group>"; };
+		2EF6877B23443D5300980799 /* iPad Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Halloween.png"; sourceTree = "<group>"; };
 		3498E14E2282518000E638A6 /* uFail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uFail-Bridging-Header.h"; sourceTree = "<group>"; };
 		3498E14F2282518000E638A6 /* DynamicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
 		349E8D3E1DECC16C005501A3 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 		2EF687722342F5F100980799 /* Halloween Theme */ = {
 			isa = PBXGroup;
 			children = (
+				2EF6877B23443D5300980799 /* iPad Halloween.png */,
 				2EF687762344388600980799 /* iPhone 5 Halloween.png */,
 				2EF687752344388600980799 /* iPhone 6 Halloween.png */,
 				2EF687772344388600980799 /* iPhone 6+ Halloween.png */,
@@ -587,6 +590,7 @@
 				2EF687742342F63E00980799 /* uFail Button Halloween.png in Resources */,
 				2EEBEF3F1ACB5F7D004B4834 /* PWNED.mp3 in Resources */,
 				2EEBEF551ACB5FA6004B4834 /* Green Button.png in Resources */,
+				2EF6877C23443D5300980799 /* iPad Halloween.png in Resources */,
 				2EEBEF391ACB5F7D004B4834 /* santa.mp3 in Resources */,
 				2E150E171CADA1BB00E51057 /* iPhone 6+ Summer.png in Resources */,
 				2ED588FE1C12BC5D00C20309 /* iPhone 6+ Background.png in Resources */,
