@@ -68,6 +68,9 @@
 		2EEBEFBF1ACB61AD004B4834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */; };
 		2EEBEFC11ACB61B4004B4834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFC01ACB61B4004B4834 /* UIKit.framework */; };
 		2EF687742342F63E00980799 /* uFail Button Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687732342F63E00980799 /* uFail Button Halloween.png */; };
+		2EF687782344388600980799 /* iPhone 6 Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687752344388600980799 /* iPhone 6 Halloween.png */; };
+		2EF687792344388600980799 /* iPhone 5 Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687762344388600980799 /* iPhone 5 Halloween.png */; };
+		2EF6877A2344388600980799 /* iPhone 6+ Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687772344388600980799 /* iPhone 6+ Halloween.png */; };
 		2EF75F831C74425600CD78AE /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
 		3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498E14F2282518000E638A6 /* DynamicTheme.swift */; };
 		349E8D401DECC16C005501A3 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 349E8D3F1DECC16C005501A3 /* SnowScene.m */; };
@@ -189,6 +192,9 @@
 		2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EEBEFC01ACB61B4004B4834 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2EF687732342F63E00980799 /* uFail Button Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Halloween.png"; sourceTree = "<group>"; };
+		2EF687752344388600980799 /* iPhone 6 Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6 Halloween.png"; sourceTree = "<group>"; };
+		2EF687762344388600980799 /* iPhone 5 Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 5 Halloween.png"; sourceTree = "<group>"; };
+		2EF687772344388600980799 /* iPhone 6+ Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+ Halloween.png"; sourceTree = "<group>"; };
 		3498E14E2282518000E638A6 /* uFail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uFail-Bridging-Header.h"; sourceTree = "<group>"; };
 		3498E14F2282518000E638A6 /* DynamicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
 		349E8D3E1DECC16C005501A3 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
@@ -424,6 +430,9 @@
 		2EF687722342F5F100980799 /* Halloween Theme */ = {
 			isa = PBXGroup;
 			children = (
+				2EF687762344388600980799 /* iPhone 5 Halloween.png */,
+				2EF687752344388600980799 /* iPhone 6 Halloween.png */,
+				2EF687772344388600980799 /* iPhone 6+ Halloween.png */,
 				2EF687732342F63E00980799 /* uFail Button Halloween.png */,
 			);
 			name = "Halloween Theme";
@@ -591,6 +600,7 @@
 				2EEBEF8A1ACB6027004B4834 /* Launch Screen.xib in Resources */,
 				34ECBBA81DEE8438002387BA /* icon_iPadPro.png in Resources */,
 				2ED589001C12BE4600C20309 /* iPhone 6 Background.png in Resources */,
+				2EF687792344388600980799 /* iPhone 5 Halloween.png in Resources */,
 				2EEBEF811ACB5FDA004B4834 /* Main_iPad.storyboard in Resources */,
 				2E18AC8C1C0FA69F004E7E97 /* snowEffect.sks in Resources */,
 				2EEBEF141ACB5F54004B4834 /* Images.xcassets in Resources */,
@@ -618,7 +628,9 @@
 				2EEBEF801ACB5FDA004B4834 /* Main_iPhone.storyboard in Resources */,
 				2E497CF51AE6FBA2007EC7EB /* RefreshMe.png in Resources */,
 				2E7D1750233EF9A0007B94A6 /* Hmain_icon.png in Resources */,
+				2EF6877A2344388600980799 /* iPhone 6+ Halloween.png in Resources */,
 				2E28F3FD1CBF37F0004080D3 /* iPhone 6+.png in Resources */,
+				2EF687782344388600980799 /* iPhone 6 Halloween.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
