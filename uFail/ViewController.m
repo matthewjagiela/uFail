@@ -16,9 +16,10 @@
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 #define iPhoneVersion ([[UIScreen mainScreen] bounds].size.height == 568 ? 5 : ([[UIScreen mainScreen] bounds].size.height == 480 ? 4 : ([[UIScreen mainScreen] bounds].size.height == 667 ? 6 : ([[UIScreen mainScreen] bounds].size.height == 736 ? 61 : 999))))
 #define iPadVersion ([[UIScreen mainScreen] bounds].size.height == 1366 ? 1 : 999)
-#import "Reachability.h"
+/**
 #import "SnowScene.h"
 #import "smokeScene.h"
+ **/
 @interface UIViewController ()
 
 @end
@@ -87,32 +88,32 @@ int mainInt = 5;
             }
             else if (iPhoneVersion ==5) //iPhone 5 style of phone (Including SE). Still need to do something about
             {
-                bgImage = [UIImage imageNamed:@"iPhone 4-5.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 5 Halloween.png"];
                 
             }
             else if (iPhoneVersion==6) //iPhone 6 family
             {
-                bgImage = [UIImage imageNamed:@"iPhone 6 Background.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 6 Halloween.png"];
                 
             }
             else if (iPhoneVersion==61) //iPhone 6+ Family
             {
-                bgImage = [UIImage imageNamed:@"iPhone 6+ Background.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 6+ Halloween.png"];
                 
             }
             else{ //iPhone X family.
-                bgImage = [UIImage imageNamed:@"iPhone 6 Background.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 6 Halloween.png"];
             }
             
         }
         else{ //iPad Family. (Winter)
-            bgImage = [UIImage imageNamed:@"iPad Winter Background.png"];
+            bgImage = [UIImage imageNamed:@"iPad Halloween.png"];
             ViewController *vc = [[UIViewController alloc]init];
             UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:vc];
             
             [self.navigationController setNavigationBarHidden:YES];
         }
-        failimage = [UIImage imageNamed:@"Winter Fail Button.png"];
+        failimage = [UIImage imageNamed:@"uFail Button Halloween.png"];
     }
     else if([[defaults objectForKey:@"themeColor"]isEqualToString:@"blue"]){
         bgImage = [UIImage imageNamed:@"blue theme.png"];
@@ -173,11 +174,7 @@ int mainInt = 5;
     }
     [self themeManagement];
     
-    
-    
-    DynamicTheme *dynamics = [[DynamicTheme alloc]init];
-    [dynamics determineThemeWithIPhoneVersion:iPhoneVersion];
-    
+    /**
     
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
      scene.scaleMode = SKSceneScaleModeAspectFill;
@@ -187,11 +184,12 @@ int mainInt = 5;
     particleBackground.showsNodeCount = true;
      
      [particleBackground presentScene:scene];
+    **/
      [_Santa setHidden:YES];
     
      
     
-    
+    /**
     
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     {
@@ -216,9 +214,11 @@ int mainInt = 5;
         
         
     }
+    **/
 
     
     //[particleBackground setHidden:YES];
+    //particleBackground.backgroundColor = [UIColor clearColor];
     //particleBackground.backgroundColor = [UIColor clearColor];
     [_blurEffect setHidden:YES];
    // [self clearTheme];
@@ -432,7 +432,7 @@ int mainInt = 5;
     {
         //Dynamic, blue, Red, Green, Purple
         UIAlertController *themeChooser = [UIAlertController alertControllerWithTitle:@"Choose A Theme" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-        UIAlertAction *dynamicAction = [UIAlertAction actionWithTitle:@"Winter" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *dynamicAction = [UIAlertAction actionWithTitle:@"Spooky" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [defaults setObject:@"winter" forKey:@"themeColor"];
             [self themeManagement];
             
@@ -601,24 +601,25 @@ int mainInt = 5;
     
 }
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([[segue identifier]isEqualToString:@"showInfo"])
-    {
-        self.navigationItem.backBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
-        InfoViewController *infovc = [segue destinationViewController];
-        
-        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Support" style:UIBarButtonItemStylePlain target:self action:@selector(supportViewController:)];
-        self.navigationItem.rightBarButtonItem = anotherButton;
-        [anotherButton setTintColor:[UIColor blackColor]];
-        /**infovc.image = bgImage;
-        infovc.buttonImage = failimage;**/
-        [infovc setImage:bgImage];
-        [infovc setButtonImage:failimage];
-        
-
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        if([[segue identifier]isEqualToString:@"showInfo"])
+        {
+            self.navigationItem.backBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
+            InfoViewController *infovc = [segue destinationViewController];
+            
+            UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Support" style:UIBarButtonItemStylePlain target:self action:@selector(supportViewController:)];
+            self.navigationItem.rightBarButtonItem = anotherButton;
+            [anotherButton setTintColor:[UIColor blackColor]];
+            /**infovc.image = bgImage;
+            infovc.buttonImage = failimage;**/
+            [infovc setImage:bgImage];
+            [infovc setButtonImage:failimage];
+        }
+    } else {
+        InfoViewController *info = [segue destinationViewController];
+        [info setImage:bgImage];
+        [info setButtonImage:failimage];
     }
-    
-    
-    
     
 }
 -(BOOL)prefersStatusBarHidden

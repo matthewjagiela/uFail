@@ -8,12 +8,13 @@
 
 #import "InfoViewController.h"
 #import "ViewController.h"
-#import "WebViewController.h"
-#import "Reachability.h"
 #import <MessageUI/MessageUI.h>
+/**
 #import "smokeScene.h"
 #import "snowScene.h"
+ **/
 #import <SafariServices/SafariServices.h>
+#import "uFail-Swift.h"
 
 
 @interface InfoViewController () <SFSafariViewControllerDelegate>
@@ -26,25 +27,16 @@
 @synthesize Background;
 @synthesize buttonImage;
 @synthesize supportView;
-@synthesize RunningLabel;
+@synthesize currentRunningLabel;
 @synthesize theme;
 @synthesize particleBackground;
+@synthesize currentInfo;
+@synthesize newsLabel;
 UIImage *stored;
 UIImage *storedButton;
+AppHandler *info;
 BOOL Internet;
 NSUserDefaults *defaults;
-
-
-
--(IBAction)facebook:(id)sender
-{
-    mySLComposerSheet = [[SLComposeViewController alloc]init];
-    mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-    [mySLComposerSheet setInitialText:@"Check out a cool soundboard on the App Store called uFail download it here: http://bit.ly/Tu2BNX"];
-    [self presentViewController:mySLComposerSheet animated:YES completion:nil];
-    
-    //SFSafariViewController *saf = [SFSafariViewController]
-}
 
 - (IBAction)pushweb:(id)sender
 {
@@ -79,39 +71,15 @@ NSUserDefaults *defaults;
      **/
 
 }
-- (void)checkForNetwork
-{
-    // check if we've got network connectivity
-    Reachability *myNetwork = [Reachability reachabilityWithHostname:@"google.com"];
-    NetworkStatus myStatus = [myNetwork currentReachabilityStatus];
-    
-    switch (myStatus) {
-        case NotReachable:
-            NSLog(@"There's no internet connection at all. Display error message now.");
-            Internet = NO;
-            break;
-            
-        case ReachableViaWWAN:
-            Internet = YES;
-            break;
-            
-        case ReachableViaWiFi:
-            NSLog(@"We have WiFi.");
-            Internet = YES;
-            break;
-            
-        default:
-            break;
-    }
-}
-
+// MARK: - Safari Delegate
 - (IBAction)pushhome:(id)sender {
-    
-    ViewController *home = [self.storyboard instantiateViewControllerWithIdentifier:@"Home"];
-    home.bgImage = stored;
-    home.buttonImage = storedButton;
-    //home.darkTheme = theme;
-    [self presentViewController:home animated:YES completion:nil];
+    if(@available(iOS 13, *)){
+        [self dismissViewControllerAnimated:true completion:^{
+            NSLog(@"Dismissed view controller on iOS 13...");
+        }];
+    } else {
+        [self performSegueWithIdentifier:@"goHome" sender:nil];
+    }
 }
 
 -(IBAction)CloseWeb:(id)sender {
@@ -195,25 +163,20 @@ NSUserDefaults *defaults;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self internetLabels];
+    info = [[AppHandler alloc]init];
+    [appStoreVersionLabel setText:[info getuFailNewestVersion]];
+    [currentRunningLabel setText:[info getAppVersion]];
+    [newsLabel setText:[info getuAppsnews]];
+    newsLabel.adjustsFontSizeToFitWidth = YES;
     // Do any additional setup after loading the view.
-    
+    /**
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor redColor];
     particleBackground.allowsTransparency = YES;
     //_particleView.showsFPS = YES;
     [particleBackground presentScene:scene];
-     
-     
-     
-    
-     
-     
-     
-    
-    
-    /**smokeScene *smoke = [smokeScene sceneWithSize:particleBackground.bounds.size];
+    smokeScene *smoke = [smokeScene sceneWithSize:particleBackground.bounds.size];
     smoke.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor clearColor];
     particleBackground.allowsTransparency  = YES;
@@ -248,8 +211,7 @@ NSUserDefaults *defaults;
     stored = image;
     storedButton = buttonImage;
     [webViewer setHidden:YES];
-    RunningLabel.text = @"You are running version 10.4.1";
-    RunningLabel.textAlignment = NSTextAlignmentCenter;
+    currentRunningLabel.textAlignment = NSTextAlignmentCenter;
     NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.com.uapps.ufail"];
     theme = [defaults boolForKey:@"theme"];
     if(theme == YES) //Dark theme
@@ -269,7 +231,7 @@ NSUserDefaults *defaults;
         [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
         
     }
-    
+    [currentInfo setText:[info changes]];
     [self.navigationController setNavigationBarHidden:NO];
     //ADS
     self.bannerView.adUnitID = @
@@ -277,34 +239,6 @@ NSUserDefaults *defaults;
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
     
-    
-}
-
--(void)internetLabels{
-    NSString *getWebInfo = @"https://matthewjagiela.github.io/uApps-HTML/";
-    NSError *error;
-    
-    NSURL *webUnformat =[NSURL URLWithString:getWebInfo];
-    //[currentInfo setContentOffset:CGPointZero];
-    
-    @try{
-        NSString *webFormat = [NSString stringWithContentsOfURL:webUnformat encoding:NSASCIIStringEncoding error:&error];
-        NSCharacterSet *newlineCharSet = [NSCharacterSet newlineCharacterSet];
-        NSArray *lines = [webFormat componentsSeparatedByCharactersInSet:newlineCharSet];
-        for (int i = 0; i < lines.count; i++) {
-            NSLog(@"I = %i = %@",i,lines[i]);
-        }
-        _newsLabel.text = lines[4];
-        _newsLabel.textAlignment = NSTextAlignmentCenter;
-        VersionLabel.text = lines[0];
-        VersionLabel.textAlignment = NSTextAlignmentCenter;
-        //bookmarkarray addObject:@"Hello World"];
-    }
-    @catch(NSException *exception)
-    {
-       // _uAppsNewsLabel.text  =@"";
-        //_newestVersionLabel.text = @"We cannot get the latest information... This could be our problem... Try again later";
-    }
     
 }
 -(void)viewWillLayoutSubviews{
@@ -329,11 +263,10 @@ NSUserDefaults *defaults;
     self.view.backgroundColor = [UIColor blackColor];
     
     [self.navigationController setNavigationBarHidden:NO];
-    [_currentInfo setContentOffset:CGPointZero];
+    [currentInfo setContentOffset:CGPointZero];
 }
 - (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
     NSLog(@"SAFARI CONTROLLER DISMISSED");
-    [self dismissViewControllerAnimated:true completion:nil];
 }
 -(void)supportViewController:(id)sender
 {
@@ -350,6 +283,7 @@ NSUserDefaults *defaults;
      **/
 }
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:true];
     
 }
 -(BOOL)prefersStatusBarHidden

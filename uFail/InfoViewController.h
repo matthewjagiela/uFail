@@ -7,12 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Twitter/Twitter.h>
-#import<Accounts/Accounts.h>
-#import<Social/Social.h>
-#import <AdSupport/AdSupport.h>
-#import<MessageUI/MFMailComposeViewController.h>
-#import <MessageUI/MessageUI.h>
 @import SpriteKit;
 @import SafariServices;
 @import GoogleMobileAds;
@@ -20,8 +14,7 @@
 @interface InfoViewController : UIViewController
 
 {
-    SLComposeViewController *mySLComposerSheet;
-    IBOutlet UILabel *VersionLabel;
+    IBOutlet UILabel *appStoreVersionLabel;
     IBOutlet UILabel *wtf;
     IBOutlet UISwitch *darkTheme;
 
@@ -31,12 +24,11 @@
 
 //@property (weak, nonatomic) IBOutlet SKView *particleView;
 @property(nonatomic) IBOutlet UIWebView *supportView;
-@property(strong,nonatomic)NSString *fuck;
 @property(nonatomic)UIImage *image;
 @property (strong, nonatomic) IBOutlet UIImageView *Background;
 @property(nonatomic)UIImage *buttonImage;
 @property(nonatomic)IBOutlet UIView *webViewer;
-@property (strong, nonatomic) IBOutlet UILabel *RunningLabel;
+@property (strong, nonatomic) IBOutlet UILabel *currentRunningLabel;
 @property(nonatomic)BOOL theme;
 @property (weak, nonatomic) IBOutlet UILabel *newsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *themeLabel;
