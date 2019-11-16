@@ -17,6 +17,7 @@
 {
     // Override point for customization after application launch.
     [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+    [[AppHandler alloc]init];
     return YES;
 }
 							
