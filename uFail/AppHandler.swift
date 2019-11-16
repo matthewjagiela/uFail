@@ -9,10 +9,22 @@
 import UIKit
 
 class AppHandler: NSObject {
-    var internetLines = [String]()
+    var internetInfo: InternetInformation?
     override init() {
         super.init()
-        internetLabels()
+        if let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/master/uAppsInfo.json") {
+                   URLSession.shared.dataTask(with: jsonURL) { data, _, error in
+                       if let fetchedData = data {
+                           let decoder = JSONDecoder()
+                           do {
+                               self.internetInfo = try decoder.decode(InternetInformation.self, from: fetchedData)
+                   
+                           } catch {
+                               print("An Error Has Occured \(error)")
+                           }
+                       }
+                   }.resume()
+               }
     }
     @objc func getAppVersion() -> String {
         return "Currently Running Version 10.5"
@@ -38,24 +50,24 @@ class AppHandler: NSObject {
 
     }
     @objc func getuFailNewestVersion() -> String {
-        return internetLines[0]
+        return "Newest Version: \(internetInfo?.uFailVersion ?? "")"
     }
     @objc func getuAppsnews() -> String {
-        return internetLines[1]
+        return internetInfo?.uAppsNews ?? ""
     }
-    func internetLabels() {
-        if let url = URL(string: "https://matthewjagiela.github.io/uApps-HTML/") {
-            do {
-                let contents = try String(contentsOf: url)
-                let newLineSet = NSCharacterSet.newlines
-                let lines = contents.components(separatedBy: newLineSet)
-                internetLines.append(lines[0])
-                internetLines.append(lines[4])
-            } catch {
-                // contents could not be loaded
-            }
-        } else {
-            // the URL was bad!
-        }
+    
+}
+
+open class InternetInformation: NSObject, Decodable {
+    public var uFailVersion: String?
+    public var uAppsNews: String?
+    enum CodingKeys: String, CodingKey {
+        case uTimeVersion = "uFail_Version"
+        case uAppsNews =  "uApps_News"
+    }
+    public required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        uFailVersion = try? container.decode(String.self, forKey: .uTimeVersion)
+        uAppsNews = try? container.decode(String.self, forKey: .uAppsNews)
     }
 }
