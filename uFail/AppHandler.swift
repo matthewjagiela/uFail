@@ -9,7 +9,7 @@
 import UIKit
 
 class AppHandler: NSObject {
-    var internetInfo: InternetInformation?
+    @objc var internetInfo: InternetInformation?
     override init() {
         super.init()
         if let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/master/uAppsInfo.json") {
@@ -59,8 +59,8 @@ class AppHandler: NSObject {
 }
 
 open class InternetInformation: NSObject, Decodable {
-    public var uFailVersion: String?
-    public var uAppsNews: String?
+    @objc public var uFailVersion: String?
+    @objc public var uAppsNews: String?
     enum CodingKeys: String, CodingKey {
         case uTimeVersion = "uFail_Version"
         case uAppsNews =  "uApps_News"

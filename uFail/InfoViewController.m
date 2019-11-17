@@ -164,10 +164,10 @@ NSUserDefaults *defaults;
 {
     [super viewDidLoad];
     info = [[AppHandler alloc]init];
-    [appStoreVersionLabel setText:[info getuFailNewestVersion]];
     [currentRunningLabel setText:[info getAppVersion]];
-    [newsLabel setText:[info getuAppsnews]];
     newsLabel.adjustsFontSizeToFitWidth = YES;
+    [appStoreVersionLabel setText:[NSString stringWithFormat:@"%@", info.internetInfo.uFailVersion]];
+    [newsLabel setText:[NSString stringWithFormat:@"%@", info.internetInfo.uAppsNews]];
     // Do any additional setup after loading the view.
     /**
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
