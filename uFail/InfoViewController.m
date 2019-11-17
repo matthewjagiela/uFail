@@ -164,10 +164,6 @@ NSUserDefaults *defaults;
 {
     [super viewDidLoad];
     info = [[AppHandler alloc]init];
-    [currentRunningLabel setText:[info getAppVersion]];
-    newsLabel.adjustsFontSizeToFitWidth = YES;
-    [appStoreVersionLabel setText:[NSString stringWithFormat:@"%@", info.internetInfo.uFailVersion]];
-    [newsLabel setText:[NSString stringWithFormat:@"%@", info.internetInfo.uAppsNews]];
     // Do any additional setup after loading the view.
     /**
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
@@ -238,6 +234,10 @@ NSUserDefaults *defaults;
     "ca-app-pub-7714978111013265/9368677969";
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
+    [currentRunningLabel setText:[info getAppVersion]];
+    newsLabel.adjustsFontSizeToFitWidth = YES;
+    [appStoreVersionLabel setText:[NSString stringWithFormat:@"Newest Version: %@", info.internetInfo.uFailVersion]];
+    [newsLabel setText:[NSString stringWithFormat:@"%@", info.internetInfo.uAppsNews]];
     
     
 }
