@@ -1,5 +1,7 @@
 Welcome to uFail 10 by uApps
 What's New:
+10.5.1:
+-Updates for version information to conform to other uApps apps. 
 10.5:
 - Updated for iOS 13:
     Info Controller is now a slide view (iPhone). Slide down from the nav bar to dismiss.
