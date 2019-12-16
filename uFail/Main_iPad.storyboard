@@ -509,6 +509,7 @@ ZWVuIQotQmx1ciBlZmZlY3QgKGlQYWQpCi1GaXhlZCBhbmltYXRpb25zIHdpdGggdmlld3MoaVBhZCkK
 LVNldHRpbmcgc29tZXRoaW5nIHVwIGZvciBpUGhvbmUuLi4KLVNldHRpbmcgU29tZXRoaW5nIFVwIEZv
 ciBTb21ldGhpbmcgTmV3Li4uCi1TbW9rZSBFZmZlY3QgZm9yIGlQaG9uZQotTW9yZSBUbyBDb21lA
 </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -559,6 +560,7 @@ ciBTb21ldGhpbmcgTmV3Li4uCi1TbW9rZSBFZmZlY3QgZm9yIGlQaG9uZQotTW9yZSBUbyBDb21lA
                         <outlet property="Background" destination="YP6-VX-9We" id="fal-z2-2p6"/>
                         <outlet property="appStoreVersionLabel" destination="ELS-NL-cTt" id="h1w-9M-4Kl"/>
                         <outlet property="bannerView" destination="HcT-04-PV6" id="Cbp-3j-96w"/>
+                        <outlet property="currentInfo" destination="7W0-8e-Vwi" id="uVN-fN-bcw"/>
                         <outlet property="currentRunningLabel" destination="L7h-lU-XkP" id="vDE-pl-L7m"/>
                         <outlet property="failCountLabel" destination="Kot-lO-xdr" id="zxM-BS-HMs"/>
                         <outlet property="newsLabel" destination="MUh-LD-OEH" id="s0t-91-POD"/>
