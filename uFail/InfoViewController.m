@@ -9,6 +9,7 @@
 #import "InfoViewController.h"
 #import "ViewController.h"
 #import <MessageUI/MessageUI.h>
+#import "SnowScene.h"
 /**
 #import "smokeScene.h"
 #import "snowScene.h"
@@ -165,13 +166,14 @@ NSUserDefaults *defaults;
     [super viewDidLoad];
     info = [[AppHandler alloc]init];
     // Do any additional setup after loading the view.
-    /**
+    
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor redColor];
     particleBackground.allowsTransparency = YES;
     //_particleView.showsFPS = YES;
     [particleBackground presentScene:scene];
+    /*
     smokeScene *smoke = [smokeScene sceneWithSize:particleBackground.bounds.size];
     smoke.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor clearColor];
