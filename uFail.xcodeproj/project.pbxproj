@@ -850,7 +850,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0DE910E159E66290B292950 /* Pods-uFail.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Halloween Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Winter Icon";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -878,7 +878,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4423F145DD112B69EA52E764 /* Pods-uFail.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Halloween Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Winter Icon";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
