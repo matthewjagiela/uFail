@@ -8,6 +8,7 @@
 #import "uFail-Swift.h"
 #import "ViewController.h"
 #import "InfoViewController.h"
+#import "SnowScene.h"
 #define myAppDelegate (MyAppDelegate *)[[UIApplication sharedApplication] delegate]
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
@@ -174,17 +175,15 @@ int mainInt = 5;
     }
     [self themeManagement];
     
-    /**
+    
     
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
      scene.scaleMode = SKSceneScaleModeAspectFill;
      particleBackground.backgroundColor = [SKColor clearColor];
      particleBackground.allowsTransparency = YES;
-    particleBackground.showsFPS = true;
-    particleBackground.showsNodeCount = true;
      
      [particleBackground presentScene:scene];
-    **/
+    
      [_Santa setHidden:YES];
     
      
