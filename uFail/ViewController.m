@@ -8,6 +8,7 @@
 #import "uFail-Swift.h"
 #import "ViewController.h"
 #import "InfoViewController.h"
+#import "SnowScene.h"
 #define myAppDelegate (MyAppDelegate *)[[UIApplication sharedApplication] delegate]
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
@@ -88,32 +89,32 @@ int mainInt = 5;
             }
             else if (iPhoneVersion ==5) //iPhone 5 style of phone (Including SE). Still need to do something about
             {
-                bgImage = [UIImage imageNamed:@"iPhone 5 Halloween.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 4-5.png"];
                 
             }
             else if (iPhoneVersion==6) //iPhone 6 family
             {
-                bgImage = [UIImage imageNamed:@"iPhone 6 Halloween.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 6 Background.png"];
                 
             }
             else if (iPhoneVersion==61) //iPhone 6+ Family
             {
-                bgImage = [UIImage imageNamed:@"iPhone 6+ Halloween.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 6+ Background.png"];
                 
             }
             else{ //iPhone X family.
-                bgImage = [UIImage imageNamed:@"iPhone 6 Halloween.png"];
+                bgImage = [UIImage imageNamed:@"iPhone 6 Background.png"];
             }
             
         }
         else{ //iPad Family. (Winter)
-            bgImage = [UIImage imageNamed:@"iPad Halloween.png"];
+            bgImage = [UIImage imageNamed:@"iPad Winter Background.png"];
             ViewController *vc = [[UIViewController alloc]init];
             UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:vc];
             
             [self.navigationController setNavigationBarHidden:YES];
         }
-        failimage = [UIImage imageNamed:@"uFail Button Halloween.png"];
+        failimage = [UIImage imageNamed:@"Winter Fail Button.png"];
     }
     else if([[defaults objectForKey:@"themeColor"]isEqualToString:@"blue"]){
         bgImage = [UIImage imageNamed:@"blue theme.png"];
@@ -174,18 +175,15 @@ int mainInt = 5;
     }
     [self themeManagement];
     
-    /**
     
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
-     scene.scaleMode = SKSceneScaleModeAspectFill;
-     particleBackground.backgroundColor = [SKColor clearColor];
-     particleBackground.allowsTransparency = YES;
-    particleBackground.showsFPS = true;
-    particleBackground.showsNodeCount = true;
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    particleBackground.backgroundColor = [SKColor clearColor];
+    particleBackground.allowsTransparency = YES;
      
-     [particleBackground presentScene:scene];
-    **/
-     [_Santa setHidden:YES];
+    [particleBackground presentScene:scene];
+    
+    [_Santa setHidden:YES];
     
      
     
