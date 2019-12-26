@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -109,11 +109,10 @@
 		2EA01E7723B5608300B38C64 /* uFail */ = {
 			isa = PBXGroup;
 			children = (
-				2EA01E7823B5608300B38C64 /* AppDelegate.swift */,
-				2EA01E7C23B5608300B38C64 /* ViewController.swift */,
-				2EA01E7E23B5608300B38C64 /* Main.storyboard */,
+				2EA01EAB23B561AA00B38C64 /* Other */,
+				2EA01EA923B5618300B38C64 /* Resources */,
+				2EA01EA823B5617A00B38C64 /* Classes */,
 				2EA01E8123B5608400B38C64 /* Assets.xcassets */,
-				2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */,
 				2EA01E8623B5608400B38C64 /* Info.plist */,
 			);
 			path = uFail;
@@ -137,6 +136,63 @@
 			path = uFailUITests;
 			sourceTree = "<group>";
 		};
+		2EA01EA823B5617A00B38C64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2EA01EAE23B561CB00B38C64 /* Other */,
+				2EA01EAD23B561C100B38C64 /* Handlers */,
+				2EA01EAC23B561B700B38C64 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2EA01EA923B5618300B38C64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EA01EAA23B5619400B38C64 /* Views + Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2EA01EAA23B5619400B38C64 /* Views + Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2EA01E7E23B5608300B38C64 /* Main.storyboard */,
+				2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */,
+			);
+			path = "Views + Storyboards";
+			sourceTree = "<group>";
+		};
+		2EA01EAB23B561AA00B38C64 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2EA01EAC23B561B700B38C64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EA01E7C23B5608300B38C64 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2EA01EAD23B561C100B38C64 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		2EA01EAE23B561CB00B38C64 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2EA01E7823B5608300B38C64 /* AppDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		5767D7FFF992EFA08E02729D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +210,6 @@
 				49E26C975EA715258286D4A0 /* Pods-uFailTests.debug.xcconfig */,
 				84F406B4C48A2FE0D70C7007 /* Pods-uFailTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
