@@ -27,7 +27,7 @@ class AppHandler: NSObject {
                }
     }
     @objc func getAppVersion() -> String {
-        return "Currently Running Version 10.6"
+        return "Currently Running Version 10.6.1"
     }
     @objc func changes() -> String {
         if let path = Bundle.main.path(forResource: "Changes", ofType: "txt") {

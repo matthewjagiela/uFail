@@ -430,7 +430,7 @@ int mainInt = 5;
     {
         //Dynamic, blue, Red, Green, Purple
         UIAlertController *themeChooser = [UIAlertController alertControllerWithTitle:@"Choose A Theme" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-        UIAlertAction *dynamicAction = [UIAlertAction actionWithTitle:@"Spooky" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *dynamicAction = [UIAlertAction actionWithTitle:@"Winter" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [defaults setObject:@"winter" forKey:@"themeColor"];
             [self themeManagement];
             
