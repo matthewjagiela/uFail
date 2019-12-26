@@ -1,5 +1,7 @@
 Welcome to uFail 10 by uApps
 What's New:
+10.6.1:
+- Various bug fixes.
 10.6:
 - Happy Holidays! Snow is falling throughout the app!
 - New winter theme now that it is cold outside!
