@@ -10,30 +10,27 @@ import UIKit
 
 class DynamicTheme: NSObject {
 
-  @objc func getTestString() -> NSString{
+  @objc func getTestString() -> NSString {
         return "Hello World"
     }
-    func getMonth() -> Int{
+    func getMonth() -> Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
     }
-    func determineSeason() ->String{ //This is going to use the month to find out the current season.
+    func determineSeason() -> String { //This is going to use the month to find out the current season.
         let month = getMonth()
-        if(month >= 3 && month < 6){
+        if month >= 3 && month < 6 {
             return "Spring"
-        }
-        else if(month >= 6 && month < 9){
+        } else if month >= 6 && month < 9 {
             return "Summer"
-        }
-        else if (month >= 9 && month < 12){
+        } else if month >= 9 && month < 12 {
             return "Fall"
-        }
-        else{
+        } else {
             return "Winter"
         }
         
     }
-    @objc func determineTheme(iPhoneVersion:Int) -> UIImage{ //This is going to use the other methods and the iPhone version to determine the dynamic theme...
+    @objc func determineTheme(iPhoneVersion: Int) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()
         /*
@@ -43,7 +40,7 @@ class DynamicTheme: NSObject {
         61 = 6+
         default iPad
         */
-        if(season == "Spring"){ //We are going to have a spring theme eventually... Right now it is going to return the summer theme
+        if season == "Spring" { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "iPhone 5 summer.png")!
@@ -56,8 +53,7 @@ class DynamicTheme: NSObject {
             default:
                 themeImage = UIImage(named: "iPad Image Warm")!
             }
-        }
-        else if(season == "Summer"){
+        } else if season == "Summer" {
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "iPhone 5 summer.png")!
@@ -70,8 +66,7 @@ class DynamicTheme: NSObject {
             default:
                 themeImage = UIImage(named: "iPad Image Warm")!
             }
-        }
-        else if(season == "Fall"){
+        } else if season == "Fall" {
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "iPhone 5 summer.png")!
@@ -84,8 +79,7 @@ class DynamicTheme: NSObject {
             default:
                 themeImage = UIImage(named: "iPad Image Warm")!
             }
-        }
-        else{ //Winter theme
+        } else { //Winter theme
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "iPhone 4-5.png")!
@@ -100,10 +94,9 @@ class DynamicTheme: NSObject {
             }
         }
         
-        
         return themeImage
     }
-    @objc func determineFailButton() -> UIImage{ //Great thing is that this does not change based on the device... Find it based on season
+    @objc func determineFailButton() -> UIImage { //Great thing is that this does not change based on the device... Find it based on season
         var buttonImage = UIImage()
         let season = determineSeason()
         switch season {

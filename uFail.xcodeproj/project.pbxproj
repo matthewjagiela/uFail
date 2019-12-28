@@ -20,6 +20,7 @@
 		2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */; };
 		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
+		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
 		685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98B5273CA5B54190826E1DA /* Pods_uFail.framework */; };
 		86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29980311673685491513F0D1 /* Pods_uFailTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		2EA01E9623B5608400B38C64 /* uFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
 		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
 		9CB5729BF30E4F64FFF98E70 /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		2EA01E6C23B5608300B38C64 = {
 			isa = PBXGroup;
 			children = (
+				2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */,
 				2EA01E7723B5608300B38C64 /* uFail */,
 				2EA01E8E23B5608400B38C64 /* uFailTests */,
 				2EA01E9923B5608400B38C64 /* uFailUITests */,
@@ -241,6 +244,7 @@
 				2EA01E7223B5608300B38C64 /* Frameworks */,
 				2EA01E7323B5608300B38C64 /* Resources */,
 				3EB48FFA6D00253E1D0CF1CD /* [CP] Embed Pods Frameworks */,
+				2EA8B57E23B7C6A000CDB417 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -336,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
 				2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */,
 				2EA01E8223B5608400B38C64 /* Assets.xcassets in Resources */,
 				2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */,
@@ -360,6 +365,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2EA8B57E23B7C6A000CDB417 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		35825CCD808314DFA12A6E17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
