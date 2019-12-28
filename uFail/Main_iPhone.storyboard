@@ -28,7 +28,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 6 Summer.png" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-rK-3Mz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHF-ej-XQC" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHF-ej-XQC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPh-fx-T6z">
@@ -334,7 +334,6 @@
                         <outlet property="blurEffect" destination="RDz-wS-wfh" id="VEm-nF-8gw"/>
                         <outlet property="colorView" destination="ZH3-az-ulu" id="T8U-Dn-Kfb"/>
                         <outlet property="messageView" destination="wd7-mz-1bZ" id="IhR-fh-1ye"/>
-                        <outlet property="particleBackground" destination="HHF-ej-XQC" id="5Ac-RW-HYq"/>
                         <outlet property="screenBackgroundImage" destination="Ypc-ZO-9ck" id="NGW-tW-AXH"/>
                     </connections>
                 </viewController>

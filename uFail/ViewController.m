@@ -175,7 +175,7 @@ int mainInt = 5;
     }
     [self themeManagement];
     
-    
+    /**
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor clearColor];
@@ -184,7 +184,7 @@ int mainInt = 5;
     [particleBackground presentScene:scene];
     
     [_Santa setHidden:YES];
-    
+    **/
      
     
     /**
