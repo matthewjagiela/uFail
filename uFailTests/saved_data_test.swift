@@ -9,10 +9,18 @@
 import UIKit
 import XCTest
 
-class saved_data_test: XCTest {
+class saved_data_test: XCTestCase {
     func testTheme() {
         let savedData = DataHandler()
         savedData.saveTheme(theme: "Blue")
         XCTAssertEqual("Blue", savedData.getTheme())
+        savedData.saveTheme(theme: "Red")
+        XCTAssertEqual("Red", savedData.getTheme())
+    }
+}
+class iCloud_data_test: XCTestCase {
+    func testiCloud() {
+        iCloudHandler.storeFailCount(10)
+        XCTAssertEqual(10, iCloudHandler.getFailCount())
     }
 }
