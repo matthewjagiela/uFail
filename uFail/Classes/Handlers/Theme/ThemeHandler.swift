@@ -9,5 +9,11 @@
 import UIKit
 
 class ThemeHandler: NSObject {
-
+    let data = DataHandler()
+    var theme = ""
+    override init() {
+        super.init()
+        theme = data.getTheme()
+    }
+    
 }
