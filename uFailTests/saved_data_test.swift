@@ -17,6 +17,11 @@ class saved_data_test: XCTestCase {
         savedData.saveTheme(theme: "Red")
         XCTAssertEqual("Red", savedData.getTheme())
     }
+    func testNullTheme() {
+        let savedData = DataHandler()
+        savedData.defaults.set(nil, forKey: "theme")
+        XCTAssertEqual("dynamic", savedData.getTheme())
+    }
 }
 class iCloud_data_test: XCTestCase {
     func testiCloud() {
