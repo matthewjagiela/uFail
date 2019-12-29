@@ -36,5 +36,4 @@ class ThemeHandler: NSObject {
             theme = .dynamic
         }
     }
-    
 }
