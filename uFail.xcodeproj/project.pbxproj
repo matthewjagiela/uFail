@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
+		2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
+		2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
 		2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* saved_data_test.swift */; };
 		2E79A87823B7C270005271CC /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F823B56844001DEC49 /* DynamicTheme.swift */; };
@@ -46,6 +48,7 @@
 		1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
 		29980311673685491513F0D1 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E54D05523B6FED40051A693 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		2E5F11C523B8514700832EDD /* DeviceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHandler.swift; sourceTree = "<group>"; };
 		2E79A87623B7C18D005271CC /* saved_data_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saved_data_test.swift; sourceTree = "<group>"; };
 		2E89B3F823B56844001DEC49 /* DynamicTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
 		2E89B3F923B56844001DEC49 /* AppHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHandler.swift; sourceTree = "<group>"; };
@@ -200,6 +203,7 @@
 				2E89B3F923B56844001DEC49 /* AppHandler.swift */,
 				2E89B3F823B56844001DEC49 /* DynamicTheme.swift */,
 				2E54D05523B6FED40051A693 /* DataHandler.swift */,
+				2E5F11C523B8514700832EDD /* DeviceHandler.swift */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -450,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */,
 				2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */,
 				2EA01E7D23B5608300B38C64 /* ViewController.swift in Sources */,
 				2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */,
@@ -462,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */,
 				2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */,
 				2E79A87823B7C270005271CC /* DataHandler.swift in Sources */,
 				2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */,
