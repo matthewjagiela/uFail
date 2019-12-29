@@ -24,4 +24,18 @@ class ThemeTest: XCTestCase {
         let theme = ThemeHandler()
         XCTAssertEqual(testImage, theme.getFailButton())
     }
+    func test_bg_failure() {
+        let testImage = UIImage(named: "blueBG.png")
+        let savedData = DataHandler()
+        savedData.saveTheme(theme: "red")
+        let theme = ThemeHandler()
+        XCTAssertNotEqual(testImage, theme.getBackgroundImage())
+    }
+    func test_button_failure() {
+        let testImage = UIImage(named: "BlueButton.png")
+        let savedData = DataHandler()
+        savedData.saveTheme(theme: "red")
+        let theme = ThemeHandler()
+        XCTAssertNotEqual(testImage, theme.getFailButton())
+    }
 }
