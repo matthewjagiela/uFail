@@ -10,11 +10,18 @@ import UIKit
 import XCTest
 
 class ThemeTest: XCTestCase {
-    func testBGImage() {
+    func test_BG_Image() {
         let testImage = UIImage(named: "blueBG.png")
         let savedData = DataHandler()
         savedData.saveTheme(theme: "blue")
         let theme = ThemeHandler()
         XCTAssertEqual(testImage, theme.getBackgroundImage())
+    }
+    func test_Button_Image() {
+        let testImage = UIImage(named: "blueButton.png") ?? UIImage()
+        let savedData = DataHandler()
+        savedData.saveTheme(theme: "blue")
+        let theme = ThemeHandler()
+        XCTAssertEqual(testImage, theme.getFailButton())
     }
 }
