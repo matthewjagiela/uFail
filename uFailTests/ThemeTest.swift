@@ -18,7 +18,7 @@ class ThemeTest: XCTestCase {
         XCTAssertEqual(testImage, theme.getBackgroundImage())
     }
     func test_Button_Image() {
-        let testImage = UIImage(named: "blueButton.png") ?? UIImage()
+        let testImage = UIImage(named: "BlueButton.png") ?? UIImage()
         let savedData = DataHandler()
         savedData.saveTheme(theme: "blue")
         let theme = ThemeHandler()

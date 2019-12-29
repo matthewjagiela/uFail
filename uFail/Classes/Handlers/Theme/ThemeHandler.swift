@@ -57,13 +57,13 @@ class ThemeHandler: NSObject {
         if theme != .dynamic {
             switch theme {
             case .blue:
-                return UIImage(named: "blueButton.png") ?? UIImage()
+                return UIImage(named: "BlueButton.png") ?? UIImage()
             case .green:
-                return UIImage(named: "greenButton.png") ?? UIImage()
+                return UIImage(named: "GreenButton.png") ?? UIImage()
             case .red:
-                return UIImage(named: "purpleButton.png") ?? UIImage()
+                return UIImage(named: "RedButton.png") ?? UIImage()
             default:
-                return UIImage(named: "purpleButton.png") ?? UIImage()
+                return UIImage(named: "PurpleButton.png") ?? UIImage()
             }
         } else {
             
