@@ -36,4 +36,9 @@ class ThemeHandler: NSObject {
             theme = .dynamic
         }
     }
+    func getBackgroundImage() -> UIImage {
+        let endFix = "BG.png"
+        var fileName = ""
+        return UIImage()
+    }
 }
