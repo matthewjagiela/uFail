@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
 		2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
+		2E5F11CE23B8679300832EDD /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
+		2E5F11E023B86A8000832EDD /* blueBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DC23B86A7F00832EDD /* blueBG.png */; };
+		2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DD23B86A7F00832EDD /* purpleBG.png */; };
+		2E5F11E223B86A8000832EDD /* greenBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DE23B86A7F00832EDD /* greenBG.png */; };
+		2E5F11E323B86A8000832EDD /* redBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DF23B86A8000832EDD /* redBG.png */; };
+		2E7045B723B922540043638F /* ThemeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7045B623B922540043638F /* ThemeTest.swift */; };
+		2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* saved_data_test.swift */; };
-		2E79A87823B7C270005271CC /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F823B56844001DEC49 /* DynamicTheme.swift */; };
 		2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F923B56844001DEC49 /* AppHandler.swift */; };
 		2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E89B3FD23B56861001DEC49 /* Changes.txt */; };
@@ -23,6 +30,10 @@
 		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
 		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
+		2EA9890823B92F91006C2CF4 /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890723B92F91006C2CF4 /* BlueButton.png */; };
+		2EA9890A23B92F97006C2CF4 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890923B92F97006C2CF4 /* GreenButton.png */; };
+		2EA9890C23B92FA1006C2CF4 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890B23B92FA1006C2CF4 /* RedButton.png */; };
+		2EA9890E23B92FA9006C2CF4 /* PurpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890D23B92FA9006C2CF4 /* PurpleButton.png */; };
 		685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98B5273CA5B54190826E1DA /* Pods_uFail.framework */; };
 		86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29980311673685491513F0D1 /* Pods_uFailTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,8 +58,14 @@
 /* Begin PBXFileReference section */
 		1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
 		29980311673685491513F0D1 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		2E54D05523B6FED40051A693 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		2E5F11C523B8514700832EDD /* DeviceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHandler.swift; sourceTree = "<group>"; };
+		2E5F11DC23B86A7F00832EDD /* blueBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueBG.png; sourceTree = "<group>"; };
+		2E5F11DD23B86A7F00832EDD /* purpleBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleBG.png; sourceTree = "<group>"; };
+		2E5F11DE23B86A7F00832EDD /* greenBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBG.png; sourceTree = "<group>"; };
+		2E5F11DF23B86A8000832EDD /* redBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redBG.png; sourceTree = "<group>"; };
+		2E7045B623B922540043638F /* ThemeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTest.swift; sourceTree = "<group>"; };
 		2E79A87623B7C18D005271CC /* saved_data_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saved_data_test.swift; sourceTree = "<group>"; };
 		2E89B3F823B56844001DEC49 /* DynamicTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
 		2E89B3F923B56844001DEC49 /* AppHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHandler.swift; sourceTree = "<group>"; };
@@ -67,6 +84,10 @@
 		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
 		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2EA9890723B92F91006C2CF4 /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
+		2EA9890923B92F97006C2CF4 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		2EA9890B23B92FA1006C2CF4 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
+		2EA9890D23B92FA9006C2CF4 /* PurpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleButton.png; sourceTree = "<group>"; };
 		43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
 		9CB5729BF30E4F64FFF98E70 /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +121,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E5202C823B7FD40001B6F65 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2E89B3F823B56844001DEC49 /* DynamicTheme.swift */,
+				2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		2E5F11D723B8695A00832EDD /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				2E5F11DB23B8698E00832EDD /* Purple */,
+				2E5F11D923B8697F00832EDD /* Red */,
+				2E5F11DA23B8698500832EDD /* Green */,
+				2E5F11D823B8696900832EDD /* Blue */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		2E5F11D823B8696900832EDD /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				2EA9890723B92F91006C2CF4 /* BlueButton.png */,
+				2E5F11DC23B86A7F00832EDD /* blueBG.png */,
+			);
+			path = Blue;
+			sourceTree = "<group>";
+		};
+		2E5F11D923B8697F00832EDD /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				2EA9890B23B92FA1006C2CF4 /* RedButton.png */,
+				2E5F11DF23B86A8000832EDD /* redBG.png */,
+			);
+			path = Red;
+			sourceTree = "<group>";
+		};
+		2E5F11DA23B8698500832EDD /* Green */ = {
+			isa = PBXGroup;
+			children = (
+				2EA9890923B92F97006C2CF4 /* GreenButton.png */,
+				2E5F11DE23B86A7F00832EDD /* greenBG.png */,
+			);
+			path = Green;
+			sourceTree = "<group>";
+		};
+		2E5F11DB23B8698E00832EDD /* Purple */ = {
+			isa = PBXGroup;
+			children = (
+				2EA9890D23B92FA9006C2CF4 /* PurpleButton.png */,
+				2E5F11DD23B86A7F00832EDD /* purpleBG.png */,
+			);
+			path = Purple;
+			sourceTree = "<group>";
+		};
 		2EA01E6C23B5608300B38C64 = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +218,7 @@
 				2EA01E8F23B5608400B38C64 /* uFailTests.swift */,
 				2EA01E9123B5608400B38C64 /* Info.plist */,
 				2E79A87623B7C18D005271CC /* saved_data_test.swift */,
-				2E5F11CC23B865C000832EDD /* simulated_device_test.swift */,
+				2E7045B623B922540043638F /* ThemeTest.swift */,
 			);
 			path = uFailTests;
 			sourceTree = "<group>";
@@ -168,6 +245,7 @@
 		2EA01EA923B5618300B38C64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E5F11D723B8695A00832EDD /* Themes */,
 				2E89B3FD23B56861001DEC49 /* Changes.txt */,
 				2EA01EAA23B5619400B38C64 /* Views + Storyboards */,
 			);
@@ -201,8 +279,8 @@
 		2EA01EAD23B561C100B38C64 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				2E5202C823B7FD40001B6F65 /* Theme */,
 				2E89B3F923B56844001DEC49 /* AppHandler.swift */,
-				2E89B3F823B56844001DEC49 /* DynamicTheme.swift */,
 				2E54D05523B6FED40051A693 /* DataHandler.swift */,
 				2E5F11C523B8514700832EDD /* DeviceHandler.swift */,
 			);
@@ -345,10 +423,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5F11E223B86A8000832EDD /* greenBG.png in Resources */,
+				2E5F11E323B86A8000832EDD /* redBG.png in Resources */,
 				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
+				2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */,
 				2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */,
+				2EA9890A23B92F97006C2CF4 /* GreenButton.png in Resources */,
+				2EA9890823B92F91006C2CF4 /* BlueButton.png in Resources */,
+				2EA9890C23B92FA1006C2CF4 /* RedButton.png in Resources */,
 				2EA01E8223B5608400B38C64 /* Assets.xcassets in Resources */,
 				2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */,
+				2EA9890E23B92FA9006C2CF4 /* PurpleButton.png in Resources */,
+				2E5F11E023B86A8000832EDD /* blueBG.png in Resources */,
 				2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */,
 				2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */,
 				2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */,
 				2EA01E7D23B5608300B38C64 /* ViewController.swift in Sources */,
@@ -468,9 +555,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */,
+				2E5F11CE23B8679300832EDD /* DataHandler.swift in Sources */,
 				2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */,
 				2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */,
-				2E79A87823B7C270005271CC /* DataHandler.swift in Sources */,
+				2E7045B723B922540043638F /* ThemeTest.swift in Sources */,
 				2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
