@@ -141,6 +141,7 @@
 				2EA01E8F23B5608400B38C64 /* uFailTests.swift */,
 				2EA01E9123B5608400B38C64 /* Info.plist */,
 				2E79A87623B7C18D005271CC /* saved_data_test.swift */,
+				2E5F11CC23B865C000832EDD /* simulated_device_test.swift */,
 			);
 			path = uFailTests;
 			sourceTree = "<group>";
