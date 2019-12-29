@@ -10,10 +10,31 @@ import UIKit
 
 class ThemeHandler: NSObject {
     let data = DataHandler()
-    var theme = ""
+    var theme: Theme?
+    let deviceHandler = DeviceHandler()
+    var device: DeviceHandler.Device!
+    enum Theme {
+        case blue
+        case green
+        case red
+        case purple
+        case dynamic
+    }
     override init() {
         super.init()
-        theme = data.getTheme()
+        device = deviceHandler.currentDevice()
+        switch data.getTheme() {
+        case "blue":
+            theme = .blue
+        case "green":
+            theme = .green
+        case "red":
+            theme = .red
+        case "purple":
+            theme = .purple
+        default:
+            theme = .dynamic
+        }
     }
     
 }
