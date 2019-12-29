@@ -53,4 +53,21 @@ class ThemeHandler: NSObject {
         }
         return UIImage()
     }
+    func getFailButton() -> UIImage {
+        if theme != .dynamic {
+            switch theme {
+            case .blue:
+                return UIImage(named: "blueButton.png") ?? UIImage()
+            case .green:
+                return UIImage(named: "greenButton.png") ?? UIImage()
+            case .red:
+                return UIImage(named: "purpleButton.png") ?? UIImage()
+            default:
+                return UIImage(named: "purpleButton.png") ?? UIImage()
+            }
+        } else {
+            
+        }
+        return UIImage()
+    }
 }
