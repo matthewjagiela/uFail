@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
+		2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
 		2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* saved_data_test.swift */; };
 		2E79A87823B7C270005271CC /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F823B56844001DEC49 /* DynamicTheme.swift */; };
@@ -466,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */,
 				2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */,
 				2E79A87823B7C270005271CC /* DataHandler.swift in Sources */,
 				2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */,
