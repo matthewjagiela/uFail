@@ -37,8 +37,20 @@ class ThemeHandler: NSObject {
         }
     }
     func getBackgroundImage() -> UIImage {
-        let endFix = "BG.png"
-        var fileName = ""
+        if theme != .dynamic {
+            switch theme {
+            case .blue:
+                return UIImage(named: "blueBG.png") ?? UIImage()
+            case .green:
+                return UIImage(named: "greenBG.png") ?? UIImage()
+            case .red:
+                return UIImage(named: "redBG.png") ?? UIImage()
+            default: //Purple
+                return UIImage(named: "purpleBG.png") ?? UIImage()
+            }
+        } else { //dynamic theme
+            
+        }
         return UIImage()
     }
 }
