@@ -9,5 +9,21 @@
 import UIKit
 
 class SoundHandler: NSObject {
+    var sound: Sound = .uFail
+    let data = DataHandler()
+    public enum Sound {
+        case airhorn
+        case epicFail
+        case fail
+        case noob
+        case pwned
+        case santa
+        case soManyFriends
+        case win
+        case uFail
+    }
+    func selectSound(_ sound: Sound) {
+        self.sound = sound
+    }
     
 }
