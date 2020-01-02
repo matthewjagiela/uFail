@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E16227823BDB01500E5A533 /* Sound_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16227723BDB01500E5A533 /* Sound_Test.swift */; };
+		2E16227923BDB02C00E5A533 /* SoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11E423B9A1A200832EDD /* SoundHandler.swift */; };
 		2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
@@ -27,9 +29,9 @@
 		2E5F11F823B9A2BF00832EDD /* FAIL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */; };
 		2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */; };
 		2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */; };
-		2E7045B723B922540043638F /* ThemeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7045B623B922540043638F /* ThemeTest.swift */; };
+		2E7045B723B922540043638F /* Theme_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7045B623B922540043638F /* Theme_Test.swift */; };
 		2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
-		2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* saved_data_test.swift */; };
+		2E79A87723B7C18D005271CC /* Saved_Data_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */; };
 		2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F823B56844001DEC49 /* DynamicTheme.swift */; };
 		2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F923B56844001DEC49 /* AppHandler.swift */; };
 		2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E89B3FD23B56861001DEC49 /* Changes.txt */; };
@@ -69,6 +71,7 @@
 /* Begin PBXFileReference section */
 		1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
 		29980311673685491513F0D1 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E16227723BDB01500E5A533 /* Sound_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound_Test.swift; sourceTree = "<group>"; };
 		2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		2E54D05523B6FED40051A693 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		2E5F11C523B8514700832EDD /* DeviceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHandler.swift; sourceTree = "<group>"; };
@@ -87,8 +90,8 @@
 		2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FAIL.mp3; sourceTree = "<group>"; };
 		2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "So Many Friends.mp3"; sourceTree = "<group>"; };
 		2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "You Fail.mp3"; sourceTree = "<group>"; };
-		2E7045B623B922540043638F /* ThemeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTest.swift; sourceTree = "<group>"; };
-		2E79A87623B7C18D005271CC /* saved_data_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saved_data_test.swift; sourceTree = "<group>"; };
+		2E7045B623B922540043638F /* Theme_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme_Test.swift; sourceTree = "<group>"; };
+		2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saved_Data_Test.swift; sourceTree = "<group>"; };
 		2E89B3F823B56844001DEC49 /* DynamicTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
 		2E89B3F923B56844001DEC49 /* AppHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHandler.swift; sourceTree = "<group>"; };
 		2E89B3FD23B56861001DEC49 /* Changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changes.txt; sourceTree = "<group>"; };
@@ -256,8 +259,9 @@
 			children = (
 				2EA01E8F23B5608400B38C64 /* uFailTests.swift */,
 				2EA01E9123B5608400B38C64 /* Info.plist */,
-				2E79A87623B7C18D005271CC /* saved_data_test.swift */,
-				2E7045B623B922540043638F /* ThemeTest.swift */,
+				2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */,
+				2E7045B623B922540043638F /* Theme_Test.swift */,
+				2E16227723BDB01500E5A533 /* Sound_Test.swift */,
 			);
 			path = uFailTests;
 			sourceTree = "<group>";
@@ -611,8 +615,10 @@
 				2E5F11CE23B8679300832EDD /* DataHandler.swift in Sources */,
 				2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */,
 				2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */,
-				2E7045B723B922540043638F /* ThemeTest.swift in Sources */,
-				2E79A87723B7C18D005271CC /* saved_data_test.swift in Sources */,
+				2E16227923BDB02C00E5A533 /* SoundHandler.swift in Sources */,
+				2E16227823BDB01500E5A533 /* Sound_Test.swift in Sources */,
+				2E7045B723B922540043638F /* Theme_Test.swift in Sources */,
+				2E79A87723B7C18D005271CC /* Saved_Data_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
