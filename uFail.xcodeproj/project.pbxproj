@@ -29,6 +29,10 @@
 		2E5F11F823B9A2BF00832EDD /* FAIL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */; };
 		2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */; };
 		2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */; };
+		2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362723C1C7BE00F4726C /* BlueButton.png */; };
+		2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362923C1C7C300F4726C /* GreenButton.png */; };
+		2E6A362C23C1C7CE00F4726C /* PurpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362B23C1C7CE00F4726C /* PurpleButton.png */; };
+		2E6A362E23C1C7D400F4726C /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362D23C1C7D400F4726C /* RedButton.png */; };
 		2E7045B723B922540043638F /* Theme_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7045B623B922540043638F /* Theme_Test.swift */; };
 		2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E79A87723B7C18D005271CC /* Saved_Data_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */; };
@@ -43,10 +47,6 @@
 		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
 		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
-		2EA9890823B92F91006C2CF4 /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890723B92F91006C2CF4 /* BlueButton.png */; };
-		2EA9890A23B92F97006C2CF4 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890923B92F97006C2CF4 /* GreenButton.png */; };
-		2EA9890C23B92FA1006C2CF4 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890B23B92FA1006C2CF4 /* RedButton.png */; };
-		2EA9890E23B92FA9006C2CF4 /* PurpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9890D23B92FA9006C2CF4 /* PurpleButton.png */; };
 		685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98B5273CA5B54190826E1DA /* Pods_uFail.framework */; };
 		86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29980311673685491513F0D1 /* Pods_uFailTests.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +90,10 @@
 		2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FAIL.mp3; sourceTree = "<group>"; };
 		2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "So Many Friends.mp3"; sourceTree = "<group>"; };
 		2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "You Fail.mp3"; sourceTree = "<group>"; };
+		2E6A362723C1C7BE00F4726C /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
+		2E6A362923C1C7C300F4726C /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		2E6A362B23C1C7CE00F4726C /* PurpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleButton.png; sourceTree = "<group>"; };
+		2E6A362D23C1C7D400F4726C /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
 		2E7045B623B922540043638F /* Theme_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme_Test.swift; sourceTree = "<group>"; };
 		2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saved_Data_Test.swift; sourceTree = "<group>"; };
 		2E89B3F823B56844001DEC49 /* DynamicTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
@@ -109,10 +113,6 @@
 		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
 		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		2EA9890723B92F91006C2CF4 /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
-		2EA9890923B92F97006C2CF4 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
-		2EA9890B23B92FA1006C2CF4 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
-		2EA9890D23B92FA9006C2CF4 /* PurpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleButton.png; sourceTree = "<group>"; };
 		43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
 		9CB5729BF30E4F64FFF98E70 /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		2E5F11D823B8696900832EDD /* Blue */ = {
 			isa = PBXGroup;
 			children = (
-				2EA9890723B92F91006C2CF4 /* BlueButton.png */,
+				2E6A362723C1C7BE00F4726C /* BlueButton.png */,
 				2E5F11DC23B86A7F00832EDD /* blueBG.png */,
 			);
 			path = Blue;
@@ -178,7 +178,7 @@
 		2E5F11D923B8697F00832EDD /* Red */ = {
 			isa = PBXGroup;
 			children = (
-				2EA9890B23B92FA1006C2CF4 /* RedButton.png */,
+				2E6A362D23C1C7D400F4726C /* RedButton.png */,
 				2E5F11DF23B86A8000832EDD /* redBG.png */,
 			);
 			path = Red;
@@ -187,7 +187,7 @@
 		2E5F11DA23B8698500832EDD /* Green */ = {
 			isa = PBXGroup;
 			children = (
-				2EA9890923B92F97006C2CF4 /* GreenButton.png */,
+				2E6A362923C1C7C300F4726C /* GreenButton.png */,
 				2E5F11DE23B86A7F00832EDD /* greenBG.png */,
 			);
 			path = Green;
@@ -196,7 +196,7 @@
 		2E5F11DB23B8698E00832EDD /* Purple */ = {
 			isa = PBXGroup;
 			children = (
-				2EA9890D23B92FA9006C2CF4 /* PurpleButton.png */,
+				2E6A362B23C1C7CE00F4726C /* PurpleButton.png */,
 				2E5F11DD23B86A7F00832EDD /* purpleBG.png */,
 			);
 			path = Purple;
@@ -473,24 +473,24 @@
 				2E5F11F223B9A2BF00832EDD /* Noob!.mp3 in Resources */,
 				2E5F11F623B9A2BF00832EDD /* PWNED.mp3 in Resources */,
 				2E5F11F523B9A2BF00832EDD /* EPIC FAIL.mp3 in Resources */,
+				2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */,
 				2E5F11F123B9A2BF00832EDD /* failure.mp3 in Resources */,
 				2E5F11F323B9A2BF00832EDD /* WIN.mp3 in Resources */,
 				2E5F11F723B9A2BF00832EDD /* santa.mp3 in Resources */,
 				2E5F11E323B86A8000832EDD /* redBG.png in Resources */,
+				2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */,
 				2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */,
 				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
 				2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */,
 				2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */,
-				2EA9890A23B92F97006C2CF4 /* GreenButton.png in Resources */,
-				2EA9890823B92F91006C2CF4 /* BlueButton.png in Resources */,
-				2EA9890C23B92FA1006C2CF4 /* RedButton.png in Resources */,
 				2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */,
 				2E5F11F823B9A2BF00832EDD /* FAIL.mp3 in Resources */,
 				2EA01E8223B5608400B38C64 /* Assets.xcassets in Resources */,
 				2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */,
-				2EA9890E23B92FA9006C2CF4 /* PurpleButton.png in Resources */,
 				2E5F11E023B86A8000832EDD /* blueBG.png in Resources */,
 				2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */,
+				2E6A362E23C1C7D400F4726C /* RedButton.png in Resources */,
+				2E6A362C23C1C7CE00F4726C /* PurpleButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
