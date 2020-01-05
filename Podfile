@@ -8,6 +8,7 @@ target 'uFail' do
   # Pods for uFail
     pod 'Google-Mobile-Ads-SDK'
     pod 'SwiftLint'
+    pod 'SideMenuSwift'
 
   target 'uFailTests' do
     inherit! :search_paths
