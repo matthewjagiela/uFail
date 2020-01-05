@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class ThemeTest: XCTestCase {
+class Theme_Test: XCTestCase {
     func test_BG_Image() {
         let testImage = UIImage(named: "blueBG.png")
         let savedData = DataHandler()

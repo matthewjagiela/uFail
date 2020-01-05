@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class saved_data_test: XCTestCase {
+class Saved_Data_Test: XCTestCase {
     func testTheme() {
         let savedData = DataHandler()
         savedData.saveTheme(theme: "Blue")
@@ -23,7 +23,7 @@ class saved_data_test: XCTestCase {
         XCTAssertEqual("dynamic", savedData.getTheme())
     }
 }
-class iCloud_data_test: XCTestCase {
+class iCloud_Data_Test: XCTestCase {
     func testiCloud() {
         iCloudHandler.storeFailCount(10)
         XCTAssertEqual(10, iCloudHandler.getFailCount())
