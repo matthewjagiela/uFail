@@ -9,14 +9,17 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var failButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func playSound(_ sender: Any) {
+    }
     
-
     /*
     // MARK: - Navigation
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -13,15 +13,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="uFail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwN-C5-5gS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjc-Hc-8vk">
+                                <rect key="frame" x="47.666666666666657" y="62" width="280" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wjc-Hc-8vk" secondAttribute="height" multiplier="1:1" id="uoK-fL-V0z"/>
+                                </constraints>
+                                <state key="normal" image="BlueButton.png"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqw-pj-Wk7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="centerX" secondItem="lwN-C5-5gS" secondAttribute="centerX" id="8rH-YL-p5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wjc-Hc-8vk" secondAttribute="bottom" constant="436" id="92H-ji-Ck9"/>
+                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="EtF-aI-oEa"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YyW-yi-lOr"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c0a-ZY-sl4"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l8K-K7-Kgc"/>
@@ -29,13 +42,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="lwN-C5-5gS" id="oSD-Mz-rgj"/>
+                        <outlet property="failButton" destination="Wjc-Hc-8vk" id="bxD-Xx-1mv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="119.83695652173914"/>
+            <point key="canvasLocation" x="136.80000000000001" y="119.70443349753695"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BlueButton.png" width="1024" height="1024"/>
         <image name="blueBG.png" width="1024" height="1024"/>
     </resources>
 </document>
