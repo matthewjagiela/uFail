@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -8,20 +8,98 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uFail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="uFail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwN-C5-5gS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjc-Hc-8vk">
+                                <rect key="frame" x="81" y="18" width="213" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wjc-Hc-8vk" secondAttribute="height" multiplier="1:1" id="uoK-fL-V0z"/>
+                                </constraints>
+                                <state key="normal" image="BlueButton.png"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqw-pj-Wk7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-jp-nC1">
+                                <rect key="frame" x="16" y="604" width="149" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="b1h-cn-kYv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Messages">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessageOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oa8-Bq-6KO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-wq-eYC">
+                                <rect key="frame" x="197" y="604" width="118" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Hj4-dL-W4K"/>
+                                    <constraint firstAttribute="width" constant="118" id="sXU-gL-CR9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Theme">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showThemeOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKe-40-O8K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXw-rm-T9F">
+                                <rect key="frame" x="334" y="616" width="25" height="23"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IsR-jp-nC1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0WX-bB-M0h"/>
+                            <constraint firstItem="2YS-wq-eYC" firstAttribute="top" secondItem="IsR-jp-nC1" secondAttribute="top" id="5hv-pO-6RI"/>
+                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="centerX" secondItem="lwN-C5-5gS" secondAttribute="centerX" id="8rH-YL-p5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wjc-Hc-8vk" secondAttribute="bottom" constant="436" id="92H-ji-Ck9"/>
+                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="EtF-aI-oEa"/>
+                            <constraint firstItem="2YS-wq-eYC" firstAttribute="baseline" secondItem="IsR-jp-nC1" secondAttribute="baseline" id="FmW-W1-2Ts"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IXw-rm-T9F" secondAttribute="bottom" constant="28" id="GKe-bL-V8L"/>
+                            <constraint firstItem="lwN-C5-5gS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YyW-yi-lOr"/>
+                            <constraint firstItem="2YS-wq-eYC" firstAttribute="centerY" secondItem="IXw-rm-T9F" secondAttribute="centerY" id="bY0-td-RBz"/>
+                            <constraint firstItem="lwN-C5-5gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c0a-ZY-sl4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IXw-rm-T9F" secondAttribute="trailing" constant="16" id="ckt-da-L9H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IsR-jp-nC1" secondAttribute="bottom" constant="16" id="eTq-Q8-bVN"/>
+                            <constraint firstItem="2YS-wq-eYC" firstAttribute="firstBaseline" secondItem="IsR-jp-nC1" secondAttribute="firstBaseline" id="l5L-Oz-faU"/>
+                            <constraint firstItem="lwN-C5-5gS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l8K-K7-Kgc"/>
+                            <constraint firstAttribute="bottom" secondItem="lwN-C5-5gS" secondAttribute="bottom" id="oFa-Z0-d7R"/>
+                            <constraint firstItem="2YS-wq-eYC" firstAttribute="leading" secondItem="IsR-jp-nC1" secondAttribute="trailing" constant="32" id="xuU-Vd-0BJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="lwN-C5-5gS" id="oSD-Mz-rgj"/>
+                        <outlet property="failButton" destination="Wjc-Hc-8vk" id="bxD-Xx-1mv"/>
+                        <outlet property="messagesButton" destination="IsR-jp-nC1" id="idc-PW-WCL"/>
+                        <outlet property="themeButton" destination="2YS-wq-eYC" id="JKR-fj-old"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="121"/>
+            <point key="canvasLocation" x="133.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BlueButton.png" width="1024" height="1024"/>
+        <image name="blueBG.png" width="1024" height="1024"/>
+    </resources>
 </document>
