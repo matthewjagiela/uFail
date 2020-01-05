@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var failButton: UIButton!
+    @IBOutlet weak var messagesButton: UIButton!
+    @IBOutlet weak var themeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,10 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func playSound(_ sender: Any) {
+    }
+    @IBAction func showMessageOptions(_ sender: Any) {
+    }
+    @IBAction func showThemeOptions(_ sender: Any) {
     }
     
     /*
