@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
         sound.playSound()
     }
     @IBAction func showMessageOptions(_ sender: Any) {
+        let controller = sideMenuController?.menuViewController as? SelectorViewController
+        controller?.sound = sound
         sideMenuController?.revealMenu()
     }
     @IBAction func showThemeOptions(_ sender: Any) {
