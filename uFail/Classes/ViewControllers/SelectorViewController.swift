@@ -10,6 +10,11 @@ import UIKit
 import SideMenuSwift
 class SelectorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SideMenuControllerDelegate {
     var sound: SoundHandler?
+    public enum types {
+        case messages
+        case themes
+    }
+    var type: types?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
@@ -25,10 +30,15 @@ class SelectorViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        print("DEBUG: SELECTOR: View Appeared")
+        debuggingVariables()
+    }
+    func debuggingVariables() {
         if sound != nil {
             print("DEBUG: SELECTOR: Sound Succesfull Passed")
         } else { print("DEBUG: SELECTOR: ERROR: Sound Did Not Pass") }
+        if type != nil {
+            print("DEBUG: SELECTOR: TYPE IS \(String(describing: type))")
+        } else { print("DEBUG: SELECTOR: TYPE IS NIL =(") }
     }
 
 }
