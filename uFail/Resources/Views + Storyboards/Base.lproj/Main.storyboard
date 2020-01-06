@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--iPhone Slide Table-->
+        <!--Selector View Controller-->
         <scene sceneID="8jg-Jt-wHF">
             <objects>
-                <viewController id="Rag-Mi-mLT" customClass="iPhoneSlideTable" customModule="uTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rag-Mi-mLT" customClass="SelectorViewController" customModule="uFail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fxh-DI-kcg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +142,7 @@
                                     <constraint firstAttribute="width" constant="260" id="fDJ-qW-LKq"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="arm-p8-DkK" customClass="TimerTableViewCell" customModule="uTime" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="arm-p8-DkK" customClass="TimerTableViewCell" customModule="uFail" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="260" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arm-p8-DkK" id="4vw-GS-OT1">

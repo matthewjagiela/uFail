@@ -34,6 +34,7 @@
 		2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362923C1C7C300F4726C /* GreenButton.png */; };
 		2E6A362C23C1C7CE00F4726C /* PurpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362B23C1C7CE00F4726C /* PurpleButton.png */; };
 		2E6A362E23C1C7D400F4726C /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362D23C1C7D400F4726C /* RedButton.png */; };
+		2E6A363023C2D20600F4726C /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A362F23C2D20600F4726C /* SelectorViewController.swift */; };
 		2E7045B723B922540043638F /* Theme_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7045B623B922540043638F /* Theme_Test.swift */; };
 		2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E79A87723B7C18D005271CC /* Saved_Data_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */; };
@@ -95,6 +96,7 @@
 		2E6A362923C1C7C300F4726C /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
 		2E6A362B23C1C7CE00F4726C /* PurpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleButton.png; sourceTree = "<group>"; };
 		2E6A362D23C1C7D400F4726C /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
+		2E6A362F23C2D20600F4726C /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		2E7045B623B922540043638F /* Theme_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme_Test.swift; sourceTree = "<group>"; };
 		2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saved_Data_Test.swift; sourceTree = "<group>"; };
 		2E89B3F823B56844001DEC49 /* DynamicTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				2E21886B23C1B60800E764E5 /* HomeViewController.swift */,
+				2E6A362F23C2D20600F4726C /* SelectorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				2E5F11E523B9A1A200832EDD /* SoundHandler.swift in Sources */,
 				2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */,
 				2EA01E7923B5608300B38C64 /* AppDelegate.swift in Sources */,
+				2E6A363023C2D20600F4726C /* SelectorViewController.swift in Sources */,
 				2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
