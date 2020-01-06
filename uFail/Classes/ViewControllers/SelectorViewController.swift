@@ -24,9 +24,9 @@ class SelectorViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
         
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         print("DEBUG: SELECTOR: View Appeared")
-        if let sound = sound {
+        if sound != nil {
             print("DEBUG: SELECTOR: Sound Succesfull Passed")
         } else { print("DEBUG: SELECTOR: ERROR: Sound Did Not Pass") }
     }

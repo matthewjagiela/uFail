@@ -18,15 +18,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
     }
     @IBAction func showMessageOptions(_ sender: Any) {
-        let controller = sideMenuController?.menuViewController as? SelectorViewController
-        controller?.sound = sound
         sideMenuController?.revealMenu()
     }
     @IBAction func showThemeOptions(_ sender: Any) {
@@ -43,4 +41,12 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+extension HomeViewController: SideMenuControllerDelegate {
+    func sideMenuControllerWillRevealMenu(_ sideMenuController: SideMenuController) {
+        print("DEBUG: HOME: PASSING SOUND NOW")
+        let controller = sideMenuController.menuViewController as? SelectorViewController
+        controller?.sound = sound
+    }
 }
