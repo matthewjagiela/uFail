@@ -11,6 +11,7 @@ import AVFoundation
 
 class SoundHandler: NSObject {
     var sound: Sound = .uFail
+     var player: AVAudioPlayer?
     public enum Sound {
         case airhorn
         case epicFail
@@ -27,7 +28,6 @@ class SoundHandler: NSObject {
         self.sound = sound
     }
     func playSound() {
-        var player: AVAudioPlayer?
         var path: String = ""
         var audioURL: URL?
         var fileName: String = ""
