@@ -9,6 +9,7 @@
 import UIKit
 import SideMenuSwift
 class SelectorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SideMenuControllerDelegate {
+    var sound: SoundHandler?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
@@ -22,6 +23,12 @@ class SelectorViewController: UIViewController, UITableViewDelegate, UITableView
 
         // Do any additional setup after loading the view.
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        print("DEBUG: SELECTOR: View Appeared")
+        if let sound = sound {
+            print("DEBUG: SELECTOR: Sound Succesfull Passed")
+        } else { print("DEBUG: SELECTOR: ERROR: Sound Did Not Pass") }
     }
 
 }
