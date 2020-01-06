@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var failButton: UIButton!
     @IBOutlet weak var messagesButton: UIButton!
     @IBOutlet weak var themeButton: UIButton!
+    let sound = SoundHandler()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +22,13 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func playSound(_ sender: Any) {
+        sound.playSound()
     }
     @IBAction func showMessageOptions(_ sender: Any) {
+        sideMenuController?.revealMenu()
     }
     @IBAction func showThemeOptions(_ sender: Any) {
+        sideMenuController?.revealMenu()
     }
     
     /*
