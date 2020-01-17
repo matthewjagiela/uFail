@@ -31,13 +31,18 @@ class InfoViewController: UIViewController {
         currentlyRunningVersion.adjustsFontSizeToFitWidth = true
         newestVersionAvailable.adjustsFontSizeToFitWidth = true
         failCountLabel.text = "Fail Count: \(iCloudHandler.getFailCount())"
+        uAppsNewsLabel.text = "Loading..."
+        newestVersionAvailable.text = "Loading..."
+        currentlyRunningVersion.text = info.getAppVersion()
         
         // Do any additional setup after loading the view.
     }
-    func internetLabels() {
-        uAppsNewsLabel.text = info.getuAppsnews()
-        currentlyRunningVersion.text = info.getAppVersion()
-        newestVersionAvailable.text = info.getuFailNewestVersion()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        info.labelsFilled { (info) in
+            self.uAppsNewsLabel.text = "uApps News: \(info.uAppsNews ?? "Thank You For Using uFail")"
+            self.newestVersionAvailable.text = "Newest Version: \(info.uFailVersion ?? "Unknown")"
+        }
     }
     // MARK: - Actions
     @IBAction func supportTapped(_ sender: Any) {
