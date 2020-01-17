@@ -10,6 +10,9 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var uFailPrivacyPolicy: UIButton!
+    @IBOutlet weak var downloaduTimeButton: UIButton!
+    @IBOutlet weak var downloaduSurfButton: UIButton!
     @IBOutlet weak var failCountLabel: UILabel!
     @IBOutlet weak var currentlyRunningVersion: UILabel!
     @IBOutlet weak var newestVersionAvailable: UILabel!
@@ -28,6 +31,12 @@ class InfoViewController: UIViewController {
     @IBAction func supportTapped(_ sender: Any) {
     }
     @IBAction func homeTapped(_ sender: Any) {
+    }
+    @IBAction func downloaduSurf(_ sender: Any) {
+    }
+    @IBAction func downloaduTime(_ sender: Any) {
+    }
+    @IBAction func viewuFailPrivacyPolicy(_ sender: Any) {
     }
     /*
     // MARK: - Navigation

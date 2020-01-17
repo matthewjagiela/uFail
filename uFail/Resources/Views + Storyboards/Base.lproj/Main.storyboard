@@ -157,10 +157,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-pN-VfP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Changes Will Go Here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-pN-VfP">
                                 <rect key="frame" x="20" y="56" width="374" height="368.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -190,6 +189,9 @@
                                 <state key="normal" title="Download uSurf">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="downloaduSurf:" destination="3cU-xj-4rC" eventType="touchUpInside" id="GAA-AR-ypb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcO-9G-XEe">
                                 <rect key="frame" x="10" y="480.66666666666669" width="394" height="40.000000000000057"/>
@@ -197,6 +199,9 @@
                                 <state key="normal" title="uFail Privacy Policy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="viewuFailPrivacyPolicy:" destination="3cU-xj-4rC" eventType="touchUpInside" id="0fx-e9-ZkJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMB-Pk-l3w">
                                 <rect key="frame" x="228" y="432.66666666666669" width="166" height="40"/>
@@ -204,6 +209,9 @@
                                 <state key="normal" title="Download uTime">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="downloaduTime:" destination="3cU-xj-4rC" eventType="touchUpInside" id="oqR-9M-EtF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -253,11 +261,14 @@
                         <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
                         <outlet property="copyrightLabel" destination="fjx-cb-sha" id="Lge-jv-Hot"/>
                         <outlet property="currentlyRunningVersion" destination="QPs-D4-Cx2" id="YYt-ta-B4h"/>
+                        <outlet property="downloaduSurfButton" destination="mDi-3s-Fi0" id="PqU-Lm-gJJ"/>
+                        <outlet property="downloaduTimeButton" destination="vMB-Pk-l3w" id="z9R-Hr-paX"/>
                         <outlet property="failCountLabel" destination="Nbv-lv-JOw" id="Ykf-b4-UeE"/>
                         <outlet property="homeButton" destination="pzi-0d-Jfu" id="lVV-Jr-gTF"/>
                         <outlet property="newestVersionAvailable" destination="NZR-66-pfv" id="umM-f9-LfX"/>
                         <outlet property="supportButton" destination="4mf-u8-cuh" id="Gbv-eC-yfw"/>
                         <outlet property="uAppsNewsLabel" destination="yRx-lg-HoD" id="hu1-eF-cpR"/>
+                        <outlet property="uFailPrivacyPolicy" destination="wcO-9G-XEe" id="Xf2-IX-L3f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2T-pC-0EQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
