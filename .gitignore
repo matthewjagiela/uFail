@@ -9,3 +9,4 @@ uFail.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 uFail.xcworkspace/xcuserdata/matthew.xcuserdatad/WorkspaceSettings.xcsettings
 uFail.xcworkspace/contents.xcworkspacedata
 Podfile.lock
+*.orig
