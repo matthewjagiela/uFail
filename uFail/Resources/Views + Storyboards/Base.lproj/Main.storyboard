@@ -139,9 +139,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-b8-97k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Info" id="5N7-bi-GjU">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="pzi-0d-Jfu">
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <connections>
+                                                <action selector="homeTapped:" destination="3cU-xj-4rC" id="wcS-s7-MsZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Support" id="4mf-u8-cuh">
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <connections>
+                                                <action selector="supportTapped:" destination="3cU-xj-4rC" id="SDQ-VG-mND"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="Pir-MO-sOc" secondAttribute="top" id="C1e-cZ-ST1"/>
                             <constraint firstItem="yRx-lg-HoD" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="DHx-Jh-YtI"/>
                             <constraint firstAttribute="bottom" secondItem="MXV-ZG-n0j" secondAttribute="bottom" id="GnP-3i-6O9"/>
                             <constraint firstItem="fjx-cb-sha" firstAttribute="top" secondItem="yRx-lg-HoD" secondAttribute="bottom" constant="8" id="LHr-1K-Nfv"/>
@@ -149,7 +170,9 @@
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="1WU-Ey-7B9" secondAttribute="top" id="Uwj-D1-gd8"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="yRx-lg-HoD" secondAttribute="trailing" constant="20" id="btJ-fj-gG9"/>
                             <constraint firstAttribute="trailing" secondItem="MXV-ZG-n0j" secondAttribute="trailing" id="fXh-Lx-Iwx"/>
+                            <constraint firstItem="MXV-ZG-n0j" firstAttribute="trailing" secondItem="Pir-MO-sOc" secondAttribute="trailing" id="jYU-un-ShR"/>
                             <constraint firstItem="fjx-cb-sha" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="mSw-3v-l7Z"/>
+                            <constraint firstItem="MXV-ZG-n0j" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" id="pwr-vk-9lv"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="fjx-cb-sha" secondAttribute="trailing" constant="20" id="z64-Rw-BM7"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="bottom" secondItem="fjx-cb-sha" secondAttribute="bottom" id="z6A-HN-t3k"/>
                         </constraints>
@@ -158,6 +181,8 @@
                     <connections>
                         <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
                         <outlet property="copyrightLabel" destination="fjx-cb-sha" id="Lge-jv-Hot"/>
+                        <outlet property="homeButton" destination="pzi-0d-Jfu" id="lVV-Jr-gTF"/>
+                        <outlet property="supportButton" destination="4mf-u8-cuh" id="Gbv-eC-yfw"/>
                         <outlet property="uAppsNewsLabel" destination="yRx-lg-HoD" id="hu1-eF-cpR"/>
                     </connections>
                 </viewController>
