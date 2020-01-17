@@ -11,11 +11,14 @@ import XCTest
 class App_Handler_Tests: XCTestCase {
     let handler = AppHandler()
     func test_newest_version() {
-        while handler.internetInfo?.uFailVersion == nil {
-            
+        handler.labelsFilled { (InternetInformation) in
+            XCTAssertNotNil(InternetInformation.uFailVersion)
         }
-        print("uFail Test: Handler Info NEWEST: \(handler.internetInfo?.uFailVersion)")
-        XCTAssertNotNil(handler.internetInfo?.uFailVersion)
+    }
+    func test_uApps_news() {
+        handler.labelsFilled { (info) in
+            XCTAssertNotNil(info.uAppsNews)
+        }
     }
 
 }
