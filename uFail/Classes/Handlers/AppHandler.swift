@@ -9,6 +9,7 @@
 import UIKit
 
 class AppHandler: NSObject {
+    lazy var count = 0
     @objc var internetInfo: InternetInformation?
     override init() {
         super.init()
@@ -55,9 +56,33 @@ class AppHandler: NSObject {
     @objc func getuAppsnews() -> String {
         return internetInfo?.uAppsNews ?? ""
     }
+    func labelsFilled(completion: @escaping(InternetInformation) -> Void) {
+        if let internetInformation = internetInfo {
+            completion(internetInformation)
+        } else {
+            let timer = Timer(timeInterval: 1.0, target: self, selector: #selector(isFilled), userInfo: nil, repeats: true)
+            if count > 5 && !isFilled() {
+                timer.invalidate()
+                print("ERROR: No JSON")
+            } else {
+                if let information = internetInfo {
+                    completion(information)
+                } else { print("ERROR") }
+            }
+        }
+    }
+    @objc func isFilled() -> Bool {
+        print("Called isFilled")
+        if internetInfo != nil {
+            return true
+        } else {
+            count += 1
+            return false
+            
+        }
+    }
     
 }
-
 open class InternetInformation: NSObject, Decodable {
     @objc public var uFailVersion: String?
     @objc public var uAppsNews: String?
