@@ -10,14 +10,13 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var copyrightLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
