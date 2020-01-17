@@ -10,6 +10,7 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var failCountLabel: UILabel!
     @IBOutlet weak var currentlyRunningVersion: UILabel!
     @IBOutlet weak var newestVersionAvailable: UILabel!
     @IBOutlet weak var supportButton: UIBarButtonItem!
