@@ -57,31 +57,11 @@ class AppHandler: NSObject {
         return internetInfo?.uAppsNews ?? ""
     }
     func labelsFilled(completion: @escaping(InternetInformation) -> Void) {
-        if let internetInformation = internetInfo {
-            completion(internetInformation)
-        } else {
-            let timer = Timer(timeInterval: 1.0, target: self, selector: #selector(isFilled), userInfo: nil, repeats: true)
-            if count > 5 && !isFilled() {
-                timer.invalidate()
-                print("ERROR: No JSON")
-            } else {
-                if let information = internetInfo {
-                    completion(information)
-                } else { print("ERROR") }
-            }
-        }
-    }
-    @objc func isFilled() -> Bool {
-        print("Called isFilled")
-        if internetInfo != nil {
-            return true
-        } else {
+        while internetInfo == nil && count < 1000 {
             count += 1
-            return false
-            
         }
+        completion(internetInfo ?? InternetInformation())
     }
-    
 }
 open class InternetInformation: NSObject, Decodable {
     @objc public var uFailVersion: String?
@@ -89,6 +69,9 @@ open class InternetInformation: NSObject, Decodable {
     enum CodingKeys: String, CodingKey {
         case uTimeVersion = "uFail_Version"
         case uAppsNews =  "uApps_News"
+    }
+    override init() {
+        super.init()
     }
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
