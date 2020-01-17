@@ -139,6 +139,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newest Version: 11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZR-66-pfv">
+                                <rect key="frame" x="20" y="608.66666666666663" width="374" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-b8-97k">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -159,16 +165,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Version: 11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPs-D4-Cx2">
+                                <rect key="frame" x="20" y="568.66666666666663" width="374" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="NZR-66-pfv" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="6Sg-gK-YZN"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="Pir-MO-sOc" secondAttribute="top" id="C1e-cZ-ST1"/>
                             <constraint firstItem="yRx-lg-HoD" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="DHx-Jh-YtI"/>
                             <constraint firstAttribute="bottom" secondItem="MXV-ZG-n0j" secondAttribute="bottom" id="GnP-3i-6O9"/>
                             <constraint firstItem="fjx-cb-sha" firstAttribute="top" secondItem="yRx-lg-HoD" secondAttribute="bottom" constant="8" id="LHr-1K-Nfv"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="leading" secondItem="1WU-Ey-7B9" secondAttribute="leading" id="Lk7-3B-ZEn"/>
+                            <constraint firstItem="yRx-lg-HoD" firstAttribute="top" secondItem="NZR-66-pfv" secondAttribute="bottom" constant="8" id="Pjv-aC-gyg"/>
+                            <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="NZR-66-pfv" secondAttribute="trailing" constant="20" id="Ril-QH-q7h"/>
+                            <constraint firstItem="NZR-66-pfv" firstAttribute="top" secondItem="QPs-D4-Cx2" secondAttribute="bottom" constant="8" id="TSs-Ou-KCm"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="1WU-Ey-7B9" secondAttribute="top" id="Uwj-D1-gd8"/>
+                            <constraint firstItem="QPs-D4-Cx2" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="aVN-Ne-oDe"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="yRx-lg-HoD" secondAttribute="trailing" constant="20" id="btJ-fj-gG9"/>
+                            <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="QPs-D4-Cx2" secondAttribute="trailing" constant="20" id="eiS-1A-kWE"/>
                             <constraint firstAttribute="trailing" secondItem="MXV-ZG-n0j" secondAttribute="trailing" id="fXh-Lx-Iwx"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="trailing" secondItem="Pir-MO-sOc" secondAttribute="trailing" id="jYU-un-ShR"/>
                             <constraint firstItem="fjx-cb-sha" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="mSw-3v-l7Z"/>
@@ -181,7 +199,9 @@
                     <connections>
                         <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
                         <outlet property="copyrightLabel" destination="fjx-cb-sha" id="Lge-jv-Hot"/>
+                        <outlet property="currentlyRunningVersion" destination="QPs-D4-Cx2" id="YYt-ta-B4h"/>
                         <outlet property="homeButton" destination="pzi-0d-Jfu" id="lVV-Jr-gTF"/>
+                        <outlet property="newestVersionAvailable" destination="NZR-66-pfv" id="umM-f9-LfX"/>
                         <outlet property="supportButton" destination="4mf-u8-cuh" id="Gbv-eC-yfw"/>
                         <outlet property="uAppsNewsLabel" destination="yRx-lg-HoD" id="hu1-eF-cpR"/>
                     </connections>

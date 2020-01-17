@@ -10,6 +10,8 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var currentlyRunningVersion: UILabel!
+    @IBOutlet weak var newestVersionAvailable: UILabel!
     @IBOutlet weak var supportButton: UIBarButtonItem!
     @IBOutlet weak var homeButton: UIBarButtonItem!
     @IBOutlet weak var uAppsNewsLabel: UILabel!
@@ -18,6 +20,8 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         uAppsNewsLabel.adjustsFontSizeToFitWidth = true
+        currentlyRunningVersion.adjustsFontSizeToFitWidth = true
+        newestVersionAvailable.adjustsFontSizeToFitWidth = true
         // Do any additional setup after loading the view.
     }
     @IBAction func supportTapped(_ sender: Any) {
