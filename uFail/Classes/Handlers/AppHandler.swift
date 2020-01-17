@@ -57,8 +57,8 @@ class AppHandler: NSObject {
         return internetInfo?.uAppsNews ?? ""
     }
     func labelsFilled(completion: @escaping(InternetInformation) -> Void) {
-        while internetInfo == nil && count < 1000 {
-            count += 1
+        while internetInfo == nil {
+            
         }
         completion(internetInfo ?? InternetInformation())
     }
