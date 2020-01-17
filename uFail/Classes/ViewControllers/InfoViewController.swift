@@ -30,7 +30,14 @@ class InfoViewController: UIViewController {
         uAppsNewsLabel.adjustsFontSizeToFitWidth = true
         currentlyRunningVersion.adjustsFontSizeToFitWidth = true
         newestVersionAvailable.adjustsFontSizeToFitWidth = true
+        failCountLabel.text = "Fail Count: \(iCloudHandler.getFailCount())"
+        
         // Do any additional setup after loading the view.
+    }
+    func internetLabels() {
+        uAppsNewsLabel.text = info.getuAppsnews()
+        currentlyRunningVersion.text = info.getAppVersion()
+        newestVersionAvailable.text = info.getuFailNewestVersion()
     }
     // MARK: - Actions
     @IBAction func supportTapped(_ sender: Any) {
