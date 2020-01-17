@@ -123,13 +123,27 @@
                     <view key="view" contentMode="scaleToFill" id="1WU-Ey-7B9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-ZG-n0j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MXV-ZG-n0j" secondAttribute="bottom" id="GnP-3i-6O9"/>
+                            <constraint firstItem="MXV-ZG-n0j" firstAttribute="leading" secondItem="1WU-Ey-7B9" secondAttribute="leading" id="Lk7-3B-ZEn"/>
+                            <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="1WU-Ey-7B9" secondAttribute="top" id="Uwj-D1-gd8"/>
+                            <constraint firstAttribute="trailing" secondItem="MXV-ZG-n0j" secondAttribute="trailing" id="fXh-Lx-Iwx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pir-MO-sOc"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2T-pC-0EQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="116"/>
+            <point key="canvasLocation" x="937.68115942028987" y="115.7608695652174"/>
         </scene>
         <!--iPhone Slide Table-->
         <scene sceneID="8jg-Jt-wHF">

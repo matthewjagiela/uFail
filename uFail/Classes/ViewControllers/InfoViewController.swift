@@ -10,6 +10,7 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
