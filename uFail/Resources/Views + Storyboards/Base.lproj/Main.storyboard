@@ -133,12 +133,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uApps News: Thank You All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRx-lg-HoD">
+                                <rect key="frame" x="20" y="648.66666666666663" width="374" height="31.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="yRx-lg-HoD" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="DHx-Jh-YtI"/>
                             <constraint firstAttribute="bottom" secondItem="MXV-ZG-n0j" secondAttribute="bottom" id="GnP-3i-6O9"/>
+                            <constraint firstItem="fjx-cb-sha" firstAttribute="top" secondItem="yRx-lg-HoD" secondAttribute="bottom" constant="8" id="LHr-1K-Nfv"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="leading" secondItem="1WU-Ey-7B9" secondAttribute="leading" id="Lk7-3B-ZEn"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="1WU-Ey-7B9" secondAttribute="top" id="Uwj-D1-gd8"/>
+                            <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="yRx-lg-HoD" secondAttribute="trailing" constant="20" id="btJ-fj-gG9"/>
                             <constraint firstAttribute="trailing" secondItem="MXV-ZG-n0j" secondAttribute="trailing" id="fXh-Lx-Iwx"/>
                             <constraint firstItem="fjx-cb-sha" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="mSw-3v-l7Z"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="fjx-cb-sha" secondAttribute="trailing" constant="20" id="z64-Rw-BM7"/>
@@ -149,6 +158,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
                         <outlet property="copyrightLabel" destination="fjx-cb-sha" id="Lge-jv-Hot"/>
+                        <outlet property="uAppsNewsLabel" destination="yRx-lg-HoD" id="hu1-eF-cpR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2T-pC-0EQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
