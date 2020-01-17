@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E16227823BDB01500E5A533 /* Sound_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16227723BDB01500E5A533 /* Sound_Test.swift */; };
 		2E16227923BDB02C00E5A533 /* SoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11E423B9A1A200832EDD /* SoundHandler.swift */; };
+		2E191D6D23D141E9007E35C2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E191D6C23D141E9007E35C2 /* InfoViewController.swift */; };
 		2E21886C23C1B60800E764E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21886B23C1B60800E764E5 /* HomeViewController.swift */; };
 		2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
@@ -72,6 +73,7 @@
 		1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
 		29980311673685491513F0D1 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E16227723BDB01500E5A533 /* Sound_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound_Test.swift; sourceTree = "<group>"; };
+		2E191D6C23D141E9007E35C2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		2E21886B23C1B60800E764E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		2E54D05523B6FED40051A693 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				2E21886B23C1B60800E764E5 /* HomeViewController.swift */,
+				2E191D6C23D141E9007E35C2 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */,
 				2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */,
 				2E21886C23C1B60800E764E5 /* HomeViewController.swift in Sources */,
+				2E191D6D23D141E9007E35C2 /* InfoViewController.swift in Sources */,
 				2E5F11E523B9A1A200832EDD /* SoundHandler.swift in Sources */,
 				2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */,
 				2EA01E7923B5608300B38C64 /* AppDelegate.swift in Sources */,
