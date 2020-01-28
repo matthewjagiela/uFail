@@ -8,9 +8,10 @@
 
 import UIKit
 import SafariServices
-
+import GoogleMobileAds
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var bannerAd: GADBannerView!
     @IBOutlet weak var uFailPrivacyPolicy: UIButton!
     @IBOutlet weak var downloaduTimeButton: UIButton!
     @IBOutlet weak var downloaduSurfButton: UIButton!
@@ -34,6 +35,9 @@ class InfoViewController: UIViewController {
         uAppsNewsLabel.text = "Loading..."
         newestVersionAvailable.text = "Loading..."
         currentlyRunningVersion.text = info.getAppVersion()
+        bannerAd.adUnitID = "ca-app-pub-7714978111013265/9368677969"
+        bannerAd.rootViewController = self
+        bannerAd.load(GADRequest())
         
         // Do any additional setup after loading the view.
     }
