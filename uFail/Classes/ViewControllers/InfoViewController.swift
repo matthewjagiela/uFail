@@ -56,8 +56,13 @@ class InfoViewController: UIViewController {
         }
     }
     @IBAction func homeTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func downloaduSurf(_ sender: Any) {
+        if let url = URL(string: "https://itunes.apple.com/us/app/usurf-universal/id953898887?ls=1&mt=8") {
+            UIApplication.shared.openURL(url)
+        }
+        
     }
     @IBAction func downloaduTime(_ sender: Any) {
     }
