@@ -65,6 +65,9 @@ class InfoViewController: UIViewController {
         
     }
     @IBAction func downloaduTime(_ sender: Any) {
+        if let url = URL(string: "https://apps.apple.com/us/app/utime-universal/id1125889944?ls=1") {
+            UIApplication.shared.openURL(url)
+        }
     }
     @IBAction func viewuFailPrivacyPolicy(_ sender: Any) {
         if let url = URL(string: "https://uappsios.com/ufail-privacy-policy") {
