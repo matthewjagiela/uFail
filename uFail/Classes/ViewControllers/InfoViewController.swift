@@ -43,12 +43,27 @@ class InfoViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if #available(iOS 13, *) {
+            
+        } else { UIApplication.shared.statusBarView?.backgroundColor = .white }
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         info.labelsFilled { (info) in
             self.uAppsNewsLabel.text = "uApps News: \(info.uAppsNews ?? "Thank You For Using uFail")"
             self.newestVersionAvailable.text = "Newest Version: \(info.uFailVersion ?? "Unknown")"
         }
+        UIView.animate(withDuration: 0.1) {
+            self.changesView.contentOffset = .zero
+        }
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        if #available(iOS 13, *) {
+            
+        } else { UIApplication.shared.statusBarView?.backgroundColor = .clear }
     }
     // MARK: - Actions
     @IBAction func supportTapped(_ sender: Any) {
@@ -87,4 +102,13 @@ class InfoViewController: UIViewController {
     }
     */
 
+}
+
+extension UIApplication {
+    var statusBarView: UIView? {
+        if responds(to: Selector(("statusBar"))) {
+            return value(forKey: "statusBar") as? UIView
+        }
+        return nil
+    }
 }
