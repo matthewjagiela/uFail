@@ -268,6 +268,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
                         <outlet property="bannerAd" destination="06e-BH-SzC" id="TYQ-Jk-Xig"/>
+                        <outlet property="changesView" destination="7Aj-pN-VfP" id="pFp-gF-ldM"/>
                         <outlet property="copyrightLabel" destination="fjx-cb-sha" id="Lge-jv-Hot"/>
                         <outlet property="currentlyRunningVersion" destination="QPs-D4-Cx2" id="YYt-ta-B4h"/>
                         <outlet property="downloaduSurfButton" destination="mDi-3s-Fi0" id="PqU-Lm-gJJ"/>

@@ -23,6 +23,7 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var uAppsNewsLabel: UILabel!
     @IBOutlet weak var copyrightLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var changesView: UITextView!
     // MARK: - Class Variables
     let info = AppHandler()
     // MARK: - Methods
@@ -35,6 +36,7 @@ class InfoViewController: UIViewController {
         uAppsNewsLabel.text = "Loading..."
         newestVersionAvailable.text = "Loading..."
         currentlyRunningVersion.text = info.getAppVersion()
+        changesView.text = info.changes()
         bannerAd.adUnitID = "ca-app-pub-7714978111013265/9368677969"
         bannerAd.rootViewController = self
         bannerAd.load(GADRequest())
