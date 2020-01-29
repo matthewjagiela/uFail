@@ -4,6 +4,9 @@ What's New:
 - This will be the last update to uFail as it is becomming completely autonomous. That means theme changes happen automatically depending on time.
 - Redesign in swift: every part of the app has been redone in swift to ensure longevity and to squash bugs.
 - Side Menu Selection: selecting themes and messages will open a slide-over view to allow you to chose your theme or sound.
+- Can now be used in slide-over on iPad
+- Improved handling of internet labels so there should no longer be any unavailable labels.
+
 10.6.1:
 - Various bug fixes.
 10.6:
