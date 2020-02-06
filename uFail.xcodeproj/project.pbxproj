@@ -13,6 +13,7 @@
 		2E16227923BDB02C00E5A533 /* SoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11E423B9A1A200832EDD /* SoundHandler.swift */; };
 		2E191D6D23D141E9007E35C2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E191D6C23D141E9007E35C2 /* InfoViewController.swift */; };
 		2E21886C23C1B60800E764E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21886B23C1B60800E764E5 /* HomeViewController.swift */; };
+		2E2EF99723EBA389008FF7CC /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EF99623EBA389008FF7CC /* MessagesTableViewCell.swift */; };
 		2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
 		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
 		2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
@@ -79,6 +80,7 @@
 		2E16227723BDB01500E5A533 /* Sound_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound_Test.swift; sourceTree = "<group>"; };
 		2E191D6C23D141E9007E35C2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		2E21886B23C1B60800E764E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2E2EF99623EBA389008FF7CC /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessagesTableViewCell.swift; path = uFailTests/MessagesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		2E54D05523B6FED40051A693 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		2E5F11C523B8514700832EDD /* DeviceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHandler.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 		2EA01EAB23B561AA00B38C64 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2E2EF99623EBA389008FF7CC /* MessagesTableViewCell.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */,
+				2E2EF99723EBA389008FF7CC /* MessagesTableViewCell.swift in Sources */,
 				2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */,
 				2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */,
 				2E21886C23C1B60800E764E5 /* HomeViewController.swift in Sources */,

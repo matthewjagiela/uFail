@@ -64,4 +64,11 @@ class SoundHandler: NSObject {
         
     }
     
+    func numberOfSounds() -> Int {
+        return listOfSounds().count
+    }
+    func listOfSounds() -> [String] {
+        return ["uFail", "Air Horn", "Epic Fail","Fail", "Failure", "Noob", "Pwned", "So Many Friends", "Win"]
+    }
+    
 }

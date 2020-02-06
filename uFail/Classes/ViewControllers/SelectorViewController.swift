@@ -26,7 +26,6 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         debuggingVariables()
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -50,11 +49,18 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
 }
 extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        switch type {
+        case .messages:
+            return sound?.numberOfSounds() ?? 0
+        default:
+            return 1
+        }
     }
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = MessagesTableViewCell()
         return cell
     }
 }
