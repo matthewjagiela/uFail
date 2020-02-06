@@ -8,20 +8,15 @@
 
 import UIKit
 import SideMenuSwift
-class SelectorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SideMenuControllerDelegate {
+class SelectorViewController: UIViewController, SideMenuControllerDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
     var sound: SoundHandler?
     public enum types {
         case messages
         case themes
     }
     var type: types?
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +26,17 @@ class SelectorViewController: UIViewController, UITableViewDelegate, UITableView
     }
     override func viewDidAppear(_ animated: Bool) {
         debuggingVariables()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        //Set the navigation title:
+        switch type {
+        case .messages:
+            navigationBar.topItem?.title = "Messages"
+        default:
+            navigationBar.topItem?.title = "Themes"
+        }
     }
     func debuggingVariables() {
         if sound != nil {
@@ -41,4 +47,14 @@ class SelectorViewController: UIViewController, UITableViewDelegate, UITableView
         } else { print("DEBUG: SELECTOR: TYPE IS NIL =(") }
     }
 
+}
+extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        return cell
+    }
 }

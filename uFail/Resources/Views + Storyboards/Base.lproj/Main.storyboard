@@ -350,6 +350,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nme-IW-bao"/>
                     </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="hhD-0o-Ppo" id="Az6-jL-KXp"/>
+                        <outlet property="tableView" destination="vYe-A5-gqS" id="4Zu-CM-Gee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGS-Cn-1NY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
