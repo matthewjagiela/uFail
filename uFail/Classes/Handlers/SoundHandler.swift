@@ -68,7 +68,7 @@ class SoundHandler: NSObject {
         return listOfSounds().count
     }
     func listOfSounds() -> [String] {
-        return ["uFail", "Air Horn", "Epic Fail","Fail", "Failure", "Noob", "Pwned", "So Many Friends", "Win"]
+        return ["uFail", "Air Horn", "Epic Fail", "Fail", "Failure", "Noob", "Pwned", "So Many Friends", "Win"]
     }
     
 }

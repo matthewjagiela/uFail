@@ -288,7 +288,7 @@
         <!--Selector View Controller-->
         <scene sceneID="8jg-Jt-wHF">
             <objects>
-                <viewController id="Rag-Mi-mLT" customClass="SelectorViewController" customModule="uFail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Rag-Mi-mLT" customClass="SelectorViewController" customModule="uFail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fxh-DI-kcg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,10 +311,10 @@
                                     <constraint firstAttribute="width" constant="260" id="fDJ-qW-LKq"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="arm-p8-DkK" customClass="TimerTableViewCell" customModule="uFail" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dynamicCell" rowHeight="99" id="arm-p8-DkK" customClass="DynamicTableViewCell" customModule="uFail" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="260" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arm-p8-DkK" id="4vw-GS-OT1">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arm-p8-DkK" id="4vw-GS-OT1" customClass="DynamicTableViewCell" customModule="uFail" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -325,16 +325,31 @@
                                                         <constraint firstAttribute="height" constant="1" id="Ifo-Kp-GqY"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMo-n8-GCm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="99"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sw-GS-Knw">
+                                                    <rect key="frame" x="16" y="29" width="228" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MXp-3J-XXO" firstAttribute="leading" secondItem="4vw-GS-OT1" secondAttribute="leading" id="D6g-Sb-zzK"/>
+                                                <constraint firstAttribute="trailing" secondItem="tMo-n8-GCm" secondAttribute="trailing" id="FQ5-Hf-xBH"/>
                                                 <constraint firstAttribute="bottom" secondItem="MXp-3J-XXO" secondAttribute="bottom" id="IwO-jW-2bd"/>
+                                                <constraint firstItem="tMo-n8-GCm" firstAttribute="top" secondItem="4vw-GS-OT1" secondAttribute="top" id="Rjl-tA-qb1"/>
+                                                <constraint firstItem="tMo-n8-GCm" firstAttribute="leading" secondItem="4vw-GS-OT1" secondAttribute="leading" id="S32-R4-0BU"/>
                                                 <constraint firstAttribute="trailing" secondItem="MXp-3J-XXO" secondAttribute="trailing" id="qiL-o9-ypd"/>
+                                                <constraint firstAttribute="bottom" secondItem="tMo-n8-GCm" secondAttribute="bottom" id="tqK-BG-oNK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="borderView" destination="MXp-3J-XXO" id="pv4-NK-kNL"/>
+                                            <outlet property="messageName" destination="8Sw-GS-Knw" id="oq7-Bn-W4A"/>
+                                            <outlet property="themeImage" destination="tMo-n8-GCm" id="1Tc-nj-cHR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -357,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGS-Cn-1NY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-943.20000000000005" y="834.33283358320841"/>
+            <point key="canvasLocation" x="-943.47826086956525" y="833.96739130434787"/>
         </scene>
     </scenes>
     <resources>

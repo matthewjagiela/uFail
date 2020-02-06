@@ -11,6 +11,7 @@ import SideMenuSwift
 class SelectorViewController: UIViewController, SideMenuControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBar: UINavigationBar!
+    lazy var soundList = [String]()
     var sound: SoundHandler?
     public enum types {
         case messages
@@ -25,19 +26,22 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        debuggingVariables()
+        //debuggingVariables()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         //Set the navigation title:
         switch type {
         case .messages:
+            soundList = sound?.listOfSounds() ?? ["Error"]
             navigationBar.topItem?.title = "Messages"
         default:
             navigationBar.topItem?.title = "Themes"
         }
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 99
+        tableView.reloadData()
     }
     func debuggingVariables() {
         if sound != nil {
@@ -62,7 +66,14 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = MessagesTableViewCell()
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dynamicCell") as? DynamicTableViewCell
+        cell?.messageName?.text = ""
+        switch type {
+        case .messages:
+            cell?.messageName?.text = soundList[indexPath.row]
+        default:
+            return UITableViewCell()
+        }
+        return cell ?? UITableViewCell()
     }
 }

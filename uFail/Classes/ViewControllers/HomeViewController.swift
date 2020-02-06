@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
     @IBAction func showMessageOptions(_ sender: Any) {
         let controller = sideMenuController?.menuViewController as? SelectorViewController
         controller?.type = .messages
+        controller?.sound = sound
         sideMenuController?.revealMenu()
     }
     @IBAction func showThemeOptions(_ sender: Any) {
@@ -50,6 +51,5 @@ extension HomeViewController: SideMenuControllerDelegate {
     func sideMenuControllerWillRevealMenu(_ sideMenuController: SideMenuController) {
         let controller = sideMenuController.menuViewController as? SelectorViewController
         if controller?.type == nil { controller?.type = .messages }
-        controller?.sound = sound
     }
 }

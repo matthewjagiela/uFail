@@ -8,9 +8,11 @@
 
 import UIKit
 
-class MessagesTableViewCell: UITableViewCell {
+class DynamicTableViewCell: UITableViewCell {
 
-    @IBOutlet var messageName: UILabel?
+    @IBOutlet weak var themeImage: UIImageView?
+    @IBOutlet weak var messageName: UILabel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
