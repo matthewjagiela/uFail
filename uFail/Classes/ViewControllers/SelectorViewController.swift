@@ -35,12 +35,13 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
         case .messages:
             soundList = sound?.listOfSounds() ?? ["Error"]
             navigationBar.topItem?.title = "Messages"
+            tableView.rowHeight = 100
         default:
+            tableView.rowHeight = 130
             navigationBar.topItem?.title = "Themes"
         }
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 99
         tableView.reloadData()
     }
     func debuggingVariables() {
@@ -58,6 +59,8 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         switch type {
         case .messages:
             return sound?.numberOfSounds() ?? 0
+        case .themes:
+            return ThemeHandler.numberOfThemes()
         default:
             return 1
         }
@@ -68,11 +71,12 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dynamicCell") as? DynamicTableViewCell
         cell?.messageName?.text = ""
+        cell?.themeImage?.image = UIImage()
         switch type {
         case .messages:
             cell?.messageName?.text = soundList[indexPath.row]
         case .themes:
-            cell?.backgroundColor = .yellow
+            cell?.themeImage?.image = ThemeHandler.getThemePreview()[indexPath.row]
         default:
             return UITableViewCell()
         }
