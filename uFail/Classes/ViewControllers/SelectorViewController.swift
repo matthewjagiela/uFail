@@ -36,6 +36,8 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
         default:
             navigationBar.topItem?.title = "Themes"
         }
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     func debuggingVariables() {
         if sound != nil {
