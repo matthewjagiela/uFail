@@ -71,6 +71,8 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         switch type {
         case .messages:
             cell?.messageName?.text = soundList[indexPath.row]
+        case .themes:
+            cell?.backgroundColor = .yellow
         default:
             return UITableViewCell()
         }

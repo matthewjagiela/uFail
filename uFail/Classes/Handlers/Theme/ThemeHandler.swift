@@ -13,6 +13,7 @@ class ThemeHandler: NSObject {
     var theme: Theme?
     let deviceHandler = DeviceHandler()
     var device: DeviceHandler.Device!
+    var previewedTheme: Theme?
     enum Theme {
         case blue
         case green
@@ -53,6 +54,18 @@ class ThemeHandler: NSObject {
         }
         return UIImage()
     }
+    static func getPreviewImage(_ theme: Theme) -> UIImage {
+        switch theme {
+        case .blue:
+            return UIImage(named: "blueBG.png") ?? UIImage()
+        case .green:
+            return UIImage(named: "greenBG.png") ?? UIImage()
+        case .red:
+            return UIImage(named: "redBG.png") ?? UIImage()
+        default: //purple
+            return UIImage(named: "purpleBG.png") ?? UIImage()
+        }
+    }
     func getFailButton() -> UIImage {
         if theme != .dynamic {
             switch theme {
@@ -69,5 +82,12 @@ class ThemeHandler: NSObject {
             
         }
         return UIImage()
+    }
+    static func numberOfThemes() -> Int {
+        return getThemePreview().count
+    }
+    static func getThemePreview() -> [UIImage] {
+        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.red), getPreviewImage(.green), getPreviewImage(.purple)]
+        return themePreviews
     }
 }
