@@ -13,6 +13,7 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
     @IBOutlet weak var navigationBar: UINavigationBar!
     lazy var soundList = [String]()
     var sound: SoundHandler?
+    var theme: ThemeHandler?
     public enum types {
         case messages
         case themes
@@ -60,7 +61,7 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         case .messages:
             return sound?.numberOfSounds() ?? 0
         case .themes:
-            return ThemeHandler.numberOfThemes()
+            return theme?.numberOfThemes() ?? 0
         default:
             return 1
         }
@@ -76,7 +77,7 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         case .messages:
             cell?.messageName?.text = soundList[indexPath.row]
         case .themes:
-            cell?.themeImage?.image = ThemeHandler.getThemePreview()[indexPath.row]
+            cell?.themeImage?.image = theme?.getThemePreview()[indexPath.row] ?? UIImage()
         default:
             return UITableViewCell()
         }
@@ -86,6 +87,8 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         if self.type == .some(.messages) {
             sound?.selectSound(sound?.listOfSoundObjects()[indexPath.row] ?? SoundHandler.Sound.uFail)
             sideMenuController?.hideMenu()
-        } else {}
+        } else {
+            theme?.setTheme(theme?.themeObjects()[indexPath.row] ?? ThemeHandler.Theme.blue)
+        }
     }
 }

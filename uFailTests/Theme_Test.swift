@@ -38,4 +38,10 @@ class Theme_Test: XCTestCase {
         let theme = ThemeHandler()
         XCTAssertNotEqual(testImage, theme.getFailButton())
     }
+    func test_theme_selection() {
+        let testTheme = ThemeHandler.Theme.blue
+        let theme = ThemeHandler()
+        theme.setTheme(.blue)
+        XCTAssertEqual(testTheme, theme.theme)
+    }
 }

@@ -15,10 +15,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var messagesButton: UIButton!
     @IBOutlet weak var themeButton: UIButton!
     let sound = SoundHandler()
+    let theme = ThemeHandler()
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
+        refreshView()
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
@@ -32,9 +34,13 @@ class HomeViewController: UIViewController {
     @IBAction func showThemeOptions(_ sender: Any) {
         let controller = sideMenuController?.menuViewController as? SelectorViewController
         controller?.type = .themes
+        controller?.theme = theme
         sideMenuController?.revealMenu()
     }
-    
+    func refreshView() {
+        self.backgroundImage.image = theme.getBackgroundImage()
+        self.failButton.imageView?.image = theme.getFailButton()
+    }
     /*
     // MARK: - Navigation
 
