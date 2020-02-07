@@ -13,7 +13,6 @@ class ThemeHandler: NSObject {
     var theme: Theme?
     let deviceHandler = DeviceHandler()
     var device: DeviceHandler.Device!
-    var previewedTheme: Theme?
     enum Theme {
         case blue
         case green
@@ -99,9 +98,6 @@ class ThemeHandler: NSObject {
             
         }
         return UIImage()
-    }
-    func numberOfThemes() -> Int {
-        return getThemePreview().count
     }
     func getThemePreview() -> [UIImage] {
         let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple)]

@@ -59,9 +59,9 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch type {
         case .messages:
-            return sound?.numberOfSounds() ?? 0
+            return sound?.listOfSounds().count ?? 0
         case .themes:
-            return theme?.numberOfThemes() ?? 0
+            return theme?.getThemePreview().count ?? 0
         default:
             return 1
         }
