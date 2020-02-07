@@ -295,7 +295,6 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-0o-Ppo">
                                 <rect key="frame" x="0.0" y="0.0" width="260" height="88"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="JmL-yh-hcv"/>
                                     <constraint firstAttribute="height" constant="88" id="XJQ-bF-cyU"/>
