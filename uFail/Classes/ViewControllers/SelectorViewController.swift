@@ -82,4 +82,10 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell ?? UITableViewCell()
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.type == .some(.messages) {
+            sound?.selectSound(sound?.listOfSoundObjects()[indexPath.row] ?? SoundHandler.Sound.uFail)
+            sideMenuController?.hideMenu()
+        } else {}
+    }
 }
