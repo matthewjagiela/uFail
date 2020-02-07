@@ -44,4 +44,21 @@ class Theme_Test: XCTestCase {
         theme.setTheme(.blue)
         XCTAssertEqual(testTheme, theme.theme)
     }
+    func test_number_of_themes() {
+        let theme = ThemeHandler()
+        // TODO: Change to 5 when dynamic theme is complete
+        XCTAssertEqual(theme.getThemePreview().count, 4)
+    }
+    func test_setting_theme() {
+        // TODO: Add Dynamic Theme
+        let theme = ThemeHandler()
+        theme.setTheme(.blue)
+        XCTAssertEqual(ThemeHandler.Theme.blue, theme.theme)
+        theme.setTheme(.green)
+        XCTAssertEqual(ThemeHandler.Theme.green, theme.theme)
+        theme.setTheme(.red)
+        XCTAssertEqual(ThemeHandler.Theme.red, theme.theme)
+        theme.setTheme(.purple)
+        XCTAssertEqual(ThemeHandler.Theme.purple, theme.theme)
+    }
 }
