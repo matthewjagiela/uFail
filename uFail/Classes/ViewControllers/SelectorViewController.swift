@@ -89,6 +89,8 @@ extension SelectorViewController: UITableViewDelegate, UITableViewDataSource {
             sideMenuController?.hideMenu()
         } else {
             theme?.setTheme(theme?.themeObjects()[indexPath.row] ?? ThemeHandler.Theme.blue)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshView"), object: nil)
+            sideMenuController?.hideMenu()
         }
     }
 }

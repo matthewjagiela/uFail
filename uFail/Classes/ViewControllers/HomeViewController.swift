@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
-        refreshView()
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
@@ -37,9 +37,9 @@ class HomeViewController: UIViewController {
         controller?.theme = theme
         sideMenuController?.revealMenu()
     }
-    func refreshView() {
+    @objc func refreshView() {
         self.backgroundImage.image = theme.getBackgroundImage()
-        self.failButton.imageView?.image = theme.getFailButton()
+        self.failButton.setImage(theme.getFailButton(), for: .normal)
     }
     /*
     // MARK: - Navigation

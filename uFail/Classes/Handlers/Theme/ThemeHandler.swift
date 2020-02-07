@@ -104,7 +104,7 @@ class ThemeHandler: NSObject {
         return getThemePreview().count
     }
     func getThemePreview() -> [UIImage] {
-        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.red), getPreviewImage(.green), getPreviewImage(.purple)]
+        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple)]
         return themePreviews
     }
     func themeObjects() -> [Theme] {
