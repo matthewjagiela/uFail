@@ -9,5 +9,10 @@
 import UIKit
 import XCTest
 class Sound_Test: XCTestCase {
+    
+    func test_number_of_sounds() {
+        let sound = SoundHandler()
+        XCTAssertEqual(sound.listOfSounds().count, 9)
+    }
 
 }

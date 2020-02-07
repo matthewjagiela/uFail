@@ -63,5 +63,11 @@ class SoundHandler: NSObject {
         }
         
     }
+    func listOfSounds() -> [String] {
+        return ["uFail", "Air Horn", "Epic Fail", "Fail", "Failure", "Noob", "Pwned", "So Many Friends", "Win"]
+    }
+    func listOfSoundObjects() -> [Sound] {
+        return [.uFail, .airhorn, .epicFail, .fail, .failure, .noob, .pwned, .soManyFriends, .win]
+    }
     
 }

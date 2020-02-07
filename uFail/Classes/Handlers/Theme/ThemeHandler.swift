@@ -36,6 +36,21 @@ class ThemeHandler: NSObject {
             theme = .dynamic
         }
     }
+    func setTheme(_ theme: Theme) {
+        self.theme = theme
+        switch theme {
+        case .blue:
+            data.saveTheme(theme: "blue")
+        case .red:
+            data.saveTheme(theme: "red")
+        case .green:
+            data.saveTheme(theme: "green")
+        case .purple:
+            data.saveTheme(theme: "purple")
+        default:
+            data.saveTheme(theme: "dyanmic")
+        }
+    }
     func getBackgroundImage() -> UIImage {
         if theme != .dynamic {
             switch theme {
@@ -53,6 +68,20 @@ class ThemeHandler: NSObject {
         }
         return UIImage()
     }
+    func getPreviewImage(_ theme: Theme) -> UIImage {
+        switch theme {
+        case .blue:
+            return UIImage(named: "blueBG.png") ?? UIImage()
+        case .green:
+            return UIImage(named: "greenBG.png") ?? UIImage()
+        case .red:
+            return UIImage(named: "redBG.png") ?? UIImage()
+        case .purple:
+            return UIImage(named: "purpleBG") ?? UIImage()
+        default: //dynamic
+            return UIImage()
+        }
+    }
     func getFailButton() -> UIImage {
         if theme != .dynamic {
             switch theme {
@@ -69,5 +98,12 @@ class ThemeHandler: NSObject {
             
         }
         return UIImage()
+    }
+    func getThemePreview() -> [UIImage] {
+        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple)]
+        return themePreviews
+    }
+    func themeObjects() -> [Theme] {
+        return [.blue, .green, .red, .purple]
     }
 }

@@ -15,22 +15,32 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var messagesButton: UIButton!
     @IBOutlet weak var themeButton: UIButton!
     let sound = SoundHandler()
-    
+    let theme = ThemeHandler()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
     }
     @IBAction func showMessageOptions(_ sender: Any) {
+        let controller = sideMenuController?.menuViewController as? SelectorViewController
+        controller?.type = .messages
+        controller?.sound = sound
         sideMenuController?.revealMenu()
     }
     @IBAction func showThemeOptions(_ sender: Any) {
+        let controller = sideMenuController?.menuViewController as? SelectorViewController
+        controller?.type = .themes
+        controller?.theme = theme
         sideMenuController?.revealMenu()
     }
-    
+    @objc func refreshView() {
+        self.backgroundImage.image = theme.getBackgroundImage()
+        self.failButton.setImage(theme.getFailButton(), for: .normal)
+    }
     /*
     // MARK: - Navigation
 
@@ -41,4 +51,11 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+extension HomeViewController: SideMenuControllerDelegate {
+    func sideMenuControllerWillRevealMenu(_ sideMenuController: SideMenuController) {
+        let controller = sideMenuController.menuViewController as? SelectorViewController
+        if controller?.type == nil { controller?.type = .messages }
+    }
 }
