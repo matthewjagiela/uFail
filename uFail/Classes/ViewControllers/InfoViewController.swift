@@ -26,9 +26,11 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var changesView: UITextView!
     // MARK: - Class Variables
     let info = AppHandler()
+    let theme = ThemeHandler()
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundImage.image = theme.getBackgroundImage()
         uAppsNewsLabel.adjustsFontSizeToFitWidth = true
         currentlyRunningVersion.adjustsFontSizeToFitWidth = true
         newestVersionAvailable.adjustsFontSizeToFitWidth = true
