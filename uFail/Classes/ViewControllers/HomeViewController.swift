@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
+        refreshView()
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
