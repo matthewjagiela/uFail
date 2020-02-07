@@ -61,4 +61,12 @@ class Theme_Test: XCTestCase {
         theme.setTheme(.purple)
         XCTAssertEqual(ThemeHandler.Theme.purple, theme.theme)
     }
+    func test_theme_index() {
+        let theme = ThemeHandler()
+        let themeObjects = theme.themeObjects()
+        let themePreviews = theme.getThemePreview()
+        for (index, object) in themeObjects.enumerated() {
+            XCTAssertEqual(theme.getPreviewImage(object), themePreviews[index])
+        }
+    }
 }
