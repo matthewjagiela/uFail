@@ -33,7 +33,8 @@ class ThemeHandler: NSObject {
         case "purple":
             theme = .purple
         default:
-            theme = .dynamic
+            // TODO: Change to dynamic
+            theme = .blue
         }
     }
     func setTheme(_ theme: Theme) {
