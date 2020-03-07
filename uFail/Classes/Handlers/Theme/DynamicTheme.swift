@@ -10,9 +10,6 @@ import UIKit
 
 class DynamicTheme: NSObject {
 
-  @objc func getTestString() -> NSString {
-        return "Hello World"
-    }
     func getMonth() -> Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
