@@ -57,6 +57,7 @@
 		2EA5919324145CE400153107 /* Summer Theme X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918F24145CE400153107 /* Summer Theme X.png */; };
 		2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919024145CE400153107 /* Summmer Theme SE.png */; };
 		2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919124145CE400153107 /* Summer Theme 6.png */; };
+		2EA591972414649C00153107 /* uFail Button Summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA591962414649C00153107 /* uFail Button Summer.png */; };
 		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
 		685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98B5273CA5B54190826E1DA /* Pods_uFail.framework */; };
 		86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29980311673685491513F0D1 /* Pods_uFailTests.framework */; };
@@ -132,6 +133,7 @@
 		2EA5918F24145CE400153107 /* Summer Theme X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme X.png"; sourceTree = "<group>"; };
 		2EA5919024145CE400153107 /* Summmer Theme SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summmer Theme SE.png"; sourceTree = "<group>"; };
 		2EA5919124145CE400153107 /* Summer Theme 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme 6.png"; sourceTree = "<group>"; };
+		2EA591962414649C00153107 /* uFail Button Summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Summer.png"; sourceTree = "<group>"; };
 		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 		2EA5918D24145CD100153107 /* Summer */ = {
 			isa = PBXGroup;
 			children = (
+				2EA591962414649C00153107 /* uFail Button Summer.png */,
 				2EA5919124145CE400153107 /* Summer Theme 6.png */,
 				2EA5918E24145CE300153107 /* Summer Theme Plus.png */,
 				2EA5918F24145CE400153107 /* Summer Theme X.png */,
@@ -519,6 +522,7 @@
 				2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */,
 				2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */,
 				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
+				2EA591972414649C00153107 /* uFail Button Summer.png in Resources */,
 				2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */,
 				2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */,
 				2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */,
