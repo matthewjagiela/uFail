@@ -10,9 +10,6 @@ import UIKit
 
 class DynamicTheme: NSObject {
 
-  @objc func getTestString() -> NSString {
-        return "Hello World"
-    }
     func getMonth() -> Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
@@ -56,15 +53,15 @@ class DynamicTheme: NSObject {
         } else if season == "Summer" {
             switch iPhoneVersion {
             case 4:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
+                themeImage = UIImage(named: "Summer Theme SE")!
             case 5:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
+                themeImage = UIImage(named: "Summer Theme SE")!
             case 6:
-                themeImage = UIImage(named: "iPhone 6 Summer.png")!
+                themeImage = UIImage(named: "Summer Theme 6")!
             case 61:
-                themeImage = UIImage(named: "iPhone 6+ Summer.png")!
+                themeImage = UIImage(named: "Summer Theme Plus")!
             default:
-                themeImage = UIImage(named: "iPad Image Warm")!
+                themeImage = UIImage(named: "iPad Image Warm")! //TODO: Change
             }
         } else if season == "Fall" {
             switch iPhoneVersion {
