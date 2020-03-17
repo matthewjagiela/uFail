@@ -2,6 +2,7 @@ Welcome to uFail 10 by uApps
 What's New:
 10.6.2:
 - Would you look at that! All the snow has melted away!
+- Warm weathered theme is back
 10.6.1:
 - Various bug fixes.
 10.6:
