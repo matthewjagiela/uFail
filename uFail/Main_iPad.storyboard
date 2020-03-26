@@ -28,7 +28,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPad Image Warm.png" translatesAutoresizingMaskIntoConstraints="NO" id="9TI-BP-nS9">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-vQ-29C" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-vQ-29C">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSt-xR-stQ">
@@ -107,11 +107,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-UR-SvP">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="44"/>
+                                        <rect key="frame" x="0.0" y="-5" width="344" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.55633002519999997" blue="0.64069473740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
-                                        <state key="normal" title="Winter">
+                                        <state key="normal" title="Summer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -348,7 +348,6 @@
                         <outlet property="blurEffect" destination="6iV-W8-Jwt" id="6Dp-zO-4NU"/>
                         <outlet property="colorView" destination="ihY-tP-xTM" id="Vd0-YT-Elu"/>
                         <outlet property="messageView" destination="cia-PB-8Wy" id="4gd-Bu-KQd"/>
-                        <outlet property="particleBackground" destination="GNR-vQ-29C" id="P5V-yh-kjW"/>
                         <outlet property="screenBackgroundImage" destination="1v5-c1-Dwn" id="v6b-zy-fM0"/>
                     </connections>
                 </viewController>
@@ -371,7 +370,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YP6-VX-9We">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Un-Y8-Noc" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Un-Y8-Noc">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -564,7 +563,6 @@ ciBTb21ldGhpbmcgTmV3Li4uCi1TbW9rZSBFZmZlY3QgZm9yIGlQaG9uZQotTW9yZSBUbyBDb21lA
                         <outlet property="currentRunningLabel" destination="L7h-lU-XkP" id="vDE-pl-L7m"/>
                         <outlet property="failCountLabel" destination="Kot-lO-xdr" id="zxM-BS-HMs"/>
                         <outlet property="newsLabel" destination="MUh-LD-OEH" id="s0t-91-POD"/>
-                        <outlet property="particleBackground" destination="0Un-Y8-Noc" id="RKz-mT-LjM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ViD-sH-7uo" userLabel="First Responder" sceneMemberID="firstResponder"/>

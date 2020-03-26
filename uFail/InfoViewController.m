@@ -166,7 +166,7 @@ NSUserDefaults *defaults;
     [super viewDidLoad];
     info = [[AppHandler alloc]init];
     // Do any additional setup after loading the view.
-    
+    /**
     SnowScene *scene = [SnowScene sceneWithSize:self.view.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     particleBackground.backgroundColor = [SKColor redColor];

@@ -28,7 +28,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 6 Summer.png" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-rK-3Mz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHF-ej-XQC" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHF-ej-XQC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPh-fx-T6z">
@@ -126,9 +126,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC4-88-YJ5">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.55633002519999997" blue="0.64069473740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
-                                        <state key="normal" title="Winter">
+                                        <state key="normal" title="Summer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -334,7 +334,6 @@
                         <outlet property="blurEffect" destination="RDz-wS-wfh" id="VEm-nF-8gw"/>
                         <outlet property="colorView" destination="ZH3-az-ulu" id="T8U-Dn-Kfb"/>
                         <outlet property="messageView" destination="wd7-mz-1bZ" id="IhR-fh-1ye"/>
-                        <outlet property="particleBackground" destination="HHF-ej-XQC" id="5Ac-RW-HYq"/>
                         <outlet property="screenBackgroundImage" destination="Ypc-ZO-9ck" id="NGW-tW-AXH"/>
                     </connections>
                 </viewController>
@@ -357,7 +356,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Image Universal.png" translatesAutoresizingMaskIntoConstraints="NO" id="rMR-WQ-BBL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysd-uC-2xc" customClass="SKView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysd-uC-2xc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBm-iu-CE3">
@@ -564,7 +563,6 @@ ciBTb21ldGhpbmcgTmV3Li4uCi1TbW9rZSBFZmZlY3QgZm9yIGlQaG9uZQotTW9yZSBUbyBDb21lA
                         <outlet property="currentRunningLabel" destination="ElE-Po-I8l" id="UrX-bg-ldU"/>
                         <outlet property="failCountLabel" destination="krD-ZO-XxX" id="SaW-vM-d5m"/>
                         <outlet property="newsLabel" destination="ksl-am-DrS" id="n2h-dY-MAN"/>
-                        <outlet property="particleBackground" destination="Ysd-uC-2xc" id="T4P-Oa-isU"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="goHome" id="jvV-27-31B"/>
                     </connections>
                 </viewController>
