@@ -53,6 +53,11 @@
 		2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */; };
 		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
+		2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918E24145CE300153107 /* Summer Theme Plus.png */; };
+		2EA5919324145CE400153107 /* Summer Theme X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918F24145CE400153107 /* Summer Theme X.png */; };
+		2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919024145CE400153107 /* Summmer Theme SE.png */; };
+		2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919124145CE400153107 /* Summer Theme 6.png */; };
+		2EA591972414649C00153107 /* uFail Button Summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA591962414649C00153107 /* uFail Button Summer.png */; };
 		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
 		685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98B5273CA5B54190826E1DA /* Pods_uFail.framework */; };
 		86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29980311673685491513F0D1 /* Pods_uFailTests.framework */; };
@@ -124,6 +129,11 @@
 		2EA01E9623B5608400B38C64 /* uFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
 		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA5918E24145CE300153107 /* Summer Theme Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme Plus.png"; sourceTree = "<group>"; };
+		2EA5918F24145CE400153107 /* Summer Theme X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme X.png"; sourceTree = "<group>"; };
+		2EA5919024145CE400153107 /* Summmer Theme SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summmer Theme SE.png"; sourceTree = "<group>"; };
+		2EA5919124145CE400153107 /* Summer Theme 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme 6.png"; sourceTree = "<group>"; };
+		2EA591962414649C00153107 /* uFail Button Summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Summer.png"; sourceTree = "<group>"; };
 		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 		2E5F11D723B8695A00832EDD /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				2EA5918D24145CD100153107 /* Summer */,
 				2E5F11DB23B8698E00832EDD /* Purple */,
 				2E5F11D923B8697F00832EDD /* Red */,
 				2E5F11DA23B8698500832EDD /* Green */,
@@ -357,6 +368,18 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		2EA5918D24145CD100153107 /* Summer */ = {
+			isa = PBXGroup;
+			children = (
+				2EA591962414649C00153107 /* uFail Button Summer.png */,
+				2EA5919124145CE400153107 /* Summer Theme 6.png */,
+				2EA5918E24145CE300153107 /* Summer Theme Plus.png */,
+				2EA5918F24145CE400153107 /* Summer Theme X.png */,
+				2EA5919024145CE400153107 /* Summmer Theme SE.png */,
+			);
+			path = Summer;
+			sourceTree = "<group>";
+		};
 		70219B4A417B64264D4CFEF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,21 +516,26 @@
 				2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */,
 				2E5F11F123B9A2BF00832EDD /* failure.mp3 in Resources */,
 				2E5F11F323B9A2BF00832EDD /* WIN.mp3 in Resources */,
+				2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */,
 				2E5F11F723B9A2BF00832EDD /* santa.mp3 in Resources */,
 				2E5F11E323B86A8000832EDD /* redBG.png in Resources */,
 				2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */,
 				2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */,
 				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
+				2EA591972414649C00153107 /* uFail Button Summer.png in Resources */,
 				2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */,
 				2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */,
 				2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */,
 				2E5F11F823B9A2BF00832EDD /* FAIL.mp3 in Resources */,
 				2EA01E8223B5608400B38C64 /* Assets.xcassets in Resources */,
 				2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */,
+				2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */,
 				2E5F11E023B86A8000832EDD /* blueBG.png in Resources */,
 				2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */,
 				2E706D0423F23DC3004C8899 /* RedButton.png in Resources */,
 				2E706D0223F23DBC004C8899 /* PurpleButton.png in Resources */,
+				2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */,
+				2EA5919324145CE400153107 /* Summer Theme X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
