@@ -11,6 +11,7 @@ import UIKit
 class AppHandler: NSObject {
     lazy var count = 0
     @objc var internetInfo: InternetInformation?
+    private var appVersion = "Running Version: \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "X")"
     override init() {
         super.init()
         if let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/master/uAppsInfo.json") {
@@ -28,7 +29,7 @@ class AppHandler: NSObject {
                }
     }
     @objc func getAppVersion() -> String {
-        return "Currently Running Version 10.6.1"
+        return appVersion
     }
     @objc func changes() -> String {
         if let path = Bundle.main.path(forResource: "Changes", ofType: "txt") {
