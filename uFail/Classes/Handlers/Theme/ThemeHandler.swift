@@ -9,10 +9,12 @@
 import UIKit
 
 class ThemeHandler: NSObject {
+
     let data = DataHandler()
     var theme: Theme?
     let deviceHandler = DeviceHandler()
     var device: DeviceHandler.Device!
+
     enum Theme {
         case blue
         case green
@@ -20,6 +22,7 @@ class ThemeHandler: NSObject {
         case purple
         case dynamic
     }
+
     override init() {
         super.init()
         device = deviceHandler.currentDevice()
@@ -37,6 +40,7 @@ class ThemeHandler: NSObject {
             theme = .blue
         }
     }
+
     func setTheme(_ theme: Theme) {
         self.theme = theme
         switch theme {
@@ -52,6 +56,7 @@ class ThemeHandler: NSObject {
             data.saveTheme(theme: "dyanmic")
         }
     }
+
     func getBackgroundImage() -> UIImage {
         if theme != .dynamic {
             switch theme {
@@ -69,6 +74,7 @@ class ThemeHandler: NSObject {
         }
         return UIImage()
     }
+
     func getPreviewImage(_ theme: Theme) -> UIImage {
         switch theme {
         case .blue:
@@ -83,6 +89,7 @@ class ThemeHandler: NSObject {
             return UIImage()
         }
     }
+
     func getFailButton() -> UIImage {
         if theme != .dynamic {
             switch theme {
@@ -100,10 +107,12 @@ class ThemeHandler: NSObject {
         }
         return UIImage()
     }
+
     func getThemePreview() -> [UIImage] {
         let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple)]
         return themePreviews
     }
+
     func themeObjects() -> [Theme] {
         return [.blue, .green, .red, .purple]
     }
