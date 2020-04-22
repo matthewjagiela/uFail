@@ -40,13 +40,13 @@ class DynamicTheme: NSObject {
         if season == "Spring" { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
             switch iPhoneVersion {
             case 4:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
+                themeImage = UIImage(named: "Spring Theme SE")!
             case 5:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
+                themeImage = UIImage(named: "Spring Theme SE")!
             case 6:
-                themeImage = UIImage(named: "iPhone 6 Summer.png")!
+                themeImage = UIImage(named: "Spring Theme 6")!
             case 61:
-                themeImage = UIImage(named: "iPhone 6+ Summer.png")!
+                themeImage = UIImage(named: "Spring Theme Plus")!
             default:
                 themeImage = UIImage(named: "iPad Image Warm")!
             }
@@ -98,9 +98,9 @@ class DynamicTheme: NSObject {
         let season = determineSeason()
         switch season {
         case "Summer":
-            print("Holder for summer")
+            buttonImage = UIImage(named: "Summer Button")!
         case "Spring":
-            print("Holder for spring")
+            buttonImage = UIImage(named: "Spring Button")!
         case "Fall":
             print("Holder for Fall")
         default:
