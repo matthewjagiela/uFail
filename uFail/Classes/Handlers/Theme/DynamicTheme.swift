@@ -66,13 +66,13 @@ class DynamicTheme: NSObject {
         } else if season == "Fall" {
             switch iPhoneVersion {
             case 4:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
+                themeImage = UIImage(named: "Fall Theme SE")!
             case 5:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
+                themeImage = UIImage(named: "Fall Theme SE")!
             case 6:
-                themeImage = UIImage(named: "iPhone 6 Summer.png")!
+                themeImage = UIImage(named: "Fall Theme 6")!
             case 61:
-                themeImage = UIImage(named: "iPhone 6+ Summer.png")!
+                themeImage = UIImage(named: "Fall Theme Plus")!
             default:
                 themeImage = UIImage(named: "iPad Image Warm")!
             }
@@ -102,7 +102,7 @@ class DynamicTheme: NSObject {
         case "Spring":
             buttonImage = UIImage(named: "Spring Button")!
         case "Fall":
-            print("Holder for Fall")
+            buttonImage = UIImage(named: "Fall Button")
         default:
             print("Holder for Winter")
         }
