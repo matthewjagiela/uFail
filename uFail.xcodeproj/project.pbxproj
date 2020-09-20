@@ -53,6 +53,11 @@
 		2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */; };
 		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
+		2EA512A52517DBCC002F1D24 /* Spring X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A02517DBCC002F1D24 /* Spring X.png */; };
+		2EA512A62517DBCC002F1D24 /* Spring 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A12517DBCC002F1D24 /* Spring 6.png */; };
+		2EA512A72517DBCC002F1D24 /* Spring Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A22517DBCC002F1D24 /* Spring Button.png */; };
+		2EA512A82517DBCC002F1D24 /* Spring SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A32517DBCC002F1D24 /* Spring SE.png */; };
+		2EA512A92517DBCC002F1D24 /* Spring Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A42517DBCC002F1D24 /* Spring Plus.png */; };
 		2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918E24145CE300153107 /* Summer Theme Plus.png */; };
 		2EA5919324145CE400153107 /* Summer Theme X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918F24145CE400153107 /* Summer Theme X.png */; };
 		2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919024145CE400153107 /* Summmer Theme SE.png */; };
@@ -129,6 +134,11 @@
 		2EA01E9623B5608400B38C64 /* uFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
 		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA512A02517DBCC002F1D24 /* Spring X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring X.png"; sourceTree = "<group>"; };
+		2EA512A12517DBCC002F1D24 /* Spring 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring 6.png"; sourceTree = "<group>"; };
+		2EA512A22517DBCC002F1D24 /* Spring Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring Button.png"; sourceTree = "<group>"; };
+		2EA512A32517DBCC002F1D24 /* Spring SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring SE.png"; sourceTree = "<group>"; };
+		2EA512A42517DBCC002F1D24 /* Spring Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring Plus.png"; sourceTree = "<group>"; };
 		2EA5918E24145CE300153107 /* Summer Theme Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme Plus.png"; sourceTree = "<group>"; };
 		2EA5918F24145CE400153107 /* Summer Theme X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme X.png"; sourceTree = "<group>"; };
 		2EA5919024145CE400153107 /* Summmer Theme SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summmer Theme SE.png"; sourceTree = "<group>"; };
@@ -180,6 +190,7 @@
 		2E5F11D723B8695A00832EDD /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				2EA5129F2517DBB3002F1D24 /* Spring Theme */,
 				2EA5918D24145CD100153107 /* Summer */,
 				2E5F11DB23B8698E00832EDD /* Purple */,
 				2E5F11D923B8697F00832EDD /* Red */,
@@ -368,6 +379,18 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		2EA5129F2517DBB3002F1D24 /* Spring Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2EA512A12517DBCC002F1D24 /* Spring 6.png */,
+				2EA512A22517DBCC002F1D24 /* Spring Button.png */,
+				2EA512A42517DBCC002F1D24 /* Spring Plus.png */,
+				2EA512A32517DBCC002F1D24 /* Spring SE.png */,
+				2EA512A02517DBCC002F1D24 /* Spring X.png */,
+			);
+			path = "Spring Theme";
+			sourceTree = "<group>";
+		};
 		2EA5918D24145CD100153107 /* Summer */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,18 +531,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA512A62517DBCC002F1D24 /* Spring 6.png in Resources */,
 				2E5F11E223B86A8000832EDD /* greenBG.png in Resources */,
 				2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */,
 				2E5F11F223B9A2BF00832EDD /* Noob!.mp3 in Resources */,
 				2E5F11F623B9A2BF00832EDD /* PWNED.mp3 in Resources */,
+				2EA512A72517DBCC002F1D24 /* Spring Button.png in Resources */,
 				2E5F11F523B9A2BF00832EDD /* EPIC FAIL.mp3 in Resources */,
 				2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */,
 				2E5F11F123B9A2BF00832EDD /* failure.mp3 in Resources */,
 				2E5F11F323B9A2BF00832EDD /* WIN.mp3 in Resources */,
 				2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */,
+				2EA512A82517DBCC002F1D24 /* Spring SE.png in Resources */,
 				2E5F11F723B9A2BF00832EDD /* santa.mp3 in Resources */,
 				2E5F11E323B86A8000832EDD /* redBG.png in Resources */,
 				2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */,
+				2EA512A52517DBCC002F1D24 /* Spring X.png in Resources */,
 				2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */,
 				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
 				2EA591972414649C00153107 /* uFail Button Summer.png in Resources */,
@@ -534,6 +561,7 @@
 				2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */,
 				2E706D0423F23DC3004C8899 /* RedButton.png in Resources */,
 				2E706D0223F23DBC004C8899 /* PurpleButton.png in Resources */,
+				2EA512A92517DBCC002F1D24 /* Spring Plus.png in Resources */,
 				2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */,
 				2EA5919324145CE400153107 /* Summer Theme X.png in Resources */,
 			);
