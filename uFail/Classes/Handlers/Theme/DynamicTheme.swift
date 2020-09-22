@@ -8,22 +8,29 @@
 
 import UIKit
 
+enum Season: String {
+    case spring
+    case summer
+    case fall
+    case winter
+}
+
 class DynamicTheme: NSObject {
 
     func getMonth() -> Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
     }
-    func determineSeason() -> String { //This is going to use the month to find out the current season.
+    func determineSeason() -> Season { //This is going to use the month to find out the current season.
         let month = getMonth()
         if month >= 3 && month < 6 {
-            return "Spring"
+            return .spring
         } else if month >= 6 && month < 9 {
-            return "Summer"
+            return .summer
         } else if month >= 9 && month < 12 {
-            return "Fall"
+            return .fall
         } else {
-            return "Winter"
+            return .winter
         }
         
     }
@@ -37,7 +44,7 @@ class DynamicTheme: NSObject {
         61 = 6+
         default iPad
         */
-        if season == "Spring" { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
+        if season == .spring { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "Spring Theme SE")!
@@ -50,7 +57,7 @@ class DynamicTheme: NSObject {
             default:
                 themeImage = UIImage(named: "iPad Image Warm")!
             }
-        } else if season == "Summer" {
+        } else if season == .summer {
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "Summer Theme SE")!
@@ -63,7 +70,7 @@ class DynamicTheme: NSObject {
             default:
                 themeImage = UIImage(named: "iPad Image Warm")! //TODO: Change
             }
-        } else if season == "Fall" {
+        } else if season == .fall {
             switch iPhoneVersion {
             case 4:
                 themeImage = UIImage(named: "Fall Theme SE")!
@@ -93,15 +100,15 @@ class DynamicTheme: NSObject {
         
         return themeImage
     }
-    @objc func determineFailButton() -> UIImage { //Great thing is that this does not change based on the device... Find it based on season
+    func determineFailButton() -> UIImage { //Great thing is that this does not change based on the device... Find it based on season
         var buttonImage = UIImage()
         let season = determineSeason()
         switch season {
-        case "Summer":
+        case .summer:
             buttonImage = UIImage(named: "Summer Button")!
-        case "Spring":
+        case .spring:
             buttonImage = UIImage(named: "Spring Button")!
-        case "Fall":
+        case .fall:
             buttonImage = UIImage(named: "Fall Button")!
         default:
             print("Holder for Winter")
