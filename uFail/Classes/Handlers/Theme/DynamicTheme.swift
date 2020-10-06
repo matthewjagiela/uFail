@@ -34,7 +34,7 @@ class DynamicTheme: NSObject {
         }
         
     }
-    @objc func determineTheme(iPhoneVersion: Int) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
+    func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()
         /*
@@ -45,56 +45,48 @@ class DynamicTheme: NSObject {
         default iPad
         */
         if season == .spring { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "Spring Theme SE")!
-            case 5:
-                themeImage = UIImage(named: "Spring Theme SE")!
-            case 6:
-                themeImage = UIImage(named: "Spring Theme 6")!
-            case 61:
-                themeImage = UIImage(named: "Spring Theme Plus")!
-            default:
-                themeImage = UIImage(named: "iPad Image Warm")!
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Spring Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Spring Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Spring Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Spring Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Spring Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Spring Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Spring Theme Plus")!
+            default: themeImage = UIImage(named:"Spring Theme Plus")! //TODO: Change to iPad
             }
         } else if season == .summer {
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "Summer Theme SE")!
-            case 5:
-                themeImage = UIImage(named: "Summer Theme SE")!
-            case 6:
-                themeImage = UIImage(named: "Summer Theme 6")!
-            case 61:
-                themeImage = UIImage(named: "Summer Theme Plus")!
-            default:
-                themeImage = UIImage(named: "iPad Image Warm")! //TODO: Change
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Summer Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Summer Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Summer Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Summer Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Summer Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Summer Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named:"Summer Theme Plus")!
+            default: themeImage = UIImage(named:"Spring Theme Plus")! //TODO: Change to iPad
             }
         } else if season == .fall {
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "Fall Theme SE")!
-            case 5:
-                themeImage = UIImage(named: "Fall Theme SE")!
-            case 6:
-                themeImage = UIImage(named: "Fall Theme 6")!
-            case 61:
-                themeImage = UIImage(named: "Fall Theme Plus")!
-            default:
-                themeImage = UIImage(named: "iPad Image Warm")!
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Fall Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Fall Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Fall Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Fall Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Fall Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Fall Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Fall Theme Plus")!
+            default: themeImage = UIImage(named:"Fall Theme Plus")! //TODO: Change to iPad
             }
         } else { //Winter theme
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "iPhone 4-5.png")!
-            case 5:
-                themeImage = UIImage(named: "iPhone 4-5.png")!
-            case 6:
-                themeImage = UIImage(named: "iPhone 6 Background.png")!
-            case 61:
-                themeImage = UIImage(named: "iPhone 6+ Background.png")!
-            default:
-                themeImage = UIImage(named: "iPad Winter Background.png")!
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Winter Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Winter Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Winter Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Winter Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Winter Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Winter Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Winter Theme Plus")!
+            default: themeImage = UIImage(named: "Winter Theme Plus")! //TODO: Change to iPad
             }
         }
         
