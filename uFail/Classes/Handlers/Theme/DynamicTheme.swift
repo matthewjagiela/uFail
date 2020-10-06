@@ -53,7 +53,7 @@ class DynamicTheme: NSObject {
             case .iPhoneX: themeImage = UIImage(named: "Spring Theme X")!
             case .iPhoneXr: themeImage = UIImage(named: "Spring Theme Plus")!
             case .iPhoneMax: themeImage = UIImage(named: "Spring Theme Plus")!
-            default: themeImage = UIImage(named:"Spring Theme Plus")! //TODO: Change to iPad
+            default: themeImage = UIImage(named: "Spring Theme Plus")! //TODO: Change to iPad
             }
         } else if season == .summer {
             switch device {
@@ -63,8 +63,8 @@ class DynamicTheme: NSObject {
             case .iPhone6Plus: themeImage = UIImage(named: "Summer Theme Plus")!
             case .iPhoneX: themeImage = UIImage(named: "Summer Theme X")!
             case .iPhoneXr: themeImage = UIImage(named: "Summer Theme Plus")!
-            case .iPhoneMax: themeImage = UIImage(named:"Summer Theme Plus")!
-            default: themeImage = UIImage(named:"Spring Theme Plus")! //TODO: Change to iPad
+            case .iPhoneMax: themeImage = UIImage(named: "Summer Theme Plus")!
+            default: themeImage = UIImage(named: "Spring Theme Plus")! //TODO: Change to iPad
             }
         } else if season == .fall {
             switch device {
@@ -75,7 +75,7 @@ class DynamicTheme: NSObject {
             case .iPhoneX: themeImage = UIImage(named: "Fall Theme X")!
             case .iPhoneXr: themeImage = UIImage(named: "Fall Theme Plus")!
             case .iPhoneMax: themeImage = UIImage(named: "Fall Theme Plus")!
-            default: themeImage = UIImage(named:"Fall Theme Plus")! //TODO: Change to iPad
+            default: themeImage = UIImage(named: "Fall Theme Plus")! //TODO: Change to iPad
             }
         } else { //Winter theme
             switch device {
