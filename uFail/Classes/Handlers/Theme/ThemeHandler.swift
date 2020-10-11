@@ -70,9 +70,8 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "purpleBG.png") ?? UIImage()
             }
         } else { //dynamic theme
-            
+            return dynamicTheme.determineTheme(device: device)
         }
-        return UIImage()
     }
 
     func getPreviewImage(_ theme: Theme) -> UIImage {
@@ -103,9 +102,8 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "PurpleButton.png") ?? UIImage()
             }
         } else {
-            
+            return dynamicTheme.determineFailButton()
         }
-        return UIImage()
     }
 
     func getThemePreview() -> [UIImage] {
