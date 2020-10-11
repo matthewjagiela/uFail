@@ -14,6 +14,7 @@ class ThemeHandler: NSObject {
     var theme: Theme?
     let deviceHandler = DeviceHandler()
     var device: DeviceHandler.Device!
+    let dynamicTheme = DynamicTheme()
 
     enum Theme {
         case blue
@@ -36,8 +37,7 @@ class ThemeHandler: NSObject {
         case "purple":
             theme = .purple
         default:
-            // TODO: Change to dynamic
-            theme = .blue
+            theme = .dynamic
         }
     }
 
@@ -70,9 +70,8 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "purpleBG.png") ?? UIImage()
             }
         } else { //dynamic theme
-            
+            return dynamicTheme.determineTheme(device: device)
         }
-        return UIImage()
     }
 
     func getPreviewImage(_ theme: Theme) -> UIImage {
@@ -86,7 +85,7 @@ class ThemeHandler: NSObject {
         case .purple:
             return UIImage(named: "purpleBG") ?? UIImage()
         default: //dynamic
-            return UIImage()
+            return dynamicTheme.getSwitcherImage()
         }
     }
 
@@ -103,17 +102,16 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "PurpleButton.png") ?? UIImage()
             }
         } else {
-            
+            return dynamicTheme.determineFailButton()
         }
-        return UIImage()
     }
 
     func getThemePreview() -> [UIImage] {
-        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple)]
+        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple), getPreviewImage(.dynamic)]
         return themePreviews
     }
 
     func themeObjects() -> [Theme] {
-        return [.blue, .green, .red, .purple]
+        return [.blue, .green, .red, .purple, .dynamic]
     }
 }
