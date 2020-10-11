@@ -34,6 +34,21 @@ class DynamicTheme: NSObject {
         }
         
     }
+
+    func getSwitcherImage() -> UIImage {
+        let season = determineSeason()
+        switch season {
+        case .fall:
+            return UIImage(named: "Fall Theme Switcher")!
+        case .spring:
+            return UIImage(named: "Spring Theme Switcher")!
+        case .summer:
+            return UIImage(named: "Summer Theme Switcher")!
+        default:
+            return UIImage()
+        }
+    }
+    
     func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()
