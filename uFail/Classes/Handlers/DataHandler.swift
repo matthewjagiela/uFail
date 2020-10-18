@@ -22,13 +22,13 @@ class DataHandler: NSObject {
 }
 
 class iCloudHandler: NSObject {
-    static let defaults = NSUbiquitousKeyValueStore.init()
+    static let defaults = NSUbiquitousKeyValueStore.default
     // MARK: - Storing
     static func storeFailCount(_ count: Int) {
-        defaults.set(count, forKey: "failCount")
+        defaults.set(count, forKey: "failAmount")
     }
     // MARK: - Fetching
     static func getFailCount() -> Int {
-        return (defaults.object(forKey: "failCount") as? Int ?? 0)
+        return (defaults.object(forKey: "failAmount") as? Int ?? 0)
     }
 }
