@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bgI-do-5Kc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bgI-do-5Kc">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="vxX-3Z-fP8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="T9g-wv-14d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="custom" identifier="SideMenu.Content" customClass="SideMenuSegue" customModule="SideMenuSwift" id="x7h-W2-lz5"/>
@@ -38,7 +39,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwN-C5-5gS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-jp-nC1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-jp-nC1">
                                 <rect key="frame" x="16" y="673" width="227" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Messages">
@@ -59,7 +60,7 @@
                                     <segue destination="3cU-xj-4rC" kind="presentation" id="1aN-D2-y37"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-wq-eYC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-wq-eYC">
                                 <rect key="frame" x="269" y="673" width="88" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Theme">
@@ -71,9 +72,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjc-Hc-8vk">
                                 <rect key="frame" x="55" y="0.0" width="304" height="304"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Wjc-Hc-8vk" secondAttribute="height" multiplier="1:1" id="ReI-Iq-SB8"/>
-                                </constraints>
                                 <state key="normal" image="BlueButton.png"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
@@ -85,25 +83,26 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wjc-Hc-8vk" secondAttribute="trailing" constant="55" id="9pl-S6-dS8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IsR-jp-nC1" secondAttribute="trailing" constant="171" id="CjY-k4-pP1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IXw-rm-T9F" secondAttribute="bottom" constant="28" id="Mgl-wN-SeW"/>
+                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Nhy-Zf-JX0"/>
                             <constraint firstItem="IXw-rm-T9F" firstAttribute="leading" secondItem="2YS-wq-eYC" secondAttribute="trailing" constant="22" id="Obx-TS-bHO"/>
                             <constraint firstItem="2YS-wq-eYC" firstAttribute="leading" secondItem="IsR-jp-nC1" secondAttribute="trailing" constant="26" id="RbJ-8g-UDn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IsR-jp-nC1" secondAttribute="bottom" constant="16" id="SsG-Gl-zeS"/>
-                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="WeJ-zw-33V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wjc-Hc-8vk" secondAttribute="bottom" constant="432" id="Wew-kT-2F9"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YyW-yi-lOr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IXw-rm-T9F" secondAttribute="trailing" constant="10" id="ZV8-da-yYd"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c0a-ZY-sl4"/>
-                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kFD-Sd-KuR"/>
+                            <constraint firstItem="Wjc-Hc-8vk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k9T-bx-hnq"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l8K-K7-Kgc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2YS-wq-eYC" secondAttribute="bottom" constant="16" id="mfZ-7G-lvV"/>
                             <constraint firstAttribute="bottom" secondItem="lwN-C5-5gS" secondAttribute="bottom" id="oFa-Z0-d7R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wjc-Hc-8vk" secondAttribute="trailing" constant="55" id="qqJ-Tm-Gvl"/>
                             <constraint firstItem="IsR-jp-nC1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sQL-VK-3zY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="lwN-C5-5gS" id="oSD-Mz-rgj"/>
@@ -159,8 +158,8 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Changes Will Go Here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-pN-VfP">
                                 <rect key="frame" x="20" y="56" width="374" height="375"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -169,13 +168,13 @@
                                 <items>
                                     <navigationItem title="Info" id="5N7-bi-GjU">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="pzi-0d-Jfu">
-                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="tintColor" systemColor="labelColor"/>
                                             <connections>
                                                 <action selector="homeTapped:" destination="3cU-xj-4rC" id="wcS-s7-MsZ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Support" id="4mf-u8-cuh">
-                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="tintColor" systemColor="labelColor"/>
                                             <connections>
                                                 <action selector="supportTapped:" destination="3cU-xj-4rC" id="SDQ-VG-mND"/>
                                             </connections>
@@ -183,8 +182,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDi-3s-Fi0">
-                                <rect key="frame" x="20" y="439" width="96" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDi-3s-Fi0">
+                                <rect key="frame" x="20" y="439" width="95" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Get uSurf">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -193,7 +192,7 @@
                                     <action selector="downloaduSurf:" destination="3cU-xj-4rC" eventType="touchUpInside" id="GAA-AR-ypb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcO-9G-XEe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcO-9G-XEe">
                                 <rect key="frame" x="10" y="479" width="394" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="uFail Privacy Policy">
@@ -203,7 +202,7 @@
                                     <action selector="viewuFailPrivacyPolicy:" destination="3cU-xj-4rC" eventType="touchUpInside" id="0fx-e9-ZkJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMB-Pk-l3w">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMB-Pk-l3w">
                                 <rect key="frame" x="293" y="439" width="101" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Get uTime">
@@ -215,13 +214,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06e-BH-SzC" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="666" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DeA-nC-yMw"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Pir-MO-sOc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Nbv-lv-JOw" firstAttribute="top" secondItem="wcO-9G-XEe" secondAttribute="bottom" constant="5.9999999999998295" id="3ik-l2-3S5"/>
                             <constraint firstItem="fif-b8-97k" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" id="4kv-b3-VGZ"/>
@@ -263,7 +263,6 @@
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="fjx-cb-sha" secondAttribute="trailing" constant="20" id="z64-Rw-BM7"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="bottom" secondItem="fjx-cb-sha" secondAttribute="bottom" constant="58" id="z6A-HN-t3k"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Pir-MO-sOc"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="MXV-ZG-n0j" id="bid-FI-5RF"/>
@@ -354,6 +353,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nme-IW-bao"/>
                         <constraints>
                             <constraint firstItem="hhD-0o-Ppo" firstAttribute="leading" secondItem="Fxh-DI-kcg" secondAttribute="leading" symbolic="YES" id="7wt-x9-NQb"/>
                             <constraint firstItem="vYe-A5-gqS" firstAttribute="top" secondItem="hhD-0o-Ppo" secondAttribute="bottom" symbolic="YES" id="8Os-fX-x64"/>
@@ -361,7 +361,6 @@
                             <constraint firstItem="vYe-A5-gqS" firstAttribute="bottom" secondItem="Nme-IW-bao" secondAttribute="bottom" id="d9V-x7-xQT"/>
                             <constraint firstItem="vYe-A5-gqS" firstAttribute="leading" secondItem="Fxh-DI-kcg" secondAttribute="leading" id="nHJ-8K-lzL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Nme-IW-bao"/>
                     </view>
                     <connections>
                         <outlet property="navigationBar" destination="hhD-0o-Ppo" id="Az6-jL-KXp"/>
@@ -376,5 +375,14 @@
     <resources>
         <image name="BlueButton.png" width="1024" height="1024"/>
         <image name="blueBG.png" width="1024" height="1024"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
