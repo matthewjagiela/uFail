@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
+        failButton.imageView?.contentMode = .scaleAspectFit
         NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
         refreshView()
     }
