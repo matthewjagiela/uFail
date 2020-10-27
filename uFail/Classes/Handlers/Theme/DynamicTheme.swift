@@ -54,7 +54,7 @@ class DynamicTheme: NSObject {
     }
     
     func labelBGColor() -> UIColor {
-        return determineSeason() == .winter ? .clear: .white
+        return determineSeason() == .winter ? .white: .clear
     }
     
     func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...

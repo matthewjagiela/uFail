@@ -43,6 +43,20 @@ class InfoViewController: UIViewController {
         bannerAd.rootViewController = self
         bannerAd.load(GADRequest())
         
+        let dynamicTheme = DynamicTheme()
+        
+        failCountLabel.backgroundColor = dynamicTheme.labelBGColor()
+        currentlyRunningVersion.backgroundColor = dynamicTheme.labelBGColor()
+        newestVersionAvailable.backgroundColor = dynamicTheme.labelBGColor()
+        uAppsNewsLabel.backgroundColor = dynamicTheme.labelBGColor()
+        copyrightLabel.backgroundColor = dynamicTheme.labelBGColor()
+        
+        failCountLabel.textColor = dynamicTheme.textColor()
+        currentlyRunningVersion.textColor = dynamicTheme.textColor()
+        newestVersionAvailable.textColor = dynamicTheme.textColor()
+        uAppsNewsLabel.textColor = dynamicTheme.textColor()
+        copyrightLabel.textColor = dynamicTheme.textColor()
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
