@@ -26,9 +26,7 @@ class HomeViewController: UIViewController {
         failButton.imageView?.contentMode = .scaleAspectFit
         NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
         refreshView()
-        messagesButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
-        themeButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
-        infoButton.tintColor = theme.dynamicTheme.textColor()
+        
         if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
             theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
         } else {
@@ -51,8 +49,21 @@ class HomeViewController: UIViewController {
         sideMenuController?.revealMenu()
     }
     @objc func refreshView() {
-        self.backgroundImage.image = theme.getBackgroundImage()
-        self.failButton.setImage(theme.getFailButton(), for: .normal)
+        DispatchQueue.main.async {
+            
+            self.backgroundImage.image = self.theme.getBackgroundImage()
+            self.failButton.setImage(self.theme.getFailButton(), for: .normal)
+            if self.theme.theme == .dynamic {
+                self.messagesButton.setTitleColor(self.theme.dynamicTheme.textColor(), for: .normal)
+                self.themeButton.setTitleColor(self.theme.dynamicTheme.textColor(), for: .normal)
+                self.infoButton.tintColor = self.theme.dynamicTheme.textColor()
+            } else {
+                self.messagesButton.setTitleColor(self.theme.textColor(), for: .normal)
+                self.themeButton.setTitleColor(self.theme.textColor(), for: .normal)
+                self.infoButton.tintColor = self.theme.textColor()
+                
+            }
+        }
     }
     /*
     // MARK: - Navigation

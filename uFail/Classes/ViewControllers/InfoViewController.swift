@@ -46,17 +46,17 @@ class InfoViewController: UIViewController {
         bannerAd.rootViewController = self
         bannerAd.load(GADRequest())
         
-        failCountLabel.backgroundColor = theme.dynamicTheme.labelBGColor()
-        currentlyRunningVersion.backgroundColor = theme.dynamicTheme.labelBGColor()
-        newestVersionAvailable.backgroundColor = theme.dynamicTheme.labelBGColor()
-        uAppsNewsLabel.backgroundColor = theme.dynamicTheme.labelBGColor()
-        copyrightLabel.backgroundColor = theme.dynamicTheme.labelBGColor()
+        failCountLabel.backgroundColor = theme.labelBGColor()
+        currentlyRunningVersion.backgroundColor = theme.labelBGColor()
+        newestVersionAvailable.backgroundColor = theme.labelBGColor()
+        uAppsNewsLabel.backgroundColor = theme.labelBGColor()
+        copyrightLabel.backgroundColor = theme.labelBGColor()
         
-        failCountLabel.textColor = theme.dynamicTheme.textColor()
-        currentlyRunningVersion.textColor = theme.dynamicTheme.textColor()
-        newestVersionAvailable.textColor = theme.dynamicTheme.textColor()
-        uAppsNewsLabel.textColor = theme.dynamicTheme.textColor()
-        copyrightLabel.textColor = theme.dynamicTheme.textColor()
+        failCountLabel.textColor = theme.textColor()
+        currentlyRunningVersion.textColor = theme.textColor()
+        newestVersionAvailable.textColor = theme.textColor()
+        uAppsNewsLabel.textColor = theme.textColor()
+        copyrightLabel.textColor = theme.textColor()
         
         if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
             theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
