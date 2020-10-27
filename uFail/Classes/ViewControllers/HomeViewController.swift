@@ -24,10 +24,9 @@ class HomeViewController: UIViewController {
         failButton.imageView?.contentMode = .scaleAspectFit
         NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
         refreshView()
-        let dynamics = DynamicTheme()
-        messagesButton.setTitleColor(dynamics.textColor(), for: .normal)
-        themeButton.setTitleColor(dynamics.textColor(), for: .normal)
-        infoButton.tintColor = dynamics.textColor()
+        messagesButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
+        themeButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
+        infoButton.tintColor = theme.dynamicTheme.textColor()
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
