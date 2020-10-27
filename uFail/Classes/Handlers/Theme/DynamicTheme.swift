@@ -118,7 +118,7 @@ class DynamicTheme: NSObject {
         case .fall:
             buttonImage = UIImage(named: "Fall Button")!
         default:
-            print("Holder for Winter")
+            buttonImage = UIImage(named: "Winter Button")!
         }
         return buttonImage
     
