@@ -55,6 +55,7 @@
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
 		2EA065062548D2C100EADBE1 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA065042548D2C100EADBE1 /* SnowScene.m */; };
 		2EA065072548D2C100EADBE1 /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2EA065052548D2C100EADBE1 /* Snow.sks */; };
+		2EA0651F2548DDEA00EADBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0651E2548DDEA00EADBE1 /* Assets.xcassets */; };
 		2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918E24145CE300153107 /* Summer Theme Plus.png */; };
 		2EA5919324145CE400153107 /* Summer Theme X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918F24145CE400153107 /* Summer Theme X.png */; };
 		2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919024145CE400153107 /* Summmer Theme SE.png */; };
@@ -135,6 +136,7 @@
 		2EA065032548D2C100EADBE1 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
 		2EA065042548D2C100EADBE1 /* SnowScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowScene.m; sourceTree = "<group>"; };
 		2EA065052548D2C100EADBE1 /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
+		2EA0651E2548DDEA00EADBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EA5918E24145CE300153107 /* Summer Theme Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme Plus.png"; sourceTree = "<group>"; };
 		2EA5918F24145CE400153107 /* Summer Theme X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme X.png"; sourceTree = "<group>"; };
 		2EA5919024145CE400153107 /* Summmer Theme SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summmer Theme SE.png"; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 		2EA065012548D2B200EADBE1 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2EA0651E2548DDEA00EADBE1 /* Assets.xcassets */,
 				2EA065052548D2C100EADBE1 /* Snow.sks */,
 				2EA065032548D2C100EADBE1 /* SnowScene.h */,
 				2EA065042548D2C100EADBE1 /* SnowScene.m */,
@@ -526,6 +529,7 @@
 				2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */,
 				2EA065072548D2C100EADBE1 /* Snow.sks in Resources */,
 				2E5F11F223B9A2BF00832EDD /* Noob!.mp3 in Resources */,
+				2EA0651F2548DDEA00EADBE1 /* Assets.xcassets in Resources */,
 				2E5F11F623B9A2BF00832EDD /* PWNED.mp3 in Resources */,
 				2E5F11F523B9A2BF00832EDD /* EPIC FAIL.mp3 in Resources */,
 				2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */,

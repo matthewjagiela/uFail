@@ -46,7 +46,7 @@ class DynamicTheme: NSObject {
         case .summer:
             return UIImage(named: "Summer Theme Switcher")!
         default:
-            return UIImage()
+            return UIImage(named: "Winter Theme Switcher")!
         }
     }
     

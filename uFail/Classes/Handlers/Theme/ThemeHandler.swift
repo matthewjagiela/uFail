@@ -73,6 +73,14 @@ class ThemeHandler: NSObject {
             return dynamicTheme.determineTheme(device: device)
         }
     }
+    
+    func textColor() -> UIColor {
+        return theme == .dynamic ? .black : .white
+    }
+    
+    func labelBGColor() -> UIColor {
+        return theme == .dynamic ? .white: .clear
+    }
 
     func getPreviewImage(_ theme: Theme) -> UIImage {
         switch theme {
