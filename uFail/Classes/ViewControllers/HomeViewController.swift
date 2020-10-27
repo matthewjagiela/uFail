@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var failButton: UIButton!
     @IBOutlet weak var messagesButton: UIButton!
     @IBOutlet weak var themeButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
     let sound = SoundHandler()
     let theme = ThemeHandler()
     override func viewDidLoad() {
@@ -23,6 +24,10 @@ class HomeViewController: UIViewController {
         failButton.imageView?.contentMode = .scaleAspectFit
         NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
         refreshView()
+        let dynamics = DynamicTheme()
+        messagesButton.setTitleColor(dynamics.textColor(), for: .normal)
+        themeButton.setTitleColor(dynamics.textColor(), for: .normal)
+        infoButton.tintColor = dynamics.textColor()
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
