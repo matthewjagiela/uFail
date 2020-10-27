@@ -49,6 +49,14 @@ class DynamicTheme: NSObject {
         }
     }
     
+    func textColor() -> UIColor {
+        return determineSeason() == .winter ? .black : .white
+    }
+    
+    func labelBGColor() -> UIColor {
+        return determineSeason() == .winter ? .clear: .white
+    }
+    
     func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()

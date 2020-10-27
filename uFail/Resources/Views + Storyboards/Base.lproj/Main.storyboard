@@ -107,6 +107,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="lwN-C5-5gS" id="oSD-Mz-rgj"/>
                         <outlet property="failButton" destination="Wjc-Hc-8vk" id="bxD-Xx-1mv"/>
+                        <outlet property="infoButton" destination="IXw-rm-T9F" id="XQv-C1-iJe"/>
                         <outlet property="messagesButton" destination="IsR-jp-nC1" id="idc-PW-WCL"/>
                         <outlet property="themeButton" destination="2YS-wq-eYC" id="JKR-fj-old"/>
                     </connections>
