@@ -53,19 +53,14 @@
 		2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */; };
 		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
 		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
-		2EA512A52517DBCC002F1D24 /* Spring X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A02517DBCC002F1D24 /* Spring X.png */; };
-		2EA512A62517DBCC002F1D24 /* Spring 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A12517DBCC002F1D24 /* Spring 6.png */; };
-		2EA512A72517DBCC002F1D24 /* Spring Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A22517DBCC002F1D24 /* Spring Button.png */; };
-		2EA512A82517DBCC002F1D24 /* Spring SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A32517DBCC002F1D24 /* Spring SE.png */; };
-		2EA512A92517DBCC002F1D24 /* Spring Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA512A42517DBCC002F1D24 /* Spring Plus.png */; };
 		2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918E24145CE300153107 /* Summer Theme Plus.png */; };
 		2EA5919324145CE400153107 /* Summer Theme X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918F24145CE400153107 /* Summer Theme X.png */; };
 		2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919024145CE400153107 /* Summmer Theme SE.png */; };
 		2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919124145CE400153107 /* Summer Theme 6.png */; };
 		2EA591972414649C00153107 /* uFail Button Summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA591962414649C00153107 /* uFail Button Summer.png */; };
 		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
-		685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98B5273CA5B54190826E1DA /* Pods_uFail.framework */; };
-		86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29980311673685491513F0D1 /* Pods_uFailTests.framework */; };
+		D16EE44105FA5AA867272B28 /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788DD77D619E0DBD635DE5B4 /* Pods_uFailTests.framework */; };
+		F6DE692AD6EFE678EE5319BF /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94642AADBC597253F9B5173 /* Pods_uFail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
-		29980311673685491513F0D1 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C83592EC6A9F4A43130D8D0 /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E018BDB23D1643000B1D627 /* App_Handler_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Handler_Tests.swift; sourceTree = "<group>"; };
 		2E16227723BDB01500E5A533 /* Sound_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound_Test.swift; sourceTree = "<group>"; };
 		2E191D6C23D141E9007E35C2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -135,21 +129,17 @@
 		2EA01E9623B5608400B38C64 /* uFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
 		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EA512A02517DBCC002F1D24 /* Spring X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring X.png"; sourceTree = "<group>"; };
-		2EA512A12517DBCC002F1D24 /* Spring 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring 6.png"; sourceTree = "<group>"; };
-		2EA512A22517DBCC002F1D24 /* Spring Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring Button.png"; sourceTree = "<group>"; };
-		2EA512A32517DBCC002F1D24 /* Spring SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring SE.png"; sourceTree = "<group>"; };
-		2EA512A42517DBCC002F1D24 /* Spring Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring Plus.png"; sourceTree = "<group>"; };
 		2EA5918E24145CE300153107 /* Summer Theme Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme Plus.png"; sourceTree = "<group>"; };
 		2EA5918F24145CE400153107 /* Summer Theme X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme X.png"; sourceTree = "<group>"; };
 		2EA5919024145CE400153107 /* Summmer Theme SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summmer Theme SE.png"; sourceTree = "<group>"; };
 		2EA5919124145CE400153107 /* Summer Theme 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme 6.png"; sourceTree = "<group>"; };
 		2EA591962414649C00153107 /* uFail Button Summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Summer.png"; sourceTree = "<group>"; };
 		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
-		66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
-		9CB5729BF30E4F64FFF98E70 /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
-		F98B5273CA5B54190826E1DA /* Pods_uFail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B4F3BB7F7E6C0D3BAD40E7 /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
+		788DD77D619E0DBD635DE5B4 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0EAD2C888C0D5AB4BFB2AB /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
+		C94642AADBC597253F9B5173 /* Pods_uFail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D29622B20EFE2892F2DCEA /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				685EC8E35A0778292D7FEE37 /* Pods_uFail.framework in Frameworks */,
+				F6DE692AD6EFE678EE5319BF /* Pods_uFail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F59A89841619506032B27D /* Pods_uFailTests.framework in Frameworks */,
+				D16EE44105FA5AA867272B28 /* Pods_uFailTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +181,6 @@
 		2E5F11D723B8695A00832EDD /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				2EA5129F2517DBB3002F1D24 /* Spring Theme */,
 				2EA5918D24145CD100153107 /* Summer */,
 				2E5F11DB23B8698E00832EDD /* Purple */,
 				2E5F11D923B8697F00832EDD /* Red */,
@@ -263,7 +252,7 @@
 				2EA01E9923B5608400B38C64 /* uFailUITests */,
 				2EA01E7623B5608300B38C64 /* Products */,
 				B22FCFA1D8D3B18B1F5A48AE /* Pods */,
-				70219B4A417B64264D4CFEF9 /* Frameworks */,
+				82F6BC1A4E468F754BBE00DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -381,18 +370,6 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		2EA5129F2517DBB3002F1D24 /* Spring Theme */ = {
-			isa = PBXGroup;
-			children = (
-				2EA512A12517DBCC002F1D24 /* Spring 6.png */,
-				2EA512A22517DBCC002F1D24 /* Spring Button.png */,
-				2EA512A42517DBCC002F1D24 /* Spring Plus.png */,
-				2EA512A32517DBCC002F1D24 /* Spring SE.png */,
-				2EA512A02517DBCC002F1D24 /* Spring X.png */,
-			);
-			path = "Spring Theme";
-			sourceTree = "<group>";
-		};
 		2EA5918D24145CD100153107 /* Summer */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,11 +382,11 @@
 			path = Summer;
 			sourceTree = "<group>";
 		};
-		70219B4A417B64264D4CFEF9 /* Frameworks */ = {
+		82F6BC1A4E468F754BBE00DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F98B5273CA5B54190826E1DA /* Pods_uFail.framework */,
-				29980311673685491513F0D1 /* Pods_uFailTests.framework */,
+				C94642AADBC597253F9B5173 /* Pods_uFail.framework */,
+				788DD77D619E0DBD635DE5B4 /* Pods_uFailTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -417,10 +394,10 @@
 		B22FCFA1D8D3B18B1F5A48AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */,
-				9CB5729BF30E4F64FFF98E70 /* Pods-uFail.release.xcconfig */,
-				43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */,
-				1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */,
+				46B4F3BB7F7E6C0D3BAD40E7 /* Pods-uFail.debug.xcconfig */,
+				F8D29622B20EFE2892F2DCEA /* Pods-uFail.release.xcconfig */,
+				0C83592EC6A9F4A43130D8D0 /* Pods-uFailTests.debug.xcconfig */,
+				BE0EAD2C888C0D5AB4BFB2AB /* Pods-uFailTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -432,13 +409,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA01E9F23B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFail" */;
 			buildPhases = (
-				35825CCD808314DFA12A6E17 /* [CP] Check Pods Manifest.lock */,
-				519EFCF2C0BF4555CDE5980B /* [CP] Prepare Artifacts */,
+				6DCE119F9A4E1A450960D9AA /* [CP] Check Pods Manifest.lock */,
+				DEC2820E9C0CD85E721AB439 /* [CP] Prepare Artifacts */,
 				2EA01E7123B5608300B38C64 /* Sources */,
 				2EA01E7223B5608300B38C64 /* Frameworks */,
 				2EA01E7323B5608300B38C64 /* Resources */,
-				3EB48FFA6D00253E1D0CF1CD /* [CP] Embed Pods Frameworks */,
 				2EA8B57E23B7C6A000CDB417 /* ShellScript */,
+				316F734CE296E104A8F7DA7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -453,7 +430,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA01EA223B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFailTests" */;
 			buildPhases = (
-				6694AF96954DB45E5095288F /* [CP] Check Pods Manifest.lock */,
+				1BED75AF371A9896E4720976 /* [CP] Check Pods Manifest.lock */,
 				2EA01E8723B5608400B38C64 /* Sources */,
 				2EA01E8823B5608400B38C64 /* Frameworks */,
 				2EA01E8923B5608400B38C64 /* Resources */,
@@ -534,22 +511,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA512A62517DBCC002F1D24 /* Spring 6.png in Resources */,
 				2E5F11E223B86A8000832EDD /* greenBG.png in Resources */,
 				2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */,
 				2E5F11F223B9A2BF00832EDD /* Noob!.mp3 in Resources */,
 				2E5F11F623B9A2BF00832EDD /* PWNED.mp3 in Resources */,
-				2EA512A72517DBCC002F1D24 /* Spring Button.png in Resources */,
 				2E5F11F523B9A2BF00832EDD /* EPIC FAIL.mp3 in Resources */,
 				2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */,
 				2E5F11F123B9A2BF00832EDD /* failure.mp3 in Resources */,
 				2E5F11F323B9A2BF00832EDD /* WIN.mp3 in Resources */,
 				2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */,
-				2EA512A82517DBCC002F1D24 /* Spring SE.png in Resources */,
 				2E5F11F723B9A2BF00832EDD /* santa.mp3 in Resources */,
 				2E5F11E323B86A8000832EDD /* redBG.png in Resources */,
 				2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */,
-				2EA512A52517DBCC002F1D24 /* Spring X.png in Resources */,
 				2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */,
 				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
 				2EA591972414649C00153107 /* uFail Button Summer.png in Resources */,
@@ -564,7 +537,6 @@
 				2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */,
 				2E706D0423F23DC3004C8899 /* RedButton.png in Resources */,
 				2E706D0223F23DBC004C8899 /* PurpleButton.png in Resources */,
-				2EA512A92517DBCC002F1D24 /* Spring Plus.png in Resources */,
 				2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */,
 				2EA5919324145CE400153107 /* Summer Theme X.png in Resources */,
 			);
@@ -587,6 +559,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1BED75AF371A9896E4720976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uFailTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2EA8B57E23B7C6A000CDB417 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,7 +598,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		35825CCD808314DFA12A6E17 /* [CP] Check Pods Manifest.lock */ = {
+		316F734CE296E104A8F7DA7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCE119F9A4E1A450960D9AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -626,24 +637,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3EB48FFA6D00253E1D0CF1CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		519EFCF2C0BF4555CDE5980B /* [CP] Prepare Artifacts */ = {
+		DEC2820E9C0CD85E721AB439 /* [CP] Prepare Artifacts */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -658,28 +652,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6694AF96954DB45E5095288F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-uFailTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -881,7 +853,7 @@
 		};
 		2EA01EA023B5608400B38C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A30754F0A2CAC74489E59A /* Pods-uFail.debug.xcconfig */;
+			baseConfigurationReference = 46B4F3BB7F7E6C0D3BAD40E7 /* Pods-uFail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
@@ -904,7 +876,7 @@
 		};
 		2EA01EA123B5608400B38C64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CB5729BF30E4F64FFF98E70 /* Pods-uFail.release.xcconfig */;
+			baseConfigurationReference = F8D29622B20EFE2892F2DCEA /* Pods-uFail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
@@ -927,7 +899,7 @@
 		};
 		2EA01EA323B5608400B38C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43E77C13CB07C16EE261B5CF /* Pods-uFailTests.debug.xcconfig */;
+			baseConfigurationReference = 0C83592EC6A9F4A43130D8D0 /* Pods-uFailTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -950,7 +922,7 @@
 		};
 		2EA01EA423B5608400B38C64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D91565EBC67B0ED57860546 /* Pods-uFailTests.release.xcconfig */;
+			baseConfigurationReference = BE0EAD2C888C0D5AB4BFB2AB /* Pods-uFailTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
