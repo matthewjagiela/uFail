@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenuSwift
+import SpriteKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
