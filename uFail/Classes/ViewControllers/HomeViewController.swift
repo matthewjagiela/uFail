@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         themeButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
         infoButton.tintColor = theme.dynamicTheme.textColor()
         if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
-            snowView = theme.dynamicTheme.setupSnowScene(size: view.bounds.size)
+            theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
         } else {
             snowView.removeFromSuperview()
         }

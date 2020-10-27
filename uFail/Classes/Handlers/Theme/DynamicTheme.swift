@@ -23,16 +23,17 @@ class DynamicTheme: NSObject {
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
     }
     func determineSeason() -> Season { //This is going to use the month to find out the current season.
-        let month = getMonth()
-        if month >= 3 && month < 6 {
-            return .spring
-        } else if month >= 6 && month < 9 {
-            return .summer
-        } else if month >= 9 && month < 12 {
-            return .fall
-        } else {
-            return .winter
-        }
+//        let month = getMonth()
+//        if month >= 3 && month < 6 {
+//            return .spring
+//        } else if month >= 6 && month < 9 {
+//            return .summer
+//        } else if month >= 9 && month < 12 {
+//            return .fall
+//        } else {
+//            return .winter
+//        }
+        return .winter
         
     }
 
@@ -62,14 +63,12 @@ class DynamicTheme: NSObject {
         return determineSeason() == .winter ? true: false
     }
     
-    func setupSnowScene(size: CGSize) -> SKView {
+    func setupSnowScene(view: SKView, size: CGSize) {
         let snowScene = SnowScene(size: size)
-        let particleBackground = SKView()
+        view.ignoresSiblingOrder = true
         snowScene.scaleMode = .resizeFill
-        particleBackground.ignoresSiblingOrder = true
-        particleBackground.backgroundColor = SKColor.clear
-        particleBackground.presentScene(snowScene)
-        return particleBackground
+        view.backgroundColor = SKColor.clear
+        view.presentScene(snowScene)
     }
     
     func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
