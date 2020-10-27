@@ -136,6 +136,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-ZG-n0j">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqZ-ii-9oV" customClass="SKView">
+                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© uApps 2010-2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjx-cb-sha">
                                 <rect key="frame" x="20" y="643.66666666666663" width="374" height="14.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -237,6 +241,7 @@
                             <constraint firstItem="fif-b8-97k" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" id="4kv-b3-VGZ"/>
                             <constraint firstItem="Nbv-lv-JOw" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="6Js-7v-MXQ"/>
                             <constraint firstItem="NZR-66-pfv" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="6Sg-gK-YZN"/>
+                            <constraint firstItem="fqZ-ii-9oV" firstAttribute="top" secondItem="fif-b8-97k" secondAttribute="bottom" id="Bz2-pR-8ea"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="top" secondItem="Pir-MO-sOc" secondAttribute="top" id="C1e-cZ-ST1"/>
                             <constraint firstItem="yRx-lg-HoD" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="DHx-Jh-YtI"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="wcO-9G-XEe" secondAttribute="trailing" constant="10" id="Gj4-xl-eGY"/>
@@ -258,8 +263,10 @@
                             <constraint firstAttribute="trailing" secondItem="MXV-ZG-n0j" secondAttribute="trailing" id="fXh-Lx-Iwx"/>
                             <constraint firstItem="06e-BH-SzC" firstAttribute="bottom" secondItem="Pir-MO-sOc" secondAttribute="bottom" id="gMN-I6-pAi"/>
                             <constraint firstItem="06e-BH-SzC" firstAttribute="trailing" secondItem="Pir-MO-sOc" secondAttribute="trailing" id="gSe-r7-7wC"/>
+                            <constraint firstAttribute="bottom" secondItem="fqZ-ii-9oV" secondAttribute="bottom" id="iJa-5M-h0M"/>
                             <constraint firstItem="MXV-ZG-n0j" firstAttribute="trailing" secondItem="Pir-MO-sOc" secondAttribute="trailing" id="jYU-un-ShR"/>
                             <constraint firstItem="QPs-D4-Cx2" firstAttribute="top" secondItem="Nbv-lv-JOw" secondAttribute="bottom" constant="8" id="jhJ-pu-9mS"/>
+                            <constraint firstAttribute="trailing" secondItem="fqZ-ii-9oV" secondAttribute="trailing" id="kWQ-aS-mib"/>
                             <constraint firstItem="06e-BH-SzC" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" id="m6o-9T-zJh"/>
                             <constraint firstItem="fjx-cb-sha" firstAttribute="leading" secondItem="Pir-MO-sOc" secondAttribute="leading" constant="20" id="mSw-3v-l7Z"/>
                             <constraint firstItem="mDi-3s-Fi0" firstAttribute="top" secondItem="7Aj-pN-VfP" secondAttribute="bottom" constant="8" id="miA-zp-8ic"/>
@@ -269,6 +276,7 @@
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="Nbv-lv-JOw" secondAttribute="trailing" constant="20" id="rlV-uY-N6V"/>
                             <constraint firstItem="fif-b8-97k" firstAttribute="top" secondItem="Pir-MO-sOc" secondAttribute="top" id="un1-VE-ecv"/>
                             <constraint firstItem="7Aj-pN-VfP" firstAttribute="top" secondItem="fif-b8-97k" secondAttribute="bottom" symbolic="YES" id="we4-Dr-nGh"/>
+                            <constraint firstItem="fqZ-ii-9oV" firstAttribute="leading" secondItem="1WU-Ey-7B9" secondAttribute="leading" id="wmo-6F-xoU"/>
                             <constraint firstItem="vMB-Pk-l3w" firstAttribute="trailing" secondItem="Nbv-lv-JOw" secondAttribute="trailing" id="wq9-Lj-l4G"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="trailing" secondItem="fjx-cb-sha" secondAttribute="trailing" constant="20" id="z64-Rw-BM7"/>
                             <constraint firstItem="Pir-MO-sOc" firstAttribute="bottom" secondItem="fjx-cb-sha" secondAttribute="bottom" constant="58" id="z6A-HN-t3k"/>
@@ -285,6 +293,7 @@
                         <outlet property="failCountLabel" destination="Nbv-lv-JOw" id="Ykf-b4-UeE"/>
                         <outlet property="homeButton" destination="pzi-0d-Jfu" id="lVV-Jr-gTF"/>
                         <outlet property="newestVersionAvailable" destination="NZR-66-pfv" id="umM-f9-LfX"/>
+                        <outlet property="snowView" destination="fqZ-ii-9oV" id="kv6-P4-PTA"/>
                         <outlet property="supportButton" destination="4mf-u8-cuh" id="Gbv-eC-yfw"/>
                         <outlet property="uAppsNewsLabel" destination="yRx-lg-HoD" id="hu1-eF-cpR"/>
                         <outlet property="uFailPrivacyPolicy" destination="wcO-9G-XEe" id="Xf2-IX-L3f"/>

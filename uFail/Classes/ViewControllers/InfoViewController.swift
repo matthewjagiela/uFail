@@ -9,6 +9,8 @@
 import UIKit
 import SafariServices
 import GoogleMobileAds
+import SpriteKit
+
 class InfoViewController: UIViewController {
 
     @IBOutlet weak var bannerAd: GADBannerView!
@@ -24,6 +26,7 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var copyrightLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var changesView: UITextView!
+    @IBOutlet weak var snowView: SKView!
     // MARK: - Class Variables
     let info = AppHandler()
     let theme = ThemeHandler()
@@ -43,19 +46,23 @@ class InfoViewController: UIViewController {
         bannerAd.rootViewController = self
         bannerAd.load(GADRequest())
         
-        let dynamicTheme = DynamicTheme()
+        failCountLabel.backgroundColor = theme.dynamicTheme.labelBGColor()
+        currentlyRunningVersion.backgroundColor = theme.dynamicTheme.labelBGColor()
+        newestVersionAvailable.backgroundColor = theme.dynamicTheme.labelBGColor()
+        uAppsNewsLabel.backgroundColor = theme.dynamicTheme.labelBGColor()
+        copyrightLabel.backgroundColor = theme.dynamicTheme.labelBGColor()
         
-        failCountLabel.backgroundColor = dynamicTheme.labelBGColor()
-        currentlyRunningVersion.backgroundColor = dynamicTheme.labelBGColor()
-        newestVersionAvailable.backgroundColor = dynamicTheme.labelBGColor()
-        uAppsNewsLabel.backgroundColor = dynamicTheme.labelBGColor()
-        copyrightLabel.backgroundColor = dynamicTheme.labelBGColor()
+        failCountLabel.textColor = theme.dynamicTheme.textColor()
+        currentlyRunningVersion.textColor = theme.dynamicTheme.textColor()
+        newestVersionAvailable.textColor = theme.dynamicTheme.textColor()
+        uAppsNewsLabel.textColor = theme.dynamicTheme.textColor()
+        copyrightLabel.textColor = theme.dynamicTheme.textColor()
         
-        failCountLabel.textColor = dynamicTheme.textColor()
-        currentlyRunningVersion.textColor = dynamicTheme.textColor()
-        newestVersionAvailable.textColor = dynamicTheme.textColor()
-        uAppsNewsLabel.textColor = dynamicTheme.textColor()
-        copyrightLabel.textColor = dynamicTheme.textColor()
+        if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
+            theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
+        } else {
+            snowView.removeFromSuperview()
+        }
         
         // Do any additional setup after loading the view.
     }
