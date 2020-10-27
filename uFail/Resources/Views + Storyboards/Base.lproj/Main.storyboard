@@ -39,6 +39,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwN-C5-5gS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3Y-ly-4tD" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-jp-nC1">
                                 <rect key="frame" x="16" y="673" width="227" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -88,6 +92,8 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wjc-Hc-8vk" secondAttribute="trailing" constant="55" id="9pl-S6-dS8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IsR-jp-nC1" secondAttribute="trailing" constant="171" id="CjY-k4-pP1"/>
+                            <constraint firstItem="i3Y-ly-4tD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="FfE-mB-C6z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i3Y-ly-4tD" secondAttribute="trailing" constant="-20" id="K3c-G1-xgz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IXw-rm-T9F" secondAttribute="bottom" constant="28" id="Mgl-wN-SeW"/>
                             <constraint firstItem="Wjc-Hc-8vk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Nhy-Zf-JX0"/>
                             <constraint firstItem="IXw-rm-T9F" firstAttribute="leading" secondItem="2YS-wq-eYC" secondAttribute="trailing" constant="22" id="Obx-TS-bHO"/>
@@ -96,11 +102,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wjc-Hc-8vk" secondAttribute="bottom" constant="432" id="Wew-kT-2F9"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YyW-yi-lOr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IXw-rm-T9F" secondAttribute="trailing" constant="10" id="ZV8-da-yYd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="i3Y-ly-4tD" secondAttribute="bottom" id="aYB-VH-KY0"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c0a-ZY-sl4"/>
                             <constraint firstItem="Wjc-Hc-8vk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k9T-bx-hnq"/>
                             <constraint firstItem="lwN-C5-5gS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l8K-K7-Kgc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2YS-wq-eYC" secondAttribute="bottom" constant="16" id="mfZ-7G-lvV"/>
                             <constraint firstAttribute="bottom" secondItem="lwN-C5-5gS" secondAttribute="bottom" id="oFa-Z0-d7R"/>
+                            <constraint firstItem="i3Y-ly-4tD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="qjp-Qm-CEN"/>
                             <constraint firstItem="IsR-jp-nC1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sQL-VK-3zY"/>
                         </constraints>
                     </view>
@@ -109,12 +117,13 @@
                         <outlet property="failButton" destination="Wjc-Hc-8vk" id="bxD-Xx-1mv"/>
                         <outlet property="infoButton" destination="IXw-rm-T9F" id="XQv-C1-iJe"/>
                         <outlet property="messagesButton" destination="IsR-jp-nC1" id="idc-PW-WCL"/>
+                        <outlet property="snowView" destination="i3Y-ly-4tD" id="mbi-KL-RjU"/>
                         <outlet property="themeButton" destination="2YS-wq-eYC" id="JKR-fj-old"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.125" y="116.25"/>
+            <point key="canvasLocation" x="131.8840579710145" y="115.7608695652174"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="lx2-Ty-jtt">

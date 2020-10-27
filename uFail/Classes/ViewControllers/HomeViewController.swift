@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var messagesButton: UIButton!
     @IBOutlet weak var themeButton: UIButton!
     @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var snowView: SKView!
     let sound = SoundHandler()
     let theme = ThemeHandler()
     override func viewDidLoad() {
@@ -28,6 +29,11 @@ class HomeViewController: UIViewController {
         messagesButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
         themeButton.setTitleColor(theme.dynamicTheme.textColor(), for: .normal)
         infoButton.tintColor = theme.dynamicTheme.textColor()
+        if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
+            snowView = theme.dynamicTheme.setupSnowScene(size: view.bounds.size)
+        } else {
+            snowView.removeFromSuperview()
+        }
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
