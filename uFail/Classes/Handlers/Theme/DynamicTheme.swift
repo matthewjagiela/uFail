@@ -57,6 +57,10 @@ class DynamicTheme: NSObject {
         return determineSeason() == .winter ? .white: .clear
     }
     
+    func shouldShowSnow() -> Bool {
+        return determineSeason() == .winter ? true: false
+    }
+
     func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()
