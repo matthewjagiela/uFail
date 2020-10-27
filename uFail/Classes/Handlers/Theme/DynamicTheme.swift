@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 enum Season: String {
     case spring
@@ -55,6 +56,18 @@ class DynamicTheme: NSObject {
     
     func labelBGColor() -> UIColor {
         return determineSeason() == .winter ? .white: .clear
+    }
+    
+    func shouldShowSnow() -> Bool {
+        return determineSeason() == .winter ? true: false
+    }
+    
+    func setupSnowScene(view: SKView, size: CGSize) {
+        let snowScene = SnowScene(size: size)
+        view.ignoresSiblingOrder = true
+        snowScene.scaleMode = .resizeFill
+        view.backgroundColor = SKColor.clear
+        view.presentScene(snowScene)
     }
     
     func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
