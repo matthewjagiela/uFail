@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
     let theme = ThemeHandler()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.backgroundImage.image = self.theme.getBackgroundImage()
+        self.failButton.setImage(self.theme.getFailButton(), for: .normal)
         sideMenuController?.delegate = self
         // Do any additional setup after loading the view.
         failButton.imageView?.contentMode = .scaleAspectFit
@@ -64,6 +66,11 @@ class HomeViewController: UIViewController {
                 
             }
         }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        self.refreshView()
     }
     /*
     // MARK: - Navigation

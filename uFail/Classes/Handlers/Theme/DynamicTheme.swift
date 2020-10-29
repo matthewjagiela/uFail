@@ -70,7 +70,7 @@ class DynamicTheme: NSObject {
         view.presentScene(snowScene)
     }
     
-    func determineTheme(device: DeviceHandler.Device) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
+    func determineTheme(device: DeviceHandler.Device, fromInfo: Bool = false) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()
         /*
@@ -111,7 +111,8 @@ class DynamicTheme: NSObject {
             case .iPhoneX: themeImage = UIImage(named: "Fall Theme X")!
             case .iPhoneXr: themeImage = UIImage(named: "Fall Theme Plus")!
             case .iPhoneMax: themeImage = UIImage(named: "Fall Theme Plus")!
-            default: themeImage = UIImage(named: "Fall Theme Plus")! //TODO: Change to iPad
+            default: themeImage = UIImage(named: UIDevice.current.orientation.isLandscape ? "Fall Theme iPad Landscape" : "Fall Theme iPad Portrait")!
+                if fromInfo ?? false { themeImage = UIImage(named: "Fall Theme iPad Portrait")!}
             }
         } else { //Winter theme
             switch device {
