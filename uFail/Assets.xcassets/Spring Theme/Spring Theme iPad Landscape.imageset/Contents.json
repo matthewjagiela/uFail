@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "Spring Theme iPad Landscape-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Spring Theme iPad Landscape-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Spring Theme iPad Landscape.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
