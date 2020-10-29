@@ -57,7 +57,7 @@ class ThemeHandler: NSObject {
         }
     }
 
-    func getBackgroundImage() -> UIImage {
+    func getBackgroundImage(fromInfo: Bool = false) -> UIImage {
         if theme != .dynamic {
             switch theme {
             case .blue:
@@ -70,7 +70,7 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "purpleBG.png") ?? UIImage()
             }
         } else { //dynamic theme
-            return dynamicTheme.determineTheme(device: device)
+            return dynamicTheme.determineTheme(device: device, fromInfo: fromInfo)
         }
     }
     

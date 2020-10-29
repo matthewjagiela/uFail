@@ -33,7 +33,7 @@ class InfoViewController: UIViewController {
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundImage.image = theme.getBackgroundImage()
+        backgroundImage.image = theme.getBackgroundImage(fromInfo: true)
         uAppsNewsLabel.adjustsFontSizeToFitWidth = true
         currentlyRunningVersion.adjustsFontSizeToFitWidth = true
         newestVersionAvailable.adjustsFontSizeToFitWidth = true
