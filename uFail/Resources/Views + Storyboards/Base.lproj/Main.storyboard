@@ -312,17 +312,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-0o-Ppo">
-                                <rect key="frame" x="0.0" y="0.0" width="260" height="88"/>
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="JmL-yh-hcv"/>
-                                    <constraint firstAttribute="height" constant="88" id="XJQ-bF-cyU"/>
+                                    <constraint firstAttribute="height" constant="98" id="XJQ-bF-cyU"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="pvY-dM-JUp"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vYe-A5-gqS">
-                                <rect key="frame" x="0.0" y="88" width="260" height="648"/>
+                                <rect key="frame" x="0.0" y="98" width="260" height="638"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="fDJ-qW-LKq"/>
@@ -342,8 +342,12 @@
                                                         <constraint firstAttribute="height" constant="1" id="Ifo-Kp-GqY"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMo-n8-GCm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="250"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMo-n8-GCm">
+                                                    <rect key="frame" x="0.0" y="60" width="260" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="260" id="RPl-pC-4JH"/>
+                                                        <constraint firstAttribute="height" constant="130" id="gol-sf-fZS"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sw-GS-Knw">
                                                     <rect key="frame" x="16" y="29" width="228" height="41"/>
@@ -355,12 +359,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MXp-3J-XXO" firstAttribute="leading" secondItem="4vw-GS-OT1" secondAttribute="leading" id="D6g-Sb-zzK"/>
-                                                <constraint firstAttribute="trailing" secondItem="tMo-n8-GCm" secondAttribute="trailing" id="FQ5-Hf-xBH"/>
                                                 <constraint firstAttribute="bottom" secondItem="MXp-3J-XXO" secondAttribute="bottom" id="IwO-jW-2bd"/>
-                                                <constraint firstItem="tMo-n8-GCm" firstAttribute="top" secondItem="4vw-GS-OT1" secondAttribute="top" id="Rjl-tA-qb1"/>
-                                                <constraint firstItem="tMo-n8-GCm" firstAttribute="leading" secondItem="4vw-GS-OT1" secondAttribute="leading" id="S32-R4-0BU"/>
+                                                <constraint firstItem="tMo-n8-GCm" firstAttribute="centerY" secondItem="4vw-GS-OT1" secondAttribute="centerY" id="OeF-zl-JEK"/>
                                                 <constraint firstAttribute="trailing" secondItem="MXp-3J-XXO" secondAttribute="trailing" id="qiL-o9-ypd"/>
-                                                <constraint firstAttribute="bottom" secondItem="tMo-n8-GCm" secondAttribute="bottom" id="tqK-BG-oNK"/>
+                                                <constraint firstItem="tMo-n8-GCm" firstAttribute="centerX" secondItem="4vw-GS-OT1" secondAttribute="centerX" id="vTy-WI-7tP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
