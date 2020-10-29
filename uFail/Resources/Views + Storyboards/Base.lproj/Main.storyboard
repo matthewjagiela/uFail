@@ -312,17 +312,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-0o-Ppo">
-                                <rect key="frame" x="0.0" y="0.0" width="260" height="88"/>
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="JmL-yh-hcv"/>
-                                    <constraint firstAttribute="height" constant="88" id="XJQ-bF-cyU"/>
+                                    <constraint firstAttribute="height" constant="98" id="XJQ-bF-cyU"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="pvY-dM-JUp"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vYe-A5-gqS">
-                                <rect key="frame" x="0.0" y="88" width="260" height="648"/>
+                                <rect key="frame" x="0.0" y="98" width="260" height="638"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="fDJ-qW-LKq"/>
