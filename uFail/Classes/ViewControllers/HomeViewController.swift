@@ -22,8 +22,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let savedData = DataHandler()
-        if savedData.thankYouMessageViewed() {
-            let alert = UIAlertController(title: "A Message From Matt (Developer of uFail", message: "" , preferredStyle: .alert)
+        if !savedData.thankYouMessageViewed() {
+            let appHandler = AppHandler()
+            let alert = UIAlertController(title: "A Message From Matt (Developer of uFail", message: appHandler.thankYouMessage(), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
+                savedData.setThankYouMessageViewed()
+            }))
             DispatchQueue.main.async {
                 self.present(alert, animated: true)
             }
