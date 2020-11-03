@@ -21,6 +21,14 @@ class HomeViewController: UIViewController {
     let theme = ThemeHandler()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let savedData = DataHandler()
+        if savedData.thankYouMessageViewed() {
+            let alert = UIAlertController(title: "A Message From Matt (Developer of uFail", message: "" , preferredStyle: .alert)
+            DispatchQueue.main.async {
+                self.present(alert, animated: true)
+            }
+        }
+        
         self.backgroundImage.image = self.theme.getBackgroundImage()
         self.failButton.setImage(self.theme.getFailButton(), for: .normal)
         sideMenuController?.delegate = self
