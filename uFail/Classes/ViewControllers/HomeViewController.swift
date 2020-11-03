@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
         let savedData = DataHandler()
         if !savedData.thankYouMessageViewed() {
             let appHandler = AppHandler()
-            let alert = UIAlertController(title: "A Message From Matt (Developer of uFail", message: appHandler.thankYouMessage(), preferredStyle: .alert)
+            let alert = UIAlertController(title: "A Message From Matt (Developer of uFail)", message: appHandler.thankYouMessage(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
                 savedData.setThankYouMessageViewed()
             }))
