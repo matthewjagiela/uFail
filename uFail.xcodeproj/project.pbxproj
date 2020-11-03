@@ -936,6 +936,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.domain.uFailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uFail.app/uFail";
@@ -959,6 +960,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.domain.uFailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uFail.app/uFail";
