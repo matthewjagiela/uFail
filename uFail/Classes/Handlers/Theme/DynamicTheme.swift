@@ -101,7 +101,8 @@ class DynamicTheme: NSObject {
             case .iPhoneX: themeImage = UIImage(named: "Summer Theme X")!
             case .iPhoneXr: themeImage = UIImage(named: "Summer Theme Plus")!
             case .iPhoneMax: themeImage = UIImage(named: "Summer Theme Plus")!
-            default: themeImage = UIImage(named: "Spring Theme Plus")! //TODO: Change to iPad
+            default: themeImage = UIImage(named: UIDevice.current.orientation.isLandscape ? "Summer Theme iPad Landscape" : "Summer Theme iPad Portrait")!
+                if fromInfo { themeImage = UIImage(named: "Summer Theme iPad Portrait")! }
             }
         } else if season == .fall {
             switch device {
