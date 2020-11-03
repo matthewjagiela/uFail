@@ -1,10 +1,14 @@
 Welcome to uFail 10 by uApps
 What's New:
 11: The Finale
-- This will be the last update to uFail as it is becomming completely autonomous. That means theme changes happen automatically depending on time.
+- This will be the last MAJOR update to uFail as it is now 100% autonomous. Updates will continue for small things such as bug fixes, broken codes, etc. 
+- Dynamic Theme: Themes will now change based on what season it is automatically! This means that there does not need to be an app update for every season change! Woo! (Snow remains!)
 - Redesign in swift: every part of the app has been redone in swift to ensure longevity and to squash bugs.
 - Side Menu Selection: selecting themes and messages will open a slide-over view to allow you to chose your theme or sound.
 - Can now be used in slide-over on iPad
+- Updates to fonts to make it more consistent throughout the app.
+- New images for all themes.
+- iPad images have landscape and portrait values, meaning no more squished images.
 - Improved handling of internet labels so there should no longer be any unavailable labels.
 
 10.6.1:
