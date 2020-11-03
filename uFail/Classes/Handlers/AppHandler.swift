@@ -51,6 +51,28 @@ class AppHandler: NSObject {
         return ""
 
     }
+    
+    func thankYouMessage() -> String {
+        if let path = Bundle.main.path(forResource: "Thank You", ofType: "txt") {
+
+            if let contents = try? String(contentsOfFile: path) {
+
+                return contents
+
+            } else {
+
+                print("Error! - This file doesn't contain any text.")
+            }
+
+        } else {
+
+            print("Error! - This file doesn't exist.")
+        }
+
+        return ""
+
+    }
+    
     @objc func getuFailNewestVersion() -> String {
         return "Newest Version: \(internetInfo?.uFailVersion ?? "")"
     }
