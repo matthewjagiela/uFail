@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        //MARK: - Side Menu Preferences
+        // MARK: - Side Menu Preferences
         SideMenuController.preferences.basic.menuWidth = 260
         SideMenuController.preferences.basic.position = .under
         return true

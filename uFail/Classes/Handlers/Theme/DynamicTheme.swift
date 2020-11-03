@@ -7,30 +7,70 @@
 //
 
 import UIKit
+import SpriteKit
+
+enum Season: String {
+    case spring
+    case summer
+    case fall
+    case winter
+}
 
 class DynamicTheme: NSObject {
 
-  @objc func getTestString() -> NSString {
-        return "Hello World"
-    }
     func getMonth() -> Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
     }
-    func determineSeason() -> String { //This is going to use the month to find out the current season.
+    func determineSeason() -> Season { //This is going to use the month to find out the current season.
         let month = getMonth()
         if month >= 3 && month < 6 {
-            return "Spring"
+            return .spring
         } else if month >= 6 && month < 9 {
-            return "Summer"
+            return .summer
         } else if month >= 9 && month < 12 {
-            return "Fall"
+            return .fall
         } else {
-            return "Winter"
+            return .winter
         }
         
     }
-    @objc func determineTheme(iPhoneVersion: Int) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
+
+    func getSwitcherImage() -> UIImage {
+        let season = determineSeason()
+        switch season {
+        case .fall:
+            return UIImage(named: "Fall Theme Switcher")!
+        case .spring:
+            return UIImage(named: "Spring Theme Switcher")!
+        case .summer:
+            return UIImage(named: "Summer Theme Switcher")!
+        default:
+            return UIImage(named: "Winter Theme Switcher")!
+        }
+    }
+    
+    func textColor() -> UIColor {
+        return determineSeason() == .winter ? .black : .white
+    }
+    
+    func labelBGColor() -> UIColor {
+        return determineSeason() == .winter ? .white: .clear
+    }
+    
+    func shouldShowSnow() -> Bool {
+        return determineSeason() == .winter ? true: false
+    }
+    
+    func setupSnowScene(view: SKView, size: CGSize) {
+        let snowScene = SnowScene(size: size)
+        view.ignoresSiblingOrder = true
+        snowScene.scaleMode = .resizeFill
+        view.backgroundColor = SKColor.clear
+        view.presentScene(snowScene)
+    }
+    
+    func determineTheme(device: DeviceHandler.Device, fromInfo: Bool = false) -> UIImage { //This is going to use the other methods and the iPhone version to determine the dynamic theme...
         var themeImage = UIImage()
         let season = determineSeason()
         /*
@@ -40,74 +80,70 @@ class DynamicTheme: NSObject {
         61 = 6+
         default iPad
         */
-        if season == "Spring" { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
-            case 5:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
-            case 6:
-                themeImage = UIImage(named: "iPhone 6 Summer.png")!
-            case 61:
-                themeImage = UIImage(named: "iPhone 6+ Summer.png")!
-            default:
-                themeImage = UIImage(named: "iPad Image Warm")!
+        if season == .spring { //We are going to have a spring theme eventually... Right now it is going to return the summer theme
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Spring Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Spring Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Spring Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Spring Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Spring Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Spring Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Spring Theme Plus")!
+            default: themeImage = UIImage(named: UIDevice.current.orientation.isLandscape ? "Spring Theme iPad Landscape" : "Spring Theme iPad Portrait")!
+                if fromInfo { themeImage = UIImage(named: "Spring Theme iPad Portrait")!}
             }
-        } else if season == "Summer" {
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
-            case 5:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
-            case 6:
-                themeImage = UIImage(named: "iPhone 6 Summer.png")!
-            case 61:
-                themeImage = UIImage(named: "iPhone 6+ Summer.png")!
-            default:
-                themeImage = UIImage(named: "iPad Image Warm")!
+        } else if season == .summer {
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Summer Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Summer Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Summer Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Summer Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Summer Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Summer Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Summer Theme Plus")!
+            default: themeImage = UIImage(named: UIDevice.current.orientation.isLandscape ? "Summer Theme iPad Landscape" : "Summer Theme iPad Portrait")!
+                if fromInfo { themeImage = UIImage(named: "Summer Theme iPad Portrait")! }
             }
-        } else if season == "Fall" {
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
-            case 5:
-                themeImage = UIImage(named: "iPhone 5 summer.png")!
-            case 6:
-                themeImage = UIImage(named: "iPhone 6 Summer.png")!
-            case 61:
-                themeImage = UIImage(named: "iPhone 6+ Summer.png")!
-            default:
-                themeImage = UIImage(named: "iPad Image Warm")!
+        } else if season == .fall {
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Fall Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Fall Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Fall Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Fall Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Fall Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Fall Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Fall Theme Plus")!
+            default: themeImage = UIImage(named: UIDevice.current.orientation.isLandscape ? "Fall Theme iPad Landscape" : "Fall Theme iPad Portrait")!
+                if fromInfo { themeImage = UIImage(named: "Fall Theme iPad Portrait")!}
             }
         } else { //Winter theme
-            switch iPhoneVersion {
-            case 4:
-                themeImage = UIImage(named: "iPhone 4-5.png")!
-            case 5:
-                themeImage = UIImage(named: "iPhone 4-5.png")!
-            case 6:
-                themeImage = UIImage(named: "iPhone 6 Background.png")!
-            case 61:
-                themeImage = UIImage(named: "iPhone 6+ Background.png")!
-            default:
-                themeImage = UIImage(named: "iPad Winter Background.png")!
+            switch device {
+            case .iPhone4: themeImage = UIImage(named: "Winter Theme SE")!
+            case .iPhone5: themeImage = UIImage(named: "Winter Theme SE")!
+            case .iPhone6: themeImage = UIImage(named: "Winter Theme 6")!
+            case .iPhone6Plus: themeImage = UIImage(named: "Winter Theme Plus")!
+            case .iPhoneX: themeImage = UIImage(named: "Winter Theme X")!
+            case .iPhoneXr: themeImage = UIImage(named: "Winter Theme Plus")!
+            case .iPhoneMax: themeImage = UIImage(named: "Winter Theme Plus")!
+            default: themeImage = UIImage(named: UIDevice.current.orientation.isLandscape ? "Winter Theme iPad Landscape" : "Winter Theme iPad Portrait")!
+                if fromInfo { themeImage = UIImage(named: "Winter Theme iPad Portrait")! }
             }
         }
         
         return themeImage
     }
-    @objc func determineFailButton() -> UIImage { //Great thing is that this does not change based on the device... Find it based on season
+    func determineFailButton() -> UIImage { //Great thing is that this does not change based on the device... Find it based on season
         var buttonImage = UIImage()
         let season = determineSeason()
         switch season {
-        case "Summer":
-            print("Holder for summer")
-        case "Spring":
-            print("Holder for spring")
-        case "Fall":
-            print("Holder for Fall")
+        case .summer:
+            buttonImage = UIImage(named: "Summer Button")!
+        case .spring:
+            buttonImage = UIImage(named: "Spring Button")!
+        case .fall:
+            buttonImage = UIImage(named: "Fall Button")!
         default:
-            print("Holder for Winter")
+            buttonImage = UIImage(named: "Winter Button")!
         }
         return buttonImage
     
