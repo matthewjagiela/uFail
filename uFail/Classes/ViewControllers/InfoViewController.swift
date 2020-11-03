@@ -9,6 +9,8 @@
 import UIKit
 import SafariServices
 import GoogleMobileAds
+import SpriteKit
+
 class InfoViewController: UIViewController {
 
     @IBOutlet weak var bannerAd: GADBannerView!
@@ -24,13 +26,14 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var copyrightLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var changesView: UITextView!
+    @IBOutlet weak var snowView: SKView!
     // MARK: - Class Variables
     let info = AppHandler()
     let theme = ThemeHandler()
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundImage.image = theme.getBackgroundImage()
+        backgroundImage.image = theme.getBackgroundImage(fromInfo: true)
         uAppsNewsLabel.adjustsFontSizeToFitWidth = true
         currentlyRunningVersion.adjustsFontSizeToFitWidth = true
         newestVersionAvailable.adjustsFontSizeToFitWidth = true
@@ -42,6 +45,24 @@ class InfoViewController: UIViewController {
         bannerAd.adUnitID = "ca-app-pub-7714978111013265/9368677969"
         bannerAd.rootViewController = self
         bannerAd.load(GADRequest())
+        
+        failCountLabel.backgroundColor = theme.labelBGColor()
+        currentlyRunningVersion.backgroundColor = theme.labelBGColor()
+        newestVersionAvailable.backgroundColor = theme.labelBGColor()
+        uAppsNewsLabel.backgroundColor = theme.labelBGColor()
+        copyrightLabel.backgroundColor = theme.labelBGColor()
+        
+        failCountLabel.textColor = theme.textColor()
+        currentlyRunningVersion.textColor = theme.textColor()
+        newestVersionAvailable.textColor = theme.textColor()
+        uAppsNewsLabel.textColor = theme.textColor()
+        copyrightLabel.textColor = theme.textColor()
+        
+        if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
+            theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
+        } else {
+            snowView.removeFromSuperview()
+        }
         
         // Do any additional setup after loading the view.
     }

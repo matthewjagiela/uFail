@@ -23,6 +23,7 @@ class DeviceHandler: NSObject {
         let height = Float(UIScreen.main.bounds.size.height)
         let width = Float(UIScreen.main.bounds.size.width)
         let pixels = Int(fmaxf(height, width))
+        print(pixels)
         
         switch pixels {
         case 480:
@@ -35,6 +36,10 @@ class DeviceHandler: NSObject {
             return .iPhone6Plus
         case 812:
             return .iPhoneX
+        case 844:
+            return .iPhoneX
+        case 926:
+            return .iPhoneMax
         case 896:
             return UIScreen.main.scale > 2.0 ? .iPhoneMax : .iPhoneXr
         default:

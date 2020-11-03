@@ -9,10 +9,13 @@
 import UIKit
 
 class ThemeHandler: NSObject {
+
     let data = DataHandler()
     var theme: Theme?
     let deviceHandler = DeviceHandler()
     var device: DeviceHandler.Device!
+    let dynamicTheme = DynamicTheme()
+
     enum Theme {
         case blue
         case green
@@ -20,6 +23,7 @@ class ThemeHandler: NSObject {
         case purple
         case dynamic
     }
+
     override init() {
         super.init()
         device = deviceHandler.currentDevice()
@@ -33,10 +37,10 @@ class ThemeHandler: NSObject {
         case "purple":
             theme = .purple
         default:
-            // TODO: Change to dynamic
-            theme = .blue
+            theme = .dynamic
         }
     }
+
     func setTheme(_ theme: Theme) {
         self.theme = theme
         switch theme {
@@ -52,7 +56,8 @@ class ThemeHandler: NSObject {
             data.saveTheme(theme: "dyanmic")
         }
     }
-    func getBackgroundImage() -> UIImage {
+
+    func getBackgroundImage(fromInfo: Bool = false) -> UIImage {
         if theme != .dynamic {
             switch theme {
             case .blue:
@@ -65,10 +70,18 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "purpleBG.png") ?? UIImage()
             }
         } else { //dynamic theme
-            
+            return dynamicTheme.determineTheme(device: device, fromInfo: fromInfo)
         }
-        return UIImage()
     }
+    
+    func textColor() -> UIColor {
+        return theme == .dynamic ? .black : .white
+    }
+    
+    func labelBGColor() -> UIColor {
+        return theme == .dynamic ? .white: .clear
+    }
+
     func getPreviewImage(_ theme: Theme) -> UIImage {
         switch theme {
         case .blue:
@@ -80,9 +93,10 @@ class ThemeHandler: NSObject {
         case .purple:
             return UIImage(named: "purpleBG") ?? UIImage()
         default: //dynamic
-            return UIImage()
+            return dynamicTheme.getSwitcherImage()
         }
     }
+
     func getFailButton() -> UIImage {
         if theme != .dynamic {
             switch theme {
@@ -96,15 +110,16 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "PurpleButton.png") ?? UIImage()
             }
         } else {
-            
+            return dynamicTheme.determineFailButton()
         }
-        return UIImage()
     }
+
     func getThemePreview() -> [UIImage] {
-        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple)]
+        let themePreviews = [getPreviewImage(.blue), getPreviewImage(.green), getPreviewImage(.red), getPreviewImage(.purple), getPreviewImage(.dynamic)]
         return themePreviews
     }
+
     func themeObjects() -> [Theme] {
-        return [.blue, .green, .red, .purple]
+        return [.blue, .green, .red, .purple, .dynamic]
     }
 }
