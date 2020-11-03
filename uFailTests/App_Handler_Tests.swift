@@ -20,5 +20,9 @@ class App_Handler_Tests: XCTestCase {
             XCTAssertNotNil(info.uAppsNews)
         }
     }
+    
+    func testThankYouFilled() {
+        XCTAssertNotEqual("", handler.thankYouMessage())
+    }
 
 }

@@ -22,6 +22,13 @@ class Saved_Data_Test: XCTestCase {
         savedData.defaults.set(nil, forKey: "theme")
         XCTAssertEqual("dynamic", savedData.getTheme())
     }
+    
+    func testThankYou() {
+        let savedData = DataHandler()
+        XCTAssertFalse(savedData.thankYouMessageViewed())
+        savedData.setThankYouMessageViewed()
+        XCTAssertTrue(savedData.thankYouMessageViewed())
+    }
 }
 class iCloud_Data_Test: XCTestCase {
     func testiCloud() {
