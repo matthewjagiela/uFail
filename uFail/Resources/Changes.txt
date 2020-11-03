@@ -1,5 +1,15 @@
 Welcome to uFail 10 by uApps
 What's New:
+
+A message from Matt (Developer of uFail):
+After 10 years of development it is time to set sail on uFail as a whole. With sadness I announce that this will be the last major version of uFail released. There will be small updates for bug fixes and updates but nothing in terms of theme changes or features.
+
+Started in 2010 uFail actually was my first development project I had ever made. It started my love of porgramming that I have turned into a career for myself. While it is hard to say goodbye it is a must so I can focus on new projects for the uApps family.
+
+I want to thank all the tens of thousands of you who have downloaded uFail over the last few years. I am sure this update will make you happy with themes that change through the seasons and a ton of stability changes along with a whole new UX for sounds and themes.
+
+- Matt 
+
 11: The Finale
 - This will be the last MAJOR update to uFail as it is now 100% autonomous. Updates will continue for small things such as bug fixes, broken codes, etc. 
 - Dynamic Theme: Themes will now change based on what season it is automatically! This means that there does not need to be an app update for every season change! Woo! (Snow remains!)
