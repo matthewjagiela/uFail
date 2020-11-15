@@ -10,23 +10,14 @@ I want to thank all the tens of thousands of you who have downloaded uFail over 
 
 - Matt 
 
-11: The Finale
-- This will be the last MAJOR update to uFail as it is now 100% autonomous. Updates will continue for small things such as bug fixes, broken codes, etc. 
-- Dynamic Theme: Themes will now change based on what season it is automatically! This means that there does not need to be an app update for every season change! Woo! (Snow remains!)
-- Redesign in swift: every part of the app has been redone in swift to ensure longevity and to squash bugs.
-- Side Menu Selection: selecting themes and messages will open a slide-over view to allow you to chose your theme or sound.
-- Can now be used in slide-over on iPad
-- Updates to fonts to make it more consistent throughout the app.
-- New images for all themes.
-- iPad images have landscape and portrait values, meaning no more squished images.
-- Improved handling of internet labels so there should no longer be any unavailable labels.
+    
 
 10.6.1:
 - Various bug fixes.
 10.6:
 - Happy Holidays! Snow is falling throughout the app!
 - New winter theme now that it is cold outside!
-- Icon change to match theme
+- Icon change to match theme    
 - Fixed bug with iPad not showing the right update information.
 10.5.1:
 -Updates for version information to conform to other uApps apps. 
