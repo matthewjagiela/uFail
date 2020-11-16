@@ -1,16 +1,28 @@
-Welcome to uFail 10 by uApps
+Welcome to uFail 11 by uApps
 What's New:
 
 A message from Matt (Developer of uFail):
 After 10 years of development it is time to set sail on uFail as a whole. With sadness I announce that this will be the last major version of uFail released. There will be small updates for bug fixes and updates but nothing in terms of theme changes or features.
 
-Started in 2010 uFail actually was my first development project I had ever made. It started my love of programming that I have turned into a career for myself. While it is hard to say goodbye it is a must so I can focus on new projects for the uApps family.
+Started in 2010 uFail actually was my first development project I had ever made. It started my love of porgramming that I have turned into a career for myself. While it is hard to say goodbye it is a must so I can focus on new projects for the uApps family.
 
 I want to thank all the tens of thousands of you who have downloaded uFail over the last few years. I am sure this update will make you happy with themes that change through the seasons and a ton of stability changes along with a whole new UX for sounds and themes.
 
 - Matt 
 
-    
+11.0.1:
+- Would be smart to check the changelog version...
+
+11: The Finale
+- This will be the last MAJOR update to uFail as it is now 100% autonomous. Updates will continue for small things such as bug fixes, broken codes, etc. 
+- Dynamic Theme: Themes will now change based on what season it is automatically! This means that there does not need to be an app update for every season change! Woo! (Snow remains!)
+- Redesign in swift: every part of the app has been redone in swift to ensure longevity and to squash bugs.
+- Side Menu Selection: selecting themes and messages will open a slide-over view to allow you to chose your theme or sound.
+- Can now be used in slide-over on iPad
+- Updates to fonts to make it more consistent throughout the app.
+- New images for all themes.
+- iPad images have landscape and portrait values, meaning no more squished images.
+- Improved handling of internet labels so there should no longer be any unavailable labels.
 
 10.6.1:
 - Various bug fixes.
@@ -71,9 +83,12 @@ It is summer time and the snow has melted! Enjoy the summer theme once again!
 -Unfortunately we had to change how we pull information for uApps news and the newest version. This is because of DropBox (our old hosting) discontinuing public HTML rendering so we changed host. All older apps will stop seeing the messages October 1st.
 
 10.0.1:
--Changed fonts to be more in line with other uApps Apps! -Added a button to download our new app uTime (It's free!) -UI Tweaks (Info naviagtion bar...)
+-Changed fonts to be more in line with other uApps Apps!
+-Added a button to download our new app uTime (It's free!)
+-UI Tweaks (Info naviagtion bar...)
 -Added Blur Effect For Theme Selector!
--Fixed issue with messageview being off centered for first call (iPad). -Bug Fixes
+-Fixed issue with messageview being off centered for first call (iPad).
+-Bug Fixes
 
 10:
 -Added Fail Count! You can see now how many times you have hit the fail button! (This syncs between devices too!)
