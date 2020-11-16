@@ -11,7 +11,7 @@ I want to thank all the tens of thousands of you who have downloaded uFail over 
 - Matt 
 
 11.0.1:
-- Would be smart to check the changelog version...
+- Would be smart to check the changelog version... (We're on 11 not 10)
 
 11: The Finale
 - This will be the last MAJOR update to uFail as it is now 100% autonomous. Updates will continue for small things such as bug fixes, broken codes, etc. 
