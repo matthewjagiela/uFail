@@ -1,4 +1,4 @@
-Welcome to uFail 10 by uApps
+Welcome to uFail 11 by uApps
 What's New:
 
 A message from Matt (Developer of uFail):
@@ -9,6 +9,9 @@ Started in 2010 uFail actually was my first development project I had ever made.
 I want to thank all the tens of thousands of you who have downloaded uFail over the last few years. I am sure this update will make you happy with themes that change through the seasons and a ton of stability changes along with a whole new UX for sounds and themes.
 
 - Matt 
+
+11.0.1:
+- Would be smart to check the changelog version...
 
 11: The Finale
 - This will be the last MAJOR update to uFail as it is now 100% autonomous. Updates will continue for small things such as bug fixes, broken codes, etc. 
