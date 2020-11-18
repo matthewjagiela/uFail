@@ -3,491 +3,435 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E150E141CADA1BB00E51057 /* iPad Image Warm.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E150E101CADA1BB00E51057 /* iPad Image Warm.png */; };
-		2E150E151CADA1BB00E51057 /* iPhone 5 summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E150E111CADA1BB00E51057 /* iPhone 5 summer.png */; };
-		2E150E161CADA1BB00E51057 /* iPhone 6 Summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E150E121CADA1BB00E51057 /* iPhone 6 Summer.png */; };
-		2E150E171CADA1BB00E51057 /* iPhone 6+ Summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E150E131CADA1BB00E51057 /* iPhone 6+ Summer.png */; };
-		2E150E191CADA63C00E51057 /* uFail Button 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E150E181CADA63C00E51057 /* uFail Button 8.png */; };
-		2E18AC8C1C0FA69F004E7E97 /* snowEffect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2E18AC8B1C0FA69F004E7E97 /* snowEffect.sks */; };
-		2E28F3FB1CBF37F0004080D3 /* iPad Pro Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3F51CBF37F0004080D3 /* iPad Pro Icon.png */; };
-		2E28F3FC1CBF37F0004080D3 /* iPad Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3F61CBF37F0004080D3 /* iPad Retina.png */; };
-		2E28F3FD1CBF37F0004080D3 /* iPhone 6+.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3F71CBF37F0004080D3 /* iPhone 6+.png */; };
-		2E28F3FE1CBF37F0004080D3 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3F81CBF37F0004080D3 /* iPhone.png */; };
-		2E28F3FF1CBF37F0004080D3 /* Normal iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3F91CBF37F0004080D3 /* Normal iPad.png */; };
-		2E28F4001CBF37F0004080D3 /* uFail Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28F3FA1CBF37F0004080D3 /* uFail Icon.png */; };
-		2E497CF51AE6FBA2007EC7EB /* RefreshMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E497CF41AE6FBA2007EC7EB /* RefreshMe.png */; };
-		2E7D174B233EF9A0007B94A6 /* Hicon_iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1745233EF99F007B94A6 /* Hicon_iPadPro.png */; };
-		2E7D174C233EF9A0007B94A6 /* HiPhone2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1746233EF99F007B94A6 /* HiPhone2x.png */; };
-		2E7D174D233EF9A0007B94A6 /* HiPhone3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1747233EF99F007B94A6 /* HiPhone3x.png */; };
-		2E7D174E233EF9A0007B94A6 /* Hicon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1748233EF99F007B94A6 /* Hicon_iPad.png */; };
-		2E7D174F233EF9A0007B94A6 /* Hicon_iPad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D1749233EF99F007B94A6 /* Hicon_iPad2x.png */; };
-		2E7D1750233EF9A0007B94A6 /* Hmain_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D174A233EF9A0007B94A6 /* Hmain_icon.png */; };
-		2E8454981BC37F26003D3D1F /* smokeEffect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2E8454961BC37F26003D3D1F /* smokeEffect.sks */; };
-		2E8454991BC37F26003D3D1F /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8454971BC37F26003D3D1F /* spark.png */; };
-		2E8BC0CC1AFC41A200C60866 /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
-		2EA4C0D01BC4E59800EE6E23 /* smokeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4C0CF1BC4E59800EE6E23 /* smokeScene.m */; };
-		2EB65AC5233C558A006DFC40 /* AppHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB65AC4233C558A006DFC40 /* AppHandler.swift */; };
-		2EB65AC8233C58BB006DFC40 /* Changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2EB65AC7233C58BB006DFC40 /* Changes.txt */; };
-		2ED588FC1C12B9E200C20309 /* iPad Winter Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED588FB1C12B9E200C20309 /* iPad Winter Background.png */; };
-		2ED588FE1C12BC5D00C20309 /* iPhone 6+ Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED588FD1C12BC5D00C20309 /* iPhone 6+ Background.png */; };
-		2ED589001C12BE4600C20309 /* iPhone 6 Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED588FF1C12BE4600C20309 /* iPhone 6 Background.png */; };
-		2ED589041C12C02500C20309 /* iPhone 4-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED589031C12C02500C20309 /* iPhone 4-5.png */; };
-		2EEBEF091ACB5F54004B4834 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF081ACB5F54004B4834 /* main.m */; };
-		2EEBEF141ACB5F54004B4834 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF131ACB5F54004B4834 /* Images.xcassets */; };
-		2EEBEF231ACB5F54004B4834 /* uFailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF221ACB5F54004B4834 /* uFailTests.m */; };
-		2EEBEF391ACB5F7D004B4834 /* santa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF2F1ACB5F7D004B4834 /* santa.mp3 */; };
-		2EEBEF3A1ACB5F7D004B4834 /* So Many Friends.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF301ACB5F7D004B4834 /* So Many Friends.mp3 */; };
-		2EEBEF3B1ACB5F7D004B4834 /* Noob!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF311ACB5F7D004B4834 /* Noob!.mp3 */; };
-		2EEBEF3C1ACB5F7D004B4834 /* FAIL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF321ACB5F7D004B4834 /* FAIL.mp3 */; };
-		2EEBEF3D1ACB5F7D004B4834 /* EPIC FAIL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF331ACB5F7D004B4834 /* EPIC FAIL.mp3 */; };
-		2EEBEF3E1ACB5F7D004B4834 /* WIN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF341ACB5F7D004B4834 /* WIN.mp3 */; };
-		2EEBEF3F1ACB5F7D004B4834 /* PWNED.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF351ACB5F7D004B4834 /* PWNED.mp3 */; };
-		2EEBEF401ACB5F7D004B4834 /* failure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF361ACB5F7D004B4834 /* failure.mp3 */; };
-		2EEBEF411ACB5F7D004B4834 /* You Fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF371ACB5F7D004B4834 /* You Fail.mp3 */; };
-		2EEBEF511ACB5FA6004B4834 /* Air Horn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF431ACB5FA6004B4834 /* Air Horn.png */; };
-		2EEBEF531ACB5FA6004B4834 /* Fail Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF451ACB5FA6004B4834 /* Fail Button.png */; };
-		2EEBEF541ACB5FA6004B4834 /* Actual Blue Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF461ACB5FA6004B4834 /* Actual Blue Button.png */; };
-		2EEBEF551ACB5FA6004B4834 /* Green Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF471ACB5FA6004B4834 /* Green Button.png */; };
-		2EEBEF561ACB5FA6004B4834 /* Purple Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF481ACB5FA6004B4834 /* Purple Button.png */; };
-		2EEBEF5B1ACB5FA6004B4834 /* Background Image Universal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF4D1ACB5FA6004B4834 /* Background Image Universal.png */; };
-		2EEBEF5C1ACB5FA6004B4834 /* blue theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF4E1ACB5FA6004B4834 /* blue theme.png */; };
-		2EEBEF5D1ACB5FA6004B4834 /* greenBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF4F1ACB5FA6004B4834 /* greenBackGround.png */; };
-		2EEBEF5E1ACB5FA6004B4834 /* Purple Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF501ACB5FA6004B4834 /* Purple Background.png */; };
-		2EEBEF7F1ACB5FDA004B4834 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF711ACB5FDA004B4834 /* AppDelegate.m */; };
-		2EEBEF801ACB5FDA004B4834 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF721ACB5FDA004B4834 /* Main_iPhone.storyboard */; };
-		2EEBEF811ACB5FDA004B4834 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF731ACB5FDA004B4834 /* Main_iPad.storyboard */; };
-		2EEBEF821ACB5FDA004B4834 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF751ACB5FDA004B4834 /* ViewController.m */; };
-		2EEBEF831ACB5FDA004B4834 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */; };
-		2EEBEF8A1ACB6027004B4834 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBEF891ACB6027004B4834 /* Launch Screen.xib */; };
-		2EEBEF8E1ACB6058004B4834 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8D1ACB6058004B4834 /* MessageUI.framework */; };
-		2EEBEF901ACB605D004B4834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEF8F1ACB605D004B4834 /* Social.framework */; };
-		2EEBEFBF1ACB61AD004B4834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */; };
-		2EEBEFC11ACB61B4004B4834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBEFC01ACB61B4004B4834 /* UIKit.framework */; };
-		2EF687742342F63E00980799 /* uFail Button Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687732342F63E00980799 /* uFail Button Halloween.png */; };
-		2EF687782344388600980799 /* iPhone 6 Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687752344388600980799 /* iPhone 6 Halloween.png */; };
-		2EF687792344388600980799 /* iPhone 5 Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687762344388600980799 /* iPhone 5 Halloween.png */; };
-		2EF6877A2344388600980799 /* iPhone 6+ Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF687772344388600980799 /* iPhone 6+ Halloween.png */; };
-		2EF6877C23443D5300980799 /* iPad Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF6877B23443D5300980799 /* iPad Halloween.png */; };
-		2EF75F831C74425600CD78AE /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */; };
-		3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498E14F2282518000E638A6 /* DynamicTheme.swift */; };
-		349E8D401DECC16C005501A3 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 349E8D3F1DECC16C005501A3 /* SnowScene.m */; };
-		34DE673B1DECC7EF00A4207C /* Winter Fail Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 34DE673A1DECC7EF00A4207C /* Winter Fail Button.png */; };
-		34ECBBA61DEE8438002387BA /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ECBBA01DEE8438002387BA /* icon_iPad.png */; };
-		34ECBBA71DEE8438002387BA /* icon_iPad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ECBBA11DEE8438002387BA /* icon_iPad2x.png */; };
-		34ECBBA81DEE8438002387BA /* icon_iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ECBBA21DEE8438002387BA /* icon_iPadPro.png */; };
-		34ECBBA91DEE8438002387BA /* iPhone2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ECBBA31DEE8438002387BA /* iPhone2x.png */; };
-		34ECBBAA1DEE8438002387BA /* iPhone3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ECBBA41DEE8438002387BA /* iPhone3x.png */; };
-		34ECBBAB1DEE8438002387BA /* main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ECBBA51DEE8438002387BA /* main_icon.png */; };
-		459D0464B6687829331A6F04 /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A38EC0C7F3D2C5C41F543B8 /* Pods_uFail.framework */; };
-		98DE96CB0BCBD9D9BA91EDBC /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243A48EFC1AA1A9FAD14DAD6 /* Pods_uFailTests.framework */; };
+		2E018BDC23D1643000B1D627 /* App_Handler_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E018BDB23D1643000B1D627 /* App_Handler_Tests.swift */; };
+		2E018BDD23D1644300B1D627 /* AppHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F923B56844001DEC49 /* AppHandler.swift */; };
+		2E16227823BDB01500E5A533 /* Sound_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16227723BDB01500E5A533 /* Sound_Test.swift */; };
+		2E16227923BDB02C00E5A533 /* SoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11E423B9A1A200832EDD /* SoundHandler.swift */; };
+		2E191D6D23D141E9007E35C2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E191D6C23D141E9007E35C2 /* InfoViewController.swift */; };
+		2E21886C23C1B60800E764E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21886B23C1B60800E764E5 /* HomeViewController.swift */; };
+		2E26E42924135E32005BCA3E /* dynamic_theme_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26E42824135E32005BCA3E /* dynamic_theme_test.swift */; };
+		2E26E42B24135ED2005BCA3E /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F823B56844001DEC49 /* DynamicTheme.swift */; };
+		2E2EF99723EBA389008FF7CC /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EF99623EBA389008FF7CC /* DynamicTableViewCell.swift */; };
+		2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
+		2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
+		2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
+		2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11C523B8514700832EDD /* DeviceHandler.swift */; };
+		2E5F11CE23B8679300832EDD /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54D05523B6FED40051A693 /* DataHandler.swift */; };
+		2E5F11E023B86A8000832EDD /* blueBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DC23B86A7F00832EDD /* blueBG.png */; };
+		2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DD23B86A7F00832EDD /* purpleBG.png */; };
+		2E5F11E223B86A8000832EDD /* greenBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DE23B86A7F00832EDD /* greenBG.png */; };
+		2E5F11E323B86A8000832EDD /* redBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11DF23B86A8000832EDD /* redBG.png */; };
+		2E5F11E523B9A1A200832EDD /* SoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F11E423B9A1A200832EDD /* SoundHandler.swift */; };
+		2E5F11F123B9A2BF00832EDD /* failure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11E723B9A2BE00832EDD /* failure.mp3 */; };
+		2E5F11F223B9A2BF00832EDD /* Noob!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11E823B9A2BE00832EDD /* Noob!.mp3 */; };
+		2E5F11F323B9A2BF00832EDD /* WIN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11E923B9A2BE00832EDD /* WIN.mp3 */; };
+		2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EA23B9A2BF00832EDD /* AIRHORN.mp3 */; };
+		2E5F11F523B9A2BF00832EDD /* EPIC FAIL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EB23B9A2BF00832EDD /* EPIC FAIL.mp3 */; };
+		2E5F11F623B9A2BF00832EDD /* PWNED.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EC23B9A2BF00832EDD /* PWNED.mp3 */; };
+		2E5F11F723B9A2BF00832EDD /* santa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11ED23B9A2BF00832EDD /* santa.mp3 */; };
+		2E5F11F823B9A2BF00832EDD /* FAIL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */; };
+		2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */; };
+		2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */; };
+		2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362723C1C7BE00F4726C /* BlueButton.png */; };
+		2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A362923C1C7C300F4726C /* GreenButton.png */; };
+		2E6A363023C2D20600F4726C /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A362F23C2D20600F4726C /* SelectorViewController.swift */; };
+		2E7045B723B922540043638F /* Theme_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7045B623B922540043638F /* Theme_Test.swift */; };
+		2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */; };
+		2E706D0223F23DBC004C8899 /* PurpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E706D0123F23DBC004C8899 /* PurpleButton.png */; };
+		2E706D0423F23DC3004C8899 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E706D0323F23DC3004C8899 /* RedButton.png */; };
+		2E79A87723B7C18D005271CC /* Saved_Data_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */; };
+		2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F823B56844001DEC49 /* DynamicTheme.swift */; };
+		2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E89B3F923B56844001DEC49 /* AppHandler.swift */; };
+		2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E89B3FD23B56861001DEC49 /* Changes.txt */; };
+		2EA01E7923B5608300B38C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E7823B5608300B38C64 /* AppDelegate.swift */; };
+		2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E7E23B5608300B38C64 /* Main.storyboard */; };
+		2EA01E8223B5608400B38C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E8123B5608400B38C64 /* Assets.xcassets */; };
+		2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */; };
+		2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E8F23B5608400B38C64 /* uFailTests.swift */; };
+		2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA01E9A23B5608400B38C64 /* uFailUITests.swift */; };
+		2EA065062548D2C100EADBE1 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA065042548D2C100EADBE1 /* SnowScene.m */; };
+		2EA065072548D2C100EADBE1 /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2EA065052548D2C100EADBE1 /* Snow.sks */; };
+		2EA0651F2548DDEA00EADBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0651E2548DDEA00EADBE1 /* Assets.xcassets */; };
+		2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918E24145CE300153107 /* Summer Theme Plus.png */; };
+		2EA5919324145CE400153107 /* Summer Theme X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5918F24145CE400153107 /* Summer Theme X.png */; };
+		2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919024145CE400153107 /* Summmer Theme SE.png */; };
+		2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA5919124145CE400153107 /* Summer Theme 6.png */; };
+		2EA591972414649C00153107 /* uFail Button Summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA591962414649C00153107 /* uFail Button Summer.png */; };
+		2EA855452550F5FE00140DEB /* Thank You.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2EA855442550F5FE00140DEB /* Thank You.txt */; };
+		2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */; };
+		D16EE44105FA5AA867272B28 /* Pods_uFailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788DD77D619E0DBD635DE5B4 /* Pods_uFailTests.framework */; };
+		F6DE692AD6EFE678EE5319BF /* Pods_uFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94642AADBC597253F9B5173 /* Pods_uFail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2EEBEF1D1ACB5F54004B4834 /* PBXContainerItemProxy */ = {
+		2EA01E8C23B5608400B38C64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2EEBEEFB1ACB5F54004B4834 /* Project object */;
+			containerPortal = 2EA01E6D23B5608300B38C64 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2EEBEF021ACB5F54004B4834;
+			remoteGlobalIDString = 2EA01E7423B5608300B38C64;
+			remoteInfo = uFail;
+		};
+		2EA01E9723B5608400B38C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EA01E6D23B5608300B38C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EA01E7423B5608300B38C64;
 			remoteInfo = uFail;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		2EE7C9371B2674AD007D6CBF /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2EEBEFBD1ACB609B004B4834 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		243A48EFC1AA1A9FAD14DAD6 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E150E101CADA1BB00E51057 /* iPad Image Warm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Image Warm.png"; sourceTree = "<group>"; };
-		2E150E111CADA1BB00E51057 /* iPhone 5 summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 5 summer.png"; sourceTree = "<group>"; };
-		2E150E121CADA1BB00E51057 /* iPhone 6 Summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6 Summer.png"; sourceTree = "<group>"; };
-		2E150E131CADA1BB00E51057 /* iPhone 6+ Summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+ Summer.png"; sourceTree = "<group>"; };
-		2E150E181CADA63C00E51057 /* uFail Button 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button 8.png"; sourceTree = "<group>"; };
-		2E18AC8B1C0FA69F004E7E97 /* snowEffect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snowEffect.sks; sourceTree = "<group>"; };
-		2E28F3F51CBF37F0004080D3 /* iPad Pro Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Pro Icon.png"; sourceTree = "<group>"; };
-		2E28F3F61CBF37F0004080D3 /* iPad Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Retina.png"; sourceTree = "<group>"; };
-		2E28F3F71CBF37F0004080D3 /* iPhone 6+.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+.png"; sourceTree = "<group>"; };
-		2E28F3F81CBF37F0004080D3 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = "<group>"; };
-		2E28F3F91CBF37F0004080D3 /* Normal iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Normal iPad.png"; sourceTree = "<group>"; };
-		2E28F3FA1CBF37F0004080D3 /* uFail Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Icon.png"; sourceTree = "<group>"; };
-		2E323D151BE7087E00233A5D /* uFail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFail.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3479711BE70A5F00B770E3 /* uFailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E497CF41AE6FBA2007EC7EB /* RefreshMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RefreshMe.png; sourceTree = "<group>"; };
-		2E7D1745233EF99F007B94A6 /* Hicon_iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hicon_iPadPro.png; sourceTree = "<group>"; };
-		2E7D1746233EF99F007B94A6 /* HiPhone2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HiPhone2x.png; sourceTree = "<group>"; };
-		2E7D1747233EF99F007B94A6 /* HiPhone3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HiPhone3x.png; sourceTree = "<group>"; };
-		2E7D1748233EF99F007B94A6 /* Hicon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hicon_iPad.png; sourceTree = "<group>"; };
-		2E7D1749233EF99F007B94A6 /* Hicon_iPad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hicon_iPad2x.png; sourceTree = "<group>"; };
-		2E7D174A233EF9A0007B94A6 /* Hmain_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hmain_icon.png; sourceTree = "<group>"; };
-		2E8454961BC37F26003D3D1F /* smokeEffect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smokeEffect.sks; sourceTree = "<group>"; };
-		2E8454971BC37F26003D3D1F /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AIRHORN.mp3; sourceTree = "<group>"; };
-		2EA4C0CE1BC4E59800EE6E23 /* smokeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smokeScene.h; sourceTree = "<group>"; };
-		2EA4C0CF1BC4E59800EE6E23 /* smokeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smokeScene.m; sourceTree = "<group>"; };
-		2EB65AC4233C558A006DFC40 /* AppHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHandler.swift; sourceTree = "<group>"; };
-		2EB65AC7233C58BB006DFC40 /* Changes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changes.txt; sourceTree = "<group>"; };
-		2ED588FB1C12B9E200C20309 /* iPad Winter Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Winter Background.png"; sourceTree = "<group>"; };
-		2ED588FD1C12BC5D00C20309 /* iPhone 6+ Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+ Background.png"; sourceTree = "<group>"; };
-		2ED588FF1C12BE4600C20309 /* iPhone 6 Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6 Background.png"; sourceTree = "<group>"; };
-		2ED589031C12C02500C20309 /* iPhone 4-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 4-5.png"; sourceTree = "<group>"; };
-		2EEBEF071ACB5F54004B4834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EEBEF081ACB5F54004B4834 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EEBEF131ACB5F54004B4834 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2EEBEF211ACB5F54004B4834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EEBEF221ACB5F54004B4834 /* uFailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uFailTests.m; sourceTree = "<group>"; };
-		2EEBEF2F1ACB5F7D004B4834 /* santa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = santa.mp3; sourceTree = "<group>"; };
-		2EEBEF301ACB5F7D004B4834 /* So Many Friends.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "So Many Friends.mp3"; sourceTree = "<group>"; };
-		2EEBEF311ACB5F7D004B4834 /* Noob!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Noob!.mp3"; sourceTree = "<group>"; };
-		2EEBEF321ACB5F7D004B4834 /* FAIL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FAIL.mp3; sourceTree = "<group>"; };
-		2EEBEF331ACB5F7D004B4834 /* EPIC FAIL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EPIC FAIL.mp3"; sourceTree = "<group>"; };
-		2EEBEF341ACB5F7D004B4834 /* WIN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WIN.mp3; sourceTree = "<group>"; };
-		2EEBEF351ACB5F7D004B4834 /* PWNED.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PWNED.mp3; sourceTree = "<group>"; };
-		2EEBEF361ACB5F7D004B4834 /* failure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failure.mp3; sourceTree = "<group>"; };
-		2EEBEF371ACB5F7D004B4834 /* You Fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "You Fail.mp3"; sourceTree = "<group>"; };
-		2EEBEF431ACB5FA6004B4834 /* Air Horn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Air Horn.png"; sourceTree = "<group>"; };
-		2EEBEF451ACB5FA6004B4834 /* Fail Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fail Button.png"; sourceTree = "<group>"; };
-		2EEBEF461ACB5FA6004B4834 /* Actual Blue Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Actual Blue Button.png"; sourceTree = "<group>"; };
-		2EEBEF471ACB5FA6004B4834 /* Green Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green Button.png"; sourceTree = "<group>"; };
-		2EEBEF481ACB5FA6004B4834 /* Purple Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple Button.png"; sourceTree = "<group>"; };
-		2EEBEF4D1ACB5FA6004B4834 /* Background Image Universal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background Image Universal.png"; sourceTree = "<group>"; };
-		2EEBEF4E1ACB5FA6004B4834 /* blue theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue theme.png"; sourceTree = "<group>"; };
-		2EEBEF4F1ACB5FA6004B4834 /* greenBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBackGround.png; sourceTree = "<group>"; };
-		2EEBEF501ACB5FA6004B4834 /* Purple Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple Background.png"; sourceTree = "<group>"; };
-		2EEBEF701ACB5FDA004B4834 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2EEBEF711ACB5FDA004B4834 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2EEBEF721ACB5FDA004B4834 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
-		2EEBEF731ACB5FDA004B4834 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
-		2EEBEF741ACB5FDA004B4834 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2EEBEF751ACB5FDA004B4834 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2EEBEF761ACB5FDA004B4834 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		2EEBEF881ACB6010004B4834 /* uFail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = uFail.entitlements; sourceTree = "<group>"; };
-		2EEBEF891ACB6027004B4834 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		2EEBEF8B1ACB6051004B4834 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		2EEBEF8D1ACB6058004B4834 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		2EEBEF8F1ACB605D004B4834 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		2EEBEF931ACB606A004B4834 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2EEBEFC01ACB61B4004B4834 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2EF687732342F63E00980799 /* uFail Button Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Halloween.png"; sourceTree = "<group>"; };
-		2EF687752344388600980799 /* iPhone 6 Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6 Halloween.png"; sourceTree = "<group>"; };
-		2EF687762344388600980799 /* iPhone 5 Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 5 Halloween.png"; sourceTree = "<group>"; };
-		2EF687772344388600980799 /* iPhone 6+ Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 6+ Halloween.png"; sourceTree = "<group>"; };
-		2EF6877B23443D5300980799 /* iPad Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad Halloween.png"; sourceTree = "<group>"; };
-		3498E14E2282518000E638A6 /* uFail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uFail-Bridging-Header.h"; sourceTree = "<group>"; };
-		3498E14F2282518000E638A6 /* DynamicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
-		349E8D3E1DECC16C005501A3 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
-		349E8D3F1DECC16C005501A3 /* SnowScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowScene.m; sourceTree = "<group>"; };
-		34DE673A1DECC7EF00A4207C /* Winter Fail Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Winter Fail Button.png"; sourceTree = "<group>"; };
-		34ECBBA01DEE8438002387BA /* icon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad.png; sourceTree = "<group>"; };
-		34ECBBA11DEE8438002387BA /* icon_iPad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPad2x.png; sourceTree = "<group>"; };
-		34ECBBA21DEE8438002387BA /* icon_iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iPadPro.png; sourceTree = "<group>"; };
-		34ECBBA31DEE8438002387BA /* iPhone2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone2x.png; sourceTree = "<group>"; };
-		34ECBBA41DEE8438002387BA /* iPhone3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone3x.png; sourceTree = "<group>"; };
-		34ECBBA51DEE8438002387BA /* main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_icon.png; sourceTree = "<group>"; };
-		4423F145DD112B69EA52E764 /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
-		8A38EC0C7F3D2C5C41F543B8 /* Pods_uFail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87E70D4A59C641689F41815 /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
-		B0DE910E159E66290B292950 /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
-		D8C232B38BAB4B9060C54B5F /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C83592EC6A9F4A43130D8D0 /* Pods-uFailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.debug.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E018BDB23D1643000B1D627 /* App_Handler_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Handler_Tests.swift; sourceTree = "<group>"; };
+		2E16227723BDB01500E5A533 /* Sound_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound_Test.swift; sourceTree = "<group>"; };
+		2E191D6C23D141E9007E35C2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		2E21886B23C1B60800E764E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2E26E42824135E32005BCA3E /* dynamic_theme_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamic_theme_test.swift; sourceTree = "<group>"; };
+		2E2EF99623EBA389008FF7CC /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicTableViewCell.swift; path = uFail/Other/DynamicTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
+		2E54D05523B6FED40051A693 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		2E57F4CF253CDF6200F301D5 /* uFail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uFail.entitlements; sourceTree = "<group>"; };
+		2E5F11C523B8514700832EDD /* DeviceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHandler.swift; sourceTree = "<group>"; };
+		2E5F11DC23B86A7F00832EDD /* blueBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueBG.png; sourceTree = "<group>"; };
+		2E5F11DD23B86A7F00832EDD /* purpleBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleBG.png; sourceTree = "<group>"; };
+		2E5F11DE23B86A7F00832EDD /* greenBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBG.png; sourceTree = "<group>"; };
+		2E5F11DF23B86A8000832EDD /* redBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redBG.png; sourceTree = "<group>"; };
+		2E5F11E423B9A1A200832EDD /* SoundHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundHandler.swift; sourceTree = "<group>"; };
+		2E5F11E723B9A2BE00832EDD /* failure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failure.mp3; sourceTree = "<group>"; };
+		2E5F11E823B9A2BE00832EDD /* Noob!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Noob!.mp3"; sourceTree = "<group>"; };
+		2E5F11E923B9A2BE00832EDD /* WIN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WIN.mp3; sourceTree = "<group>"; };
+		2E5F11EA23B9A2BF00832EDD /* AIRHORN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AIRHORN.mp3; sourceTree = "<group>"; };
+		2E5F11EB23B9A2BF00832EDD /* EPIC FAIL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EPIC FAIL.mp3"; sourceTree = "<group>"; };
+		2E5F11EC23B9A2BF00832EDD /* PWNED.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PWNED.mp3; sourceTree = "<group>"; };
+		2E5F11ED23B9A2BF00832EDD /* santa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = santa.mp3; sourceTree = "<group>"; };
+		2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FAIL.mp3; sourceTree = "<group>"; };
+		2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "So Many Friends.mp3"; sourceTree = "<group>"; };
+		2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "You Fail.mp3"; sourceTree = "<group>"; };
+		2E6A362723C1C7BE00F4726C /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
+		2E6A362923C1C7C300F4726C /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		2E6A362F23C2D20600F4726C /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
+		2E7045B623B922540043638F /* Theme_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme_Test.swift; sourceTree = "<group>"; };
+		2E706D0123F23DBC004C8899 /* PurpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PurpleButton.png; sourceTree = "<group>"; };
+		2E706D0323F23DC3004C8899 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
+		2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saved_Data_Test.swift; sourceTree = "<group>"; };
+		2E89B3F823B56844001DEC49 /* DynamicTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTheme.swift; sourceTree = "<group>"; };
+		2E89B3F923B56844001DEC49 /* AppHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHandler.swift; sourceTree = "<group>"; };
+		2E89B3FD23B56861001DEC49 /* Changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changes.txt; sourceTree = "<group>"; };
+		2EA01E7523B5608300B38C64 /* uFail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA01E7823B5608300B38C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EA01E7F23B5608300B38C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EA01E8123B5608400B38C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EA01E8423B5608400B38C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EA01E8623B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA01E8B23B5608400B38C64 /* uFailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA01E8F23B5608400B38C64 /* uFailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailTests.swift; sourceTree = "<group>"; };
+		2EA01E9123B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA01E9623B5608400B38C64 /* uFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA01E9A23B5608400B38C64 /* uFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFailUITests.swift; sourceTree = "<group>"; };
+		2EA01E9C23B5608400B38C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA065022548D2C000EADBE1 /* uFail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uFail-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EA065032548D2C100EADBE1 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
+		2EA065042548D2C100EADBE1 /* SnowScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowScene.m; sourceTree = "<group>"; };
+		2EA065052548D2C100EADBE1 /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
+		2EA0651E2548DDEA00EADBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EA5918E24145CE300153107 /* Summer Theme Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme Plus.png"; sourceTree = "<group>"; };
+		2EA5918F24145CE400153107 /* Summer Theme X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme X.png"; sourceTree = "<group>"; };
+		2EA5919024145CE400153107 /* Summmer Theme SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summmer Theme SE.png"; sourceTree = "<group>"; };
+		2EA5919124145CE400153107 /* Summer Theme 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Summer Theme 6.png"; sourceTree = "<group>"; };
+		2EA591962414649C00153107 /* uFail Button Summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uFail Button Summer.png"; sourceTree = "<group>"; };
+		2EA855442550F5FE00140DEB /* Thank You.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Thank You.txt"; sourceTree = "<group>"; };
+		2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		46B4F3BB7F7E6C0D3BAD40E7 /* Pods-uFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.debug.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.debug.xcconfig"; sourceTree = "<group>"; };
+		788DD77D619E0DBD635DE5B4 /* Pods_uFailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0EAD2C888C0D5AB4BFB2AB /* Pods-uFailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFailTests.release.xcconfig"; path = "Target Support Files/Pods-uFailTests/Pods-uFailTests.release.xcconfig"; sourceTree = "<group>"; };
+		C94642AADBC597253F9B5173 /* Pods_uFail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D29622B20EFE2892F2DCEA /* Pods-uFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFail.release.xcconfig"; path = "Target Support Files/Pods-uFail/Pods-uFail.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2EEBEF001ACB5F54004B4834 /* Frameworks */ = {
+		2EA01E7223B5608300B38C64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EEBEFC11ACB61B4004B4834 /* UIKit.framework in Frameworks */,
-				2EEBEFBF1ACB61AD004B4834 /* Foundation.framework in Frameworks */,
-				2EEBEF901ACB605D004B4834 /* Social.framework in Frameworks */,
-				2EEBEF8E1ACB6058004B4834 /* MessageUI.framework in Frameworks */,
-				459D0464B6687829331A6F04 /* Pods_uFail.framework in Frameworks */,
+				F6DE692AD6EFE678EE5319BF /* Pods_uFail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EEBEF191ACB5F54004B4834 /* Frameworks */ = {
+		2EA01E8823B5608400B38C64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DE96CB0BCBD9D9BA91EDBC /* Pods_uFailTests.framework in Frameworks */,
+				D16EE44105FA5AA867272B28 /* Pods_uFailTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA01E9323B5608400B38C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E150E0E1CADA18500E51057 /* Summer */ = {
+		2E5202C823B7FD40001B6F65 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				2E150E181CADA63C00E51057 /* uFail Button 8.png */,
-				2E150E101CADA1BB00E51057 /* iPad Image Warm.png */,
-				2E150E111CADA1BB00E51057 /* iPhone 5 summer.png */,
-				2E150E121CADA1BB00E51057 /* iPhone 6 Summer.png */,
-				2E150E131CADA1BB00E51057 /* iPhone 6+ Summer.png */,
+				2E89B3F823B56844001DEC49 /* DynamicTheme.swift */,
+				2E5202C623B7FD38001B6F65 /* ThemeHandler.swift */,
 			);
-			name = Summer;
+			path = Theme;
 			sourceTree = "<group>";
 		};
-		2E150E0F1CADA18B00E51057 /* Icons (Summer) */ = {
+		2E5F11D723B8695A00832EDD /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				2E28F3F51CBF37F0004080D3 /* iPad Pro Icon.png */,
-				2E28F3F61CBF37F0004080D3 /* iPad Retina.png */,
-				2E28F3F71CBF37F0004080D3 /* iPhone 6+.png */,
-				2E28F3F81CBF37F0004080D3 /* iPhone.png */,
-				2E28F3F91CBF37F0004080D3 /* Normal iPad.png */,
-				2E28F3FA1CBF37F0004080D3 /* uFail Icon.png */,
+				2EA5918D24145CD100153107 /* Summer */,
+				2E5F11DB23B8698E00832EDD /* Purple */,
+				2E5F11D923B8697F00832EDD /* Red */,
+				2E5F11DA23B8698500832EDD /* Green */,
+				2E5F11D823B8696900832EDD /* Blue */,
 			);
-			name = "Icons (Summer)";
+			path = Themes;
 			sourceTree = "<group>";
 		};
-		2E7D1720233EF7B3007B94A6 /* Icons (Halloween) */ = {
+		2E5F11D823B8696900832EDD /* Blue */ = {
 			isa = PBXGroup;
 			children = (
-				2E7D1748233EF99F007B94A6 /* Hicon_iPad.png */,
-				2E7D1749233EF99F007B94A6 /* Hicon_iPad2x.png */,
-				2E7D1745233EF99F007B94A6 /* Hicon_iPadPro.png */,
-				2E7D1746233EF99F007B94A6 /* HiPhone2x.png */,
-				2E7D1747233EF99F007B94A6 /* HiPhone3x.png */,
-				2E7D174A233EF9A0007B94A6 /* Hmain_icon.png */,
+				2E6A362723C1C7BE00F4726C /* BlueButton.png */,
+				2E5F11DC23B86A7F00832EDD /* blueBG.png */,
 			);
-			name = "Icons (Halloween)";
+			path = Blue;
 			sourceTree = "<group>";
 		};
-		2EB65AC3233C5544006DFC40 /* Handlers */ = {
+		2E5F11D923B8697F00832EDD /* Red */ = {
 			isa = PBXGroup;
 			children = (
-				3498E14F2282518000E638A6 /* DynamicTheme.swift */,
-				2EB65AC4233C558A006DFC40 /* AppHandler.swift */,
+				2E706D0323F23DC3004C8899 /* RedButton.png */,
+				2E5F11DF23B86A8000832EDD /* redBG.png */,
 			);
-			name = Handlers;
+			path = Red;
 			sourceTree = "<group>";
 		};
-		2EB65AC6233C58A4006DFC40 /* Other */ = {
+		2E5F11DA23B8698500832EDD /* Green */ = {
 			isa = PBXGroup;
 			children = (
-				2EB65AC7233C58BB006DFC40 /* Changes.txt */,
+				2E6A362923C1C7C300F4726C /* GreenButton.png */,
+				2E5F11DE23B86A7F00832EDD /* greenBG.png */,
 			);
-			name = Other;
+			path = Green;
 			sourceTree = "<group>";
 		};
-		2ED588FA1C12B9D700C20309 /* Winter */ = {
+		2E5F11DB23B8698E00832EDD /* Purple */ = {
 			isa = PBXGroup;
 			children = (
-				34DE673A1DECC7EF00A4207C /* Winter Fail Button.png */,
-				2ED589031C12C02500C20309 /* iPhone 4-5.png */,
-				2ED588FF1C12BE4600C20309 /* iPhone 6 Background.png */,
-				2ED588FD1C12BC5D00C20309 /* iPhone 6+ Background.png */,
-				2ED588FB1C12B9E200C20309 /* iPad Winter Background.png */,
+				2E706D0123F23DBC004C8899 /* PurpleButton.png */,
+				2E5F11DD23B86A7F00832EDD /* purpleBG.png */,
 			);
-			name = Winter;
+			path = Purple;
 			sourceTree = "<group>";
 		};
-		2EEBEEFA1ACB5F54004B4834 = {
+		2E5F11E623B9A1DC00832EDD /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				2EA4C0CE1BC4E59800EE6E23 /* smokeScene.h */,
-				349E8D3E1DECC16C005501A3 /* SnowScene.h */,
-				349E8D3F1DECC16C005501A3 /* SnowScene.m */,
-				2E18AC8B1C0FA69F004E7E97 /* snowEffect.sks */,
-				2EA4C0CF1BC4E59800EE6E23 /* smokeScene.m */,
-				2E8454961BC37F26003D3D1F /* smokeEffect.sks */,
-				2E8454971BC37F26003D3D1F /* spark.png */,
-				2EEBEFC01ACB61B4004B4834 /* UIKit.framework */,
-				2EEBEFBE1ACB61AD004B4834 /* Foundation.framework */,
-				2EEBEF931ACB606A004B4834 /* Twitter.framework */,
-				2EEBEF8F1ACB605D004B4834 /* Social.framework */,
-				2EEBEF8D1ACB6058004B4834 /* MessageUI.framework */,
-				2EEBEF8B1ACB6051004B4834 /* iAd.framework */,
-				2EEBEF051ACB5F54004B4834 /* uFail */,
-				2EEBEF1F1ACB5F54004B4834 /* uFailTests */,
-				2E323D151BE7087E00233A5D /* uFail.app */,
-				2E3479711BE70A5F00B770E3 /* uFailTests.xctest */,
-				9255EE4757E6C3852FFE5B5A /* Pods */,
-				9AF4F8DBF1B3159FBB163E3E /* Frameworks */,
+				2E5F11EA23B9A2BF00832EDD /* AIRHORN.mp3 */,
+				2E5F11EB23B9A2BF00832EDD /* EPIC FAIL.mp3 */,
+				2E5F11EE23B9A2BF00832EDD /* FAIL.mp3 */,
+				2E5F11E723B9A2BE00832EDD /* failure.mp3 */,
+				2E5F11E823B9A2BE00832EDD /* Noob!.mp3 */,
+				2E5F11EC23B9A2BF00832EDD /* PWNED.mp3 */,
+				2E5F11ED23B9A2BF00832EDD /* santa.mp3 */,
+				2E5F11EF23B9A2BF00832EDD /* So Many Friends.mp3 */,
+				2E5F11E923B9A2BE00832EDD /* WIN.mp3 */,
+				2E5F11F023B9A2BF00832EDD /* You Fail.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2EA01E6C23B5608300B38C64 = {
+			isa = PBXGroup;
+			children = (
+				2EA8B57C23B7C66900CDB417 /* .swiftlint.yml */,
+				2EA01E7723B5608300B38C64 /* uFail */,
+				2EA01E8E23B5608400B38C64 /* uFailTests */,
+				2EA01E9923B5608400B38C64 /* uFailUITests */,
+				2EA01E7623B5608300B38C64 /* Products */,
+				B22FCFA1D8D3B18B1F5A48AE /* Pods */,
+				82F6BC1A4E468F754BBE00DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2EEBEF051ACB5F54004B4834 /* uFail */ = {
+		2EA01E7623B5608300B38C64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EB65AC6233C58A4006DFC40 /* Other */,
-				2EB65AC3233C5544006DFC40 /* Handlers */,
-				2EEBEF881ACB6010004B4834 /* uFail.entitlements */,
-				2EEBEF701ACB5FDA004B4834 /* AppDelegate.h */,
-				2EEBEF711ACB5FDA004B4834 /* AppDelegate.m */,
-				2EEBEF721ACB5FDA004B4834 /* Main_iPhone.storyboard */,
-				2EEBEF731ACB5FDA004B4834 /* Main_iPad.storyboard */,
-				2EEBEF741ACB5FDA004B4834 /* ViewController.h */,
-				2EEBEF751ACB5FDA004B4834 /* ViewController.m */,
-				2EEBEF761ACB5FDA004B4834 /* InfoViewController.h */,
-				2EEBEF771ACB5FDA004B4834 /* InfoViewController.m */,
-				2EEBEF891ACB6027004B4834 /* Launch Screen.xib */,
-				2EEBEF2C1ACB5F5F004B4834 /* Resources */,
-				2EEBEF131ACB5F54004B4834 /* Images.xcassets */,
-				2EEBEF061ACB5F54004B4834 /* Supporting Files */,
-				3498E14E2282518000E638A6 /* uFail-Bridging-Header.h */,
+				2EA01E7523B5608300B38C64 /* uFail.app */,
+				2EA01E8B23B5608400B38C64 /* uFailTests.xctest */,
+				2EA01E9623B5608400B38C64 /* uFailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EA01E7723B5608300B38C64 /* uFail */ = {
+			isa = PBXGroup;
+			children = (
+				2EA065012548D2B200EADBE1 /* Other */,
+				2E57F4CF253CDF6200F301D5 /* uFail.entitlements */,
+				2EA01EA923B5618300B38C64 /* Resources */,
+				2EA01EA823B5617A00B38C64 /* Classes */,
+				2EA01E8123B5608400B38C64 /* Assets.xcassets */,
+				2EA01E8623B5608400B38C64 /* Info.plist */,
 			);
 			path = uFail;
 			sourceTree = "<group>";
 		};
-		2EEBEF061ACB5F54004B4834 /* Supporting Files */ = {
+		2EA01E8E23B5608400B38C64 /* uFailTests */ = {
 			isa = PBXGroup;
 			children = (
-				2EEBEF071ACB5F54004B4834 /* Info.plist */,
-				2EEBEF081ACB5F54004B4834 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2EEBEF1F1ACB5F54004B4834 /* uFailTests */ = {
-			isa = PBXGroup;
-			children = (
-				2EEBEF221ACB5F54004B4834 /* uFailTests.m */,
-				2EEBEF201ACB5F54004B4834 /* Supporting Files */,
+				2EA01E8F23B5608400B38C64 /* uFailTests.swift */,
+				2EA01E9123B5608400B38C64 /* Info.plist */,
+				2E79A87623B7C18D005271CC /* Saved_Data_Test.swift */,
+				2E7045B623B922540043638F /* Theme_Test.swift */,
+				2E16227723BDB01500E5A533 /* Sound_Test.swift */,
+				2E018BDB23D1643000B1D627 /* App_Handler_Tests.swift */,
+				2E26E42824135E32005BCA3E /* dynamic_theme_test.swift */,
 			);
 			path = uFailTests;
 			sourceTree = "<group>";
 		};
-		2EEBEF201ACB5F54004B4834 /* Supporting Files */ = {
+		2EA01E9923B5608400B38C64 /* uFailUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2EEBEF211ACB5F54004B4834 /* Info.plist */,
+				2EA01E9A23B5608400B38C64 /* uFailUITests.swift */,
+				2EA01E9C23B5608400B38C64 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = uFailUITests;
 			sourceTree = "<group>";
 		};
-		2EEBEF2C1ACB5F5F004B4834 /* Resources */ = {
+		2EA01EA823B5617A00B38C64 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2EF687722342F5F100980799 /* Halloween Theme */,
-				2E7D1720233EF7B3007B94A6 /* Icons (Halloween) */,
-				34ECBB9F1DEE8429002387BA /* Icons (Winter) */,
-				2E150E0F1CADA18B00E51057 /* Icons (Summer) */,
-				2EEBEF2E1ACB5F6E004B4834 /* Sounds */,
-				2EEBEF2D1ACB5F66004B4834 /* Images */,
+				2EA01EAE23B561CB00B38C64 /* Other */,
+				2EA01EAD23B561C100B38C64 /* Handlers */,
+				2EA01EAC23B561B700B38C64 /* ViewControllers */,
 			);
-			name = Resources;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		2EEBEF2D1ACB5F66004B4834 /* Images */ = {
+		2EA01EA923B5618300B38C64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2E150E0E1CADA18500E51057 /* Summer */,
-				2ED588FA1C12B9D700C20309 /* Winter */,
-				2E497CF41AE6FBA2007EC7EB /* RefreshMe.png */,
-				2EEBEF431ACB5FA6004B4834 /* Air Horn.png */,
-				2EEBEF451ACB5FA6004B4834 /* Fail Button.png */,
-				2EEBEF461ACB5FA6004B4834 /* Actual Blue Button.png */,
-				2EEBEF471ACB5FA6004B4834 /* Green Button.png */,
-				2EEBEF481ACB5FA6004B4834 /* Purple Button.png */,
-				2EEBEF4D1ACB5FA6004B4834 /* Background Image Universal.png */,
-				2EEBEF4E1ACB5FA6004B4834 /* blue theme.png */,
-				2EEBEF4F1ACB5FA6004B4834 /* greenBackGround.png */,
-				2EEBEF501ACB5FA6004B4834 /* Purple Background.png */,
+				2E5F11E623B9A1DC00832EDD /* Sounds */,
+				2E5F11D723B8695A00832EDD /* Themes */,
+				2E89B3FD23B56861001DEC49 /* Changes.txt */,
+				2EA855442550F5FE00140DEB /* Thank You.txt */,
+				2EA01EAA23B5619400B38C64 /* Views + Storyboards */,
 			);
-			name = Images;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		2EEBEF2E1ACB5F6E004B4834 /* Sounds */ = {
+		2EA01EAA23B5619400B38C64 /* Views + Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				2E8BC0CB1AFC41A200C60866 /* AIRHORN.mp3 */,
-				2EEBEF2F1ACB5F7D004B4834 /* santa.mp3 */,
-				2EEBEF301ACB5F7D004B4834 /* So Many Friends.mp3 */,
-				2EEBEF311ACB5F7D004B4834 /* Noob!.mp3 */,
-				2EEBEF321ACB5F7D004B4834 /* FAIL.mp3 */,
-				2EEBEF331ACB5F7D004B4834 /* EPIC FAIL.mp3 */,
-				2EEBEF341ACB5F7D004B4834 /* WIN.mp3 */,
-				2EEBEF351ACB5F7D004B4834 /* PWNED.mp3 */,
-				2EEBEF361ACB5F7D004B4834 /* failure.mp3 */,
-				2EEBEF371ACB5F7D004B4834 /* You Fail.mp3 */,
+				2EA01E7E23B5608300B38C64 /* Main.storyboard */,
+				2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */,
 			);
-			name = Sounds;
+			path = "Views + Storyboards";
 			sourceTree = "<group>";
 		};
-		2EF687722342F5F100980799 /* Halloween Theme */ = {
+		2EA01EAC23B561B700B38C64 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2EF6877B23443D5300980799 /* iPad Halloween.png */,
-				2EF687762344388600980799 /* iPhone 5 Halloween.png */,
-				2EF687752344388600980799 /* iPhone 6 Halloween.png */,
-				2EF687772344388600980799 /* iPhone 6+ Halloween.png */,
-				2EF687732342F63E00980799 /* uFail Button Halloween.png */,
+				2E21886B23C1B60800E764E5 /* HomeViewController.swift */,
+				2E6A362F23C2D20600F4726C /* SelectorViewController.swift */,
+				2E191D6C23D141E9007E35C2 /* InfoViewController.swift */,
 			);
-			name = "Halloween Theme";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		34ECBB9F1DEE8429002387BA /* Icons (Winter) */ = {
+		2EA01EAD23B561C100B38C64 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				34ECBBA01DEE8438002387BA /* icon_iPad.png */,
-				34ECBBA11DEE8438002387BA /* icon_iPad2x.png */,
-				34ECBBA21DEE8438002387BA /* icon_iPadPro.png */,
-				34ECBBA31DEE8438002387BA /* iPhone2x.png */,
-				34ECBBA41DEE8438002387BA /* iPhone3x.png */,
-				34ECBBA51DEE8438002387BA /* main_icon.png */,
+				2E5202C823B7FD40001B6F65 /* Theme */,
+				2E89B3F923B56844001DEC49 /* AppHandler.swift */,
+				2E54D05523B6FED40051A693 /* DataHandler.swift */,
+				2E5F11C523B8514700832EDD /* DeviceHandler.swift */,
+				2E5F11E423B9A1A200832EDD /* SoundHandler.swift */,
 			);
-			name = "Icons (Winter)";
+			path = Handlers;
 			sourceTree = "<group>";
 		};
-		9255EE4757E6C3852FFE5B5A /* Pods */ = {
+		2EA01EAE23B561CB00B38C64 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				B0DE910E159E66290B292950 /* Pods-uFail.debug.xcconfig */,
-				4423F145DD112B69EA52E764 /* Pods-uFail.release.xcconfig */,
-				D8C232B38BAB4B9060C54B5F /* Pods-uFailTests.debug.xcconfig */,
-				A87E70D4A59C641689F41815 /* Pods-uFailTests.release.xcconfig */,
+				2EA01E7823B5608300B38C64 /* AppDelegate.swift */,
 			);
-			name = Pods;
+			path = Other;
 			sourceTree = "<group>";
 		};
-		9AF4F8DBF1B3159FBB163E3E /* Frameworks */ = {
+		2EA065012548D2B200EADBE1 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8A38EC0C7F3D2C5C41F543B8 /* Pods_uFail.framework */,
-				243A48EFC1AA1A9FAD14DAD6 /* Pods_uFailTests.framework */,
+				2EA0651E2548DDEA00EADBE1 /* Assets.xcassets */,
+				2EA065052548D2C100EADBE1 /* Snow.sks */,
+				2EA065032548D2C100EADBE1 /* SnowScene.h */,
+				2EA065042548D2C100EADBE1 /* SnowScene.m */,
+				2E2EF99623EBA389008FF7CC /* DynamicTableViewCell.swift */,
+				2EA065022548D2C000EADBE1 /* uFail-Bridging-Header.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2EA5918D24145CD100153107 /* Summer */ = {
+			isa = PBXGroup;
+			children = (
+				2EA591962414649C00153107 /* uFail Button Summer.png */,
+				2EA5919124145CE400153107 /* Summer Theme 6.png */,
+				2EA5918E24145CE300153107 /* Summer Theme Plus.png */,
+				2EA5918F24145CE400153107 /* Summer Theme X.png */,
+				2EA5919024145CE400153107 /* Summmer Theme SE.png */,
+			);
+			path = Summer;
+			sourceTree = "<group>";
+		};
+		82F6BC1A4E468F754BBE00DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94642AADBC597253F9B5173 /* Pods_uFail.framework */,
+				788DD77D619E0DBD635DE5B4 /* Pods_uFailTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B22FCFA1D8D3B18B1F5A48AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46B4F3BB7F7E6C0D3BAD40E7 /* Pods-uFail.debug.xcconfig */,
+				F8D29622B20EFE2892F2DCEA /* Pods-uFail.release.xcconfig */,
+				0C83592EC6A9F4A43130D8D0 /* Pods-uFailTests.debug.xcconfig */,
+				BE0EAD2C888C0D5AB4BFB2AB /* Pods-uFailTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EEBEF021ACB5F54004B4834 /* uFail */ = {
+		2EA01E7423B5608300B38C64 /* uFail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EEBEF261ACB5F54004B4834 /* Build configuration list for PBXNativeTarget "uFail" */;
+			buildConfigurationList = 2EA01E9F23B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFail" */;
 			buildPhases = (
-				2880D75737AEBBCA96A1A410 /* [CP] Check Pods Manifest.lock */,
-				2EEBEEFF1ACB5F54004B4834 /* Sources */,
-				2EEBEF001ACB5F54004B4834 /* Frameworks */,
-				2EEBEF011ACB5F54004B4834 /* Resources */,
-				2EEBEFBD1ACB609B004B4834 /* Embed App Extensions */,
-				2EE7C9371B2674AD007D6CBF /* Embed Watch Content */,
-				4EC2063FB798DBC31BEA0FEB /* [CP] Embed Pods Frameworks */,
+				6DCE119F9A4E1A450960D9AA /* [CP] Check Pods Manifest.lock */,
+				DEC2820E9C0CD85E721AB439 /* [CP] Prepare Artifacts */,
+				2EA01E7123B5608300B38C64 /* Sources */,
+				2EA01E7223B5608300B38C64 /* Frameworks */,
+				2EA01E7323B5608300B38C64 /* Resources */,
+				2EA8B57E23B7C6A000CDB417 /* ShellScript */,
+				316F734CE296E104A8F7DA7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -495,208 +439,160 @@
 			);
 			name = uFail;
 			productName = uFail;
-			productReference = 2E323D151BE7087E00233A5D /* uFail.app */;
+			productReference = 2EA01E7523B5608300B38C64 /* uFail.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2EEBEF1B1ACB5F54004B4834 /* uFailTests */ = {
+		2EA01E8A23B5608400B38C64 /* uFailTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EEBEF291ACB5F54004B4834 /* Build configuration list for PBXNativeTarget "uFailTests" */;
+			buildConfigurationList = 2EA01EA223B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFailTests" */;
 			buildPhases = (
-				FBF7D1BFA94924755A0EEC04 /* [CP] Check Pods Manifest.lock */,
-				2EEBEF181ACB5F54004B4834 /* Sources */,
-				2EEBEF191ACB5F54004B4834 /* Frameworks */,
-				2EEBEF1A1ACB5F54004B4834 /* Resources */,
+				1BED75AF371A9896E4720976 /* [CP] Check Pods Manifest.lock */,
+				2EA01E8723B5608400B38C64 /* Sources */,
+				2EA01E8823B5608400B38C64 /* Frameworks */,
+				2EA01E8923B5608400B38C64 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2EEBEF1E1ACB5F54004B4834 /* PBXTargetDependency */,
+				2EA01E8D23B5608400B38C64 /* PBXTargetDependency */,
 			);
 			name = uFailTests;
 			productName = uFailTests;
-			productReference = 2E3479711BE70A5F00B770E3 /* uFailTests.xctest */;
+			productReference = 2EA01E8B23B5608400B38C64 /* uFailTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EA01E9523B5608400B38C64 /* uFailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA01EA523B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFailUITests" */;
+			buildPhases = (
+				2EA01E9223B5608400B38C64 /* Sources */,
+				2EA01E9323B5608400B38C64 /* Frameworks */,
+				2EA01E9423B5608400B38C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EA01E9823B5608400B38C64 /* PBXTargetDependency */,
+			);
+			name = uFailUITests;
+			productName = uFailUITests;
+			productReference = 2EA01E9623B5608400B38C64 /* uFailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2EEBEEFB1ACB5F54004B4834 /* Project object */ = {
+		2EA01E6D23B5608300B38C64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Matthew Jagiela";
 				TargetAttributes = {
-					2EEBEF021ACB5F54004B4834 = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = MCRTE5CC2K;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.InterAppAudio = {
-								enabled = 0;
-							};
-							com.apple.iCloud = {
-								enabled = 1;
-							};
-						};
+					2EA01E7423B5608300B38C64 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1210;
 					};
-					2EEBEF1B1ACB5F54004B4834 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 2EEBEF021ACB5F54004B4834;
+					2EA01E8A23B5608400B38C64 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2EA01E7423B5608300B38C64;
+					};
+					2EA01E9523B5608400B38C64 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2EA01E7423B5608300B38C64;
 					};
 				};
 			};
-			buildConfigurationList = 2EEBEEFE1ACB5F54004B4834 /* Build configuration list for PBXProject "uFail" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 2EA01E7023B5608300B38C64 /* Build configuration list for PBXProject "uFail" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2EEBEEFA1ACB5F54004B4834;
-			productRefGroup = 2EEBEEFA1ACB5F54004B4834;
+			mainGroup = 2EA01E6C23B5608300B38C64;
+			productRefGroup = 2EA01E7623B5608300B38C64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EEBEF021ACB5F54004B4834 /* uFail */,
-				2EEBEF1B1ACB5F54004B4834 /* uFailTests */,
+				2EA01E7423B5608300B38C64 /* uFail */,
+				2EA01E8A23B5608400B38C64 /* uFailTests */,
+				2EA01E9523B5608400B38C64 /* uFailUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2EEBEF011ACB5F54004B4834 /* Resources */ = {
+		2EA01E7323B5608300B38C64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E150E161CADA1BB00E51057 /* iPhone 6 Summer.png in Resources */,
-				2EEBEF3D1ACB5F7D004B4834 /* EPIC FAIL.mp3 in Resources */,
-				2ED588FC1C12B9E200C20309 /* iPad Winter Background.png in Resources */,
-				2E28F3FE1CBF37F0004080D3 /* iPhone.png in Resources */,
-				34ECBBA91DEE8438002387BA /* iPhone2x.png in Resources */,
-				2EEBEF3C1ACB5F7D004B4834 /* FAIL.mp3 in Resources */,
-				2E28F3FF1CBF37F0004080D3 /* Normal iPad.png in Resources */,
-				2EEBEF5D1ACB5FA6004B4834 /* greenBackGround.png in Resources */,
-				2EEBEF3E1ACB5F7D004B4834 /* WIN.mp3 in Resources */,
-				2E7D174D233EF9A0007B94A6 /* HiPhone3x.png in Resources */,
-				2EEBEF401ACB5F7D004B4834 /* failure.mp3 in Resources */,
-				2E28F4001CBF37F0004080D3 /* uFail Icon.png in Resources */,
-				34ECBBA61DEE8438002387BA /* icon_iPad.png in Resources */,
-				2EF687742342F63E00980799 /* uFail Button Halloween.png in Resources */,
-				2EEBEF3F1ACB5F7D004B4834 /* PWNED.mp3 in Resources */,
-				2EEBEF551ACB5FA6004B4834 /* Green Button.png in Resources */,
-				2EF6877C23443D5300980799 /* iPad Halloween.png in Resources */,
-				2EEBEF391ACB5F7D004B4834 /* santa.mp3 in Resources */,
-				2E150E171CADA1BB00E51057 /* iPhone 6+ Summer.png in Resources */,
-				2ED588FE1C12BC5D00C20309 /* iPhone 6+ Background.png in Resources */,
-				2E7D174B233EF9A0007B94A6 /* Hicon_iPadPro.png in Resources */,
-				2EEBEF511ACB5FA6004B4834 /* Air Horn.png in Resources */,
-				2E28F3FB1CBF37F0004080D3 /* iPad Pro Icon.png in Resources */,
-				2EEBEF5E1ACB5FA6004B4834 /* Purple Background.png in Resources */,
-				2E7D174F233EF9A0007B94A6 /* Hicon_iPad2x.png in Resources */,
-				2EEBEF531ACB5FA6004B4834 /* Fail Button.png in Resources */,
-				2EEBEF5C1ACB5FA6004B4834 /* blue theme.png in Resources */,
-				2EEBEF8A1ACB6027004B4834 /* Launch Screen.xib in Resources */,
-				34ECBBA81DEE8438002387BA /* icon_iPadPro.png in Resources */,
-				2ED589001C12BE4600C20309 /* iPhone 6 Background.png in Resources */,
-				2EF687792344388600980799 /* iPhone 5 Halloween.png in Resources */,
-				2EEBEF811ACB5FDA004B4834 /* Main_iPad.storyboard in Resources */,
-				2E18AC8C1C0FA69F004E7E97 /* snowEffect.sks in Resources */,
-				2EEBEF141ACB5F54004B4834 /* Images.xcassets in Resources */,
-				2EEBEF3B1ACB5F7D004B4834 /* Noob!.mp3 in Resources */,
-				34ECBBAA1DEE8438002387BA /* iPhone3x.png in Resources */,
-				2E28F3FC1CBF37F0004080D3 /* iPad Retina.png in Resources */,
-				2E8454991BC37F26003D3D1F /* spark.png in Resources */,
-				2EB65AC8233C58BB006DFC40 /* Changes.txt in Resources */,
-				34ECBBA71DEE8438002387BA /* icon_iPad2x.png in Resources */,
-				2EEBEF3A1ACB5F7D004B4834 /* So Many Friends.mp3 in Resources */,
-				2E150E191CADA63C00E51057 /* uFail Button 8.png in Resources */,
-				2ED589041C12C02500C20309 /* iPhone 4-5.png in Resources */,
-				2E7D174E233EF9A0007B94A6 /* Hicon_iPad.png in Resources */,
-				2E150E151CADA1BB00E51057 /* iPhone 5 summer.png in Resources */,
-				34ECBBAB1DEE8438002387BA /* main_icon.png in Resources */,
-				2EEBEF411ACB5F7D004B4834 /* You Fail.mp3 in Resources */,
-				2E7D174C233EF9A0007B94A6 /* HiPhone2x.png in Resources */,
-				2E8BC0CC1AFC41A200C60866 /* AIRHORN.mp3 in Resources */,
-				2E150E141CADA1BB00E51057 /* iPad Image Warm.png in Resources */,
-				2EEBEF5B1ACB5FA6004B4834 /* Background Image Universal.png in Resources */,
-				2EEBEF561ACB5FA6004B4834 /* Purple Button.png in Resources */,
-				2EEBEF541ACB5FA6004B4834 /* Actual Blue Button.png in Resources */,
-				2E8454981BC37F26003D3D1F /* smokeEffect.sks in Resources */,
-				34DE673B1DECC7EF00A4207C /* Winter Fail Button.png in Resources */,
-				2EEBEF801ACB5FDA004B4834 /* Main_iPhone.storyboard in Resources */,
-				2E497CF51AE6FBA2007EC7EB /* RefreshMe.png in Resources */,
-				2E7D1750233EF9A0007B94A6 /* Hmain_icon.png in Resources */,
-				2EF6877A2344388600980799 /* iPhone 6+ Halloween.png in Resources */,
-				2E28F3FD1CBF37F0004080D3 /* iPhone 6+.png in Resources */,
-				2EF687782344388600980799 /* iPhone 6 Halloween.png in Resources */,
+				2E5F11E223B86A8000832EDD /* greenBG.png in Resources */,
+				2E5F11F923B9A2BF00832EDD /* So Many Friends.mp3 in Resources */,
+				2EA065072548D2C100EADBE1 /* Snow.sks in Resources */,
+				2E5F11F223B9A2BF00832EDD /* Noob!.mp3 in Resources */,
+				2EA0651F2548DDEA00EADBE1 /* Assets.xcassets in Resources */,
+				2E5F11F623B9A2BF00832EDD /* PWNED.mp3 in Resources */,
+				2E5F11F523B9A2BF00832EDD /* EPIC FAIL.mp3 in Resources */,
+				2E6A362823C1C7BE00F4726C /* BlueButton.png in Resources */,
+				2E5F11F123B9A2BF00832EDD /* failure.mp3 in Resources */,
+				2E5F11F323B9A2BF00832EDD /* WIN.mp3 in Resources */,
+				2EA5919224145CE400153107 /* Summer Theme Plus.png in Resources */,
+				2E5F11F723B9A2BF00832EDD /* santa.mp3 in Resources */,
+				2E5F11E323B86A8000832EDD /* redBG.png in Resources */,
+				2E6A362A23C1C7C300F4726C /* GreenButton.png in Resources */,
+				2EA855452550F5FE00140DEB /* Thank You.txt in Resources */,
+				2E5F11F423B9A2BF00832EDD /* AIRHORN.mp3 in Resources */,
+				2EA8B57D23B7C66900CDB417 /* .swiftlint.yml in Resources */,
+				2EA591972414649C00153107 /* uFail Button Summer.png in Resources */,
+				2E5F11E123B86A8000832EDD /* purpleBG.png in Resources */,
+				2EA01E8523B5608400B38C64 /* LaunchScreen.storyboard in Resources */,
+				2E5F11FA23B9A2BF00832EDD /* You Fail.mp3 in Resources */,
+				2E5F11F823B9A2BF00832EDD /* FAIL.mp3 in Resources */,
+				2EA01E8223B5608400B38C64 /* Assets.xcassets in Resources */,
+				2E89B3FE23B56861001DEC49 /* Changes.txt in Resources */,
+				2EA5919424145CE400153107 /* Summmer Theme SE.png in Resources */,
+				2E5F11E023B86A8000832EDD /* blueBG.png in Resources */,
+				2EA01E8023B5608300B38C64 /* Main.storyboard in Resources */,
+				2E706D0423F23DC3004C8899 /* RedButton.png in Resources */,
+				2E706D0223F23DBC004C8899 /* PurpleButton.png in Resources */,
+				2EA5919524145CE400153107 /* Summer Theme 6.png in Resources */,
+				2EA5919324145CE400153107 /* Summer Theme X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EEBEF1A1ACB5F54004B4834 /* Resources */ = {
+		2EA01E8923B5608400B38C64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF75F831C74425600CD78AE /* AIRHORN.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA01E9423B5608400B38C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2880D75737AEBBCA96A1A410 /* [CP] Check Pods Manifest.lock */ = {
+		1BED75AF371A9896E4720976 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-uFail-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4EC2063FB798DBC31BEA0FEB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBF7D1BFA94924755A0EEC04 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-uFailTests-checkManifestLockResult.txt",
 			);
@@ -705,58 +601,181 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2EA8B57E23B7C6A000CDB417 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		316F734CE296E104A8F7DA7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCE119F9A4E1A450960D9AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uFail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC2820E9C0CD85E721AB439 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uFail/Pods-uFail-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2EEBEEFF1ACB5F54004B4834 /* Sources */ = {
+		2EA01E7123B5608300B38C64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA4C0D01BC4E59800EE6E23 /* smokeScene.m in Sources */,
-				3498E1502282518000E638A6 /* DynamicTheme.swift in Sources */,
-				349E8D401DECC16C005501A3 /* SnowScene.m in Sources */,
-				2EEBEF091ACB5F54004B4834 /* main.m in Sources */,
-				2EB65AC5233C558A006DFC40 /* AppHandler.swift in Sources */,
-				2EEBEF821ACB5FDA004B4834 /* ViewController.m in Sources */,
-				2EEBEF831ACB5FDA004B4834 /* InfoViewController.m in Sources */,
-				2EEBEF7F1ACB5FDA004B4834 /* AppDelegate.m in Sources */,
+				2E5202C723B7FD38001B6F65 /* ThemeHandler.swift in Sources */,
+				2E2EF99723EBA389008FF7CC /* DynamicTableViewCell.swift in Sources */,
+				2E5F11C623B8514700832EDD /* DeviceHandler.swift in Sources */,
+				2E89B3FA23B56844001DEC49 /* DynamicTheme.swift in Sources */,
+				2E21886C23C1B60800E764E5 /* HomeViewController.swift in Sources */,
+				2E191D6D23D141E9007E35C2 /* InfoViewController.swift in Sources */,
+				2E5F11E523B9A1A200832EDD /* SoundHandler.swift in Sources */,
+				2E89B3FB23B56844001DEC49 /* AppHandler.swift in Sources */,
+				2EA01E7923B5608300B38C64 /* AppDelegate.swift in Sources */,
+				2E6A363023C2D20600F4726C /* SelectorViewController.swift in Sources */,
+				2E54D05623B6FED40051A693 /* DataHandler.swift in Sources */,
+				2EA065062548D2C100EADBE1 /* SnowScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EEBEF181ACB5F54004B4834 /* Sources */ = {
+		2EA01E8723B5608400B38C64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EEBEF231ACB5F54004B4834 /* uFailTests.m in Sources */,
+				2E7045B823B9225B0043638F /* ThemeHandler.swift in Sources */,
+				2E5F11CE23B8679300832EDD /* DataHandler.swift in Sources */,
+				2E5F11CA23B85B6700832EDD /* DeviceHandler.swift in Sources */,
+				2EA01E9023B5608400B38C64 /* uFailTests.swift in Sources */,
+				2E16227923BDB02C00E5A533 /* SoundHandler.swift in Sources */,
+				2E26E42924135E32005BCA3E /* dynamic_theme_test.swift in Sources */,
+				2E16227823BDB01500E5A533 /* Sound_Test.swift in Sources */,
+				2E018BDD23D1644300B1D627 /* AppHandler.swift in Sources */,
+				2E7045B723B922540043638F /* Theme_Test.swift in Sources */,
+				2E26E42B24135ED2005BCA3E /* DynamicTheme.swift in Sources */,
+				2E018BDC23D1643000B1D627 /* App_Handler_Tests.swift in Sources */,
+				2E79A87723B7C18D005271CC /* Saved_Data_Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA01E9223B5608400B38C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA01E9B23B5608400B38C64 /* uFailUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2EEBEF1E1ACB5F54004B4834 /* PBXTargetDependency */ = {
+		2EA01E8D23B5608400B38C64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EEBEF021ACB5F54004B4834 /* uFail */;
-			targetProxy = 2EEBEF1D1ACB5F54004B4834 /* PBXContainerItemProxy */;
+			target = 2EA01E7423B5608300B38C64 /* uFail */;
+			targetProxy = 2EA01E8C23B5608400B38C64 /* PBXContainerItemProxy */;
+		};
+		2EA01E9823B5608400B38C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EA01E7423B5608300B38C64 /* uFail */;
+			targetProxy = 2EA01E9723B5608400B38C64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		2EA01E7E23B5608300B38C64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA01E7F23B5608300B38C64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EA01E8323B5608400B38C64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA01E8423B5608400B38C64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		2EEBEF241ACB5F54004B4834 /* Debug */ = {
+		2EA01E9D23B5608400B38C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -768,13 +787,14 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -782,36 +802,40 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		2EEBEF251ACB5F54004B4834 /* Release */ = {
+		2EA01E9E23B5608400B38C64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -823,13 +847,14 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -837,141 +862,195 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2EEBEF271ACB5F54004B4834 /* Debug */ = {
+		2EA01EA023B5608400B38C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0DE910E159E66290B292950 /* Pods-uFail.debug.xcconfig */;
+			baseConfigurationReference = 46B4F3BB7F7E6C0D3BAD40E7 /* Pods-uFail.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Summer Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10.6.2;
-				DEFINES_MODULE = YES;
+				CURRENT_PROJECT_VERSION = 11.0.1;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uFail/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 10.6.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 11.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.domain.ufail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "uFail/uFail-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2EEBEF281ACB5F54004B4834 /* Release */ = {
+		2EA01EA123B5608400B38C64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4423F145DD112B69EA52E764 /* Pods-uFail.release.xcconfig */;
+			baseConfigurationReference = F8D29622B20EFE2892F2DCEA /* Pods-uFail.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Summer Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10.6.2;
-				DEFINES_MODULE = YES;
+				CURRENT_PROJECT_VERSION = 11.0.1;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uFail/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 10.6.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 11.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.domain.ufail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "uFail/uFail-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2EEBEF2A1ACB5F54004B4834 /* Debug */ = {
+		2EA01EA323B5608400B38C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8C232B38BAB4B9060C54B5F /* Pods-uFailTests.debug.xcconfig */;
+			baseConfigurationReference = 0C83592EC6A9F4A43130D8D0 /* Pods-uFailTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uFailTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uApps.$(PRODUCT_NAME:rfc1034identifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.domain.uFailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uFail.app/uFail";
 			};
 			name = Debug;
 		};
-		2EEBEF2B1ACB5F54004B4834 /* Release */ = {
+		2EA01EA423B5608400B38C64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A87E70D4A59C641689F41815 /* Pods-uFailTests.release.xcconfig */;
+			baseConfigurationReference = BE0EAD2C888C0D5AB4BFB2AB /* Pods-uFailTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uFailTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uApps.$(PRODUCT_NAME:rfc1034identifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.domain.uFailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uFail.app/uFail";
+			};
+			name = Release;
+		};
+		2EA01EA623B5608400B38C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCRTE5CC2K;
+				INFOPLIST_FILE = uFailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.domain.uFailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = uFail;
+			};
+			name = Debug;
+		};
+		2EA01EA723B5608400B38C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCRTE5CC2K;
+				INFOPLIST_FILE = uFailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.domain.uFailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = uFail;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2EEBEEFE1ACB5F54004B4834 /* Build configuration list for PBXProject "uFail" */ = {
+		2EA01E7023B5608300B38C64 /* Build configuration list for PBXProject "uFail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EEBEF241ACB5F54004B4834 /* Debug */,
-				2EEBEF251ACB5F54004B4834 /* Release */,
+				2EA01E9D23B5608400B38C64 /* Debug */,
+				2EA01E9E23B5608400B38C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EEBEF261ACB5F54004B4834 /* Build configuration list for PBXNativeTarget "uFail" */ = {
+		2EA01E9F23B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EEBEF271ACB5F54004B4834 /* Debug */,
-				2EEBEF281ACB5F54004B4834 /* Release */,
+				2EA01EA023B5608400B38C64 /* Debug */,
+				2EA01EA123B5608400B38C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EEBEF291ACB5F54004B4834 /* Build configuration list for PBXNativeTarget "uFailTests" */ = {
+		2EA01EA223B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFailTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EEBEF2A1ACB5F54004B4834 /* Debug */,
-				2EEBEF2B1ACB5F54004B4834 /* Release */,
+				2EA01EA323B5608400B38C64 /* Debug */,
+				2EA01EA423B5608400B38C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA01EA523B5608400B38C64 /* Build configuration list for PBXNativeTarget "uFailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA01EA623B5608400B38C64 /* Debug */,
+				2EA01EA723B5608400B38C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2EEBEEFB1ACB5F54004B4834 /* Project object */;
+	rootObject = 2EA01E6D23B5608300B38C64 /* Project object */;
 }

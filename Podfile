@@ -6,7 +6,9 @@ target 'uFail' do
   use_frameworks!
 
   # Pods for uFail
-    pod 'Google-Mobile-Ads-SDK'
+    pod 'Google-Mobile-Ads-SDK', '~> 7.68.0'
+    pod 'SwiftLint'
+    pod 'SideMenuSwift', '~> 2.0.5'
 
   target 'uFailTests' do
     inherit! :search_paths
