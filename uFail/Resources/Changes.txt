@@ -8,7 +8,10 @@ Started in 2010 uFail actually was my first development project I had ever made.
 
 I want to thank all the tens of thousands of you who have downloaded uFail over the last few years. I am sure this update will make you happy with themes that change through the seasons and a ton of stability changes along with a whole new UX for sounds and themes.
 
-- Matt 
+- Matt
+
+11.0.2:
+- Fixed issue where swiping to reveal messages before selecting an option would result in a crash
 
 11.0.1:
 - Would be smart to check the changelog version... (We're on 11 not 10)
