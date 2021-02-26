@@ -41,7 +41,7 @@ class HomeViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(refreshView), name: NSNotification.Name(rawValue: "refreshView"), object: nil)
         refreshView()
         
-        if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
+        if theme.dynamicTheme.shouldShowSnow() { // Snow should fall
             theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
         } else {
             snowView.removeFromSuperview()
@@ -49,6 +49,7 @@ class HomeViewController: UIViewController {
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
+        iCloudHandler.addToFailCount()
     }
     @IBAction func showMessageOptions(_ sender: Any) {
         let controller = sideMenuController?.menuViewController as? SelectorViewController

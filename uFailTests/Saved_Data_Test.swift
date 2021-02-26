@@ -25,14 +25,23 @@ class Saved_Data_Test: XCTestCase {
     
     func testThankYou() {
         let savedData = DataHandler()
+        savedData.overrideThankYouMessageViewed(override: false)
         XCTAssertFalse(savedData.thankYouMessageViewed())
         savedData.setThankYouMessageViewed()
         XCTAssertTrue(savedData.thankYouMessageViewed())
+        savedData.overrideThankYouMessageViewed(override: false)
     }
 }
 class iCloud_Data_Test: XCTestCase {
-    func testiCloud() {
+    func testFailCountStorage() {
         iCloudHandler.storeFailCount(10)
         XCTAssertEqual(10, iCloudHandler.getFailCount())
     }
+    
+    func testFailCountIncrementation() {
+        let count = iCloudHandler.getFailCount()
+        iCloudHandler.addToFailCount()
+        XCTAssertEqual(count + 1, iCloudHandler.getFailCount())
+    }
+    
 }
