@@ -27,12 +27,12 @@ class SelectorViewController: UIViewController, SideMenuControllerDelegate {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        //debuggingVariables()
+        // debuggingVariables()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        //Set the navigation titles:
-        if type == nil { type = .messages; sound = SoundHandler() } //check if swipe before button press (default selection)
+        // Set the navigation titles:
+        if type == nil { type = .messages; sound = SoundHandler() } // check if swipe before button press (default selection)
         switch type {
         case .messages:
             soundList = sound?.listOfSounds() ?? ["Error"]

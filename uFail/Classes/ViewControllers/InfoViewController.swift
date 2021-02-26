@@ -58,7 +58,7 @@ class InfoViewController: UIViewController {
         uAppsNewsLabel.textColor = theme.textColor()
         copyrightLabel.textColor = theme.textColor()
         
-        if theme.dynamicTheme.shouldShowSnow() { //Snow should fall
+        if theme.dynamicTheme.shouldShowSnow() { // Snow should fall
             theme.dynamicTheme.setupSnowScene(view: snowView, size: view.bounds.size)
         } else {
             snowView.removeFromSuperview()

@@ -11,7 +11,7 @@ import UIKit
 class DataHandler: NSObject {
     // MARK: - Storing
     let defaults = UserDefaults.standard
-    func saveTheme(theme: String) { //Red, Green, Blue, Dynamic
+    func saveTheme(theme: String) { // Red, Green, Blue, Dynamic
         defaults.set(theme, forKey: "theme")
     }
     
@@ -24,8 +24,8 @@ class DataHandler: NSObject {
     }
     // MARK: - Retriving
     func getTheme() -> String {
-        //Red, Green, Blue, Dynamic
-        return defaults.string(forKey: "theme") ?? "dynamic" //If non set make it the dynamic theme
+        // Red, Green, Blue, Dynamic
+        return defaults.string(forKey: "theme") ?? "dynamic" // If non set make it the dynamic theme
     }
     func thankYouMessageViewed() -> Bool {
         return defaults.bool(forKey: "thankYou")
