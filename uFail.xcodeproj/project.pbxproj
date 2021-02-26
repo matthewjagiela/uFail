@@ -862,7 +862,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11.0.1;
+				CURRENT_PROJECT_VERSION = 11.0.2;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uFail/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -870,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.0.1;
+				MARKETING_VERSION = 11.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.domain.ufail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";
@@ -888,7 +888,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = uFail/uFail.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11.0.1;
+				CURRENT_PROJECT_VERSION = 11.0.2;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uFail/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -896,7 +896,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.0.1;
+				MARKETING_VERSION = 11.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.domain.ufail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "uFail/Other/uFail-Bridging-Header.h";

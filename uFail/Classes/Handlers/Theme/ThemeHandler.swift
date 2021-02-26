@@ -66,10 +66,10 @@ class ThemeHandler: NSObject {
                 return UIImage(named: "greenBG.png") ?? UIImage()
             case .red:
                 return UIImage(named: "redBG.png") ?? UIImage()
-            default: //Purple
+            default: // Purple
                 return UIImage(named: "purpleBG.png") ?? UIImage()
             }
-        } else { //dynamic theme
+        } else { // dynamic theme
             return dynamicTheme.determineTheme(device: device, fromInfo: fromInfo)
         }
     }
@@ -92,7 +92,7 @@ class ThemeHandler: NSObject {
             return UIImage(named: "redBG.png") ?? UIImage()
         case .purple:
             return UIImage(named: "purpleBG") ?? UIImage()
-        default: //dynamic
+        default: // dynamic
             return dynamicTheme.getSwitcherImage()
         }
     }
