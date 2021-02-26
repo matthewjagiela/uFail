@@ -38,6 +38,13 @@ class iCloudHandler: NSObject {
     static func storeFailCount(_ count: Int) {
         defaults.set(count, forKey: "failAmount")
     }
+    /*
+     Add 1 to the current fail count
+     */
+    static func addToFailCount() {
+        let count = getFailCount()
+        defaults.set(count + 1, forKey: "failAmount")
+    }
     // MARK: - Fetching
     static func getFailCount() -> Int {
         return (defaults.object(forKey: "failAmount") as? Int ?? 0)

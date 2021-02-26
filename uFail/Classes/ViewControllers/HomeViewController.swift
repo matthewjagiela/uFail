@@ -49,6 +49,7 @@ class HomeViewController: UIViewController {
     }
     @IBAction func playSound(_ sender: Any) {
         sound.playSound()
+        iCloudHandler.addToFailCount()
     }
     @IBAction func showMessageOptions(_ sender: Any) {
         let controller = sideMenuController?.menuViewController as? SelectorViewController

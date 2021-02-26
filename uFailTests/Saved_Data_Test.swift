@@ -33,8 +33,15 @@ class Saved_Data_Test: XCTestCase {
     }
 }
 class iCloud_Data_Test: XCTestCase {
-    func testiCloud() {
+    func testFailCountStorage() {
         iCloudHandler.storeFailCount(10)
         XCTAssertEqual(10, iCloudHandler.getFailCount())
     }
+    
+    func testFailCountIncrementation() {
+        let count = iCloudHandler.getFailCount()
+        iCloudHandler.addToFailCount()
+        XCTAssertEqual(count + 1, iCloudHandler.getFailCount())
+    }
+    
 }
