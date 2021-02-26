@@ -14,8 +14,13 @@ class DataHandler: NSObject {
     func saveTheme(theme: String) { //Red, Green, Blue, Dynamic
         defaults.set(theme, forKey: "theme")
     }
+    
     func setThankYouMessageViewed() {
         defaults.set(true, forKey: "thankYou")
+    }
+    
+    func overrideThankYouMessageViewed(override: Bool) {
+        defaults.set(override, forKey: "thankYou")
     }
     // MARK: - Retriving
     func getTheme() -> String {
