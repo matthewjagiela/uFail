@@ -12,6 +12,7 @@ I want to thank all the tens of thousands of you who have downloaded uFail over 
 
 11.0.2:
 - Fixed issue where swiping to reveal messages before selecting an option would result in a crash
+- Fixed bug where fail count would not increment when a sound was played
 
 11.0.1:
 - Would be smart to check the changelog version... (We're on 11 not 10)
